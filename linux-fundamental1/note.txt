@@ -1,0 +1,1 @@
+-> Buat ssh ke machine pake passwd nya samain kayak username contoh tryhackme@ip passwd nya -> tryhackme

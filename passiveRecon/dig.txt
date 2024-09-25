@@ -1,0 +1,2 @@
+Jalanin ini :
+dig thmlabs.com TXT

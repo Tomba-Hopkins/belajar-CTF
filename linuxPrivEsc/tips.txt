@@ -1,0 +1,7 @@
+Command saat masuk shell :
+-> hostname
+-> uname -a
+-> proc/version
+-> /etc/issue
+-> ps aux
+-> dll dll

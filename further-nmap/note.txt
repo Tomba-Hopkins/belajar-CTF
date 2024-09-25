@@ -1,0 +1,5 @@
+1. ping ip -> nanti gada respon -> N
+2. sudo nmap -sX -T4 -p1-999 ip -Pn -> -sX buat detect port, -T4 biar cepet scannya, -p1-999 scan dari port 1 - 999, -Pn ttp scan walau gabisa ping [soal nomer 1 kan N] -> jawabannya 999 open cuman ga keliatan
+3. no response -> scan atas ada resultnya no response
+4. tcp scan port 1 sampai 5000 -> sudo nmap -sS -p1-5000 ip -Pn -> jawaban ada 5 port kebuka
+5. buka wireshark -> pasang interface yang tun0 soalnya pakai vpn thm -> filter pakai "tcp" -> sudo nmap -sT -p80 ip -Pn -> -sT tcp connect -> nanti ada response nya -> sudo nmap -p21 --script ftp-anon ip -Pn -> coba login anonim ke ftp [port 21] -> Y

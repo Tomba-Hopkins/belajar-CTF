@@ -1,0 +1,4 @@
+-> buat connect ke vm windows pakai ini :
+- xfreerdp /u:username /p:password /v:ip /dynamic-resolution
+
+-> kalau di linux biasanya --help -> kalau di win pake ini contoh -> ipconfig /?

@@ -1,0 +1,2 @@
+- Subnetworks : yauda tinggal view site terus analyst sendiri lah
+- Enumerating Target : bisa pilih nmap -sL -n [target] 

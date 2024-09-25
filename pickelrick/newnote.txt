@@ -1,0 +1,22 @@
+username: R1ckRul3s
+pw: ?
+
+-> username di dapet dari source code main page
+
+
+-> ternyata pw di dapet dari /robots.txt
+-> fuzz pake dirsearch aja nanti ketemu
+
+
+-> masukkin command di portal
+-> pas di ls pas di pwd itu di /www/var/html
+-> artinya langsung bisa di akses https://ip/file
+
+-> di grep -R . juga bisa -> nanti ada codingan bash yang larang pake command cat atau vim gitu -> nah dia ga larang less -> coba deh
+-> grep . file.txt -> atau grep -R .
+-> cek versi python kali aja kepasang -> python --version atau python3 --version
+-> kalau ada bisa itu cari code reverse shell di tanem shell -> nyalain nc -nvlp port -> nanti codingan shell nya edit pake ip tun0 ama portnya
+-> jangan lupa juga itu python3 atau python 
+-> kalau udah inject -> terus di nc pasti masuk terminal
+-> install dulu /bin/bash nya -> python3 'import pty;pty.spawn("/bin/bash")'
+-> kalau udah cat semua flag nya -> di /home/rick -> di /root
