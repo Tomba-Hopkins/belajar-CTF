@@ -1,0 +1,54 @@
+# FFUF Report
+
+  Command line : `ffuf -w /home/tomba/wordlists/seclists/web-content/common.txt -u http://10.10.37.10/FUZZ -of md -fw 18 -o fuzz1`
+  Time: 2024-11-03T11:25:33&#43;07:00
+
+  | FUZZ | URL | Redirectlocation | Position | Status Code | Content Length | Content Words | Content Lines | Content Type | Duration | ResultFile | ScraperData | Ffufhash
+  | :- | :-- | :--------------- | :---- | :------- | :---------- | :------------- | :------------ | :--------- | :----------- | :------------ | :-------- |
+  | .htaccess | http://10.10.37.10/.htaccess |  | 25 | 403 | 218 | 16 | 10 | text/html; charset=iso-8859-1 | 227.370574ms |  |  | cdced19
+  | .htpasswd | http://10.10.37.10/.htpasswd |  | 26 | 403 | 218 | 16 | 10 | text/html; charset=iso-8859-1 | 227.942204ms |  |  | cdced1a
+  | .hta | http://10.10.37.10/.hta |  | 24 | 403 | 213 | 16 | 10 | text/html; charset=iso-8859-1 | 241.418656ms |  |  | cdced18
+  | 0 | http://10.10.37.10/0 | http://10.10.37.10/0/ | 98 | 301 | 0 | 1 | 1 | text/html; charset=UTF-8 | 511.884533ms |  |  | cdced62
+  | Image | http://10.10.37.10/Image | http://10.10.37.10/Image/ | 263 | 301 | 0 | 1 | 1 | text/html; charset=UTF-8 | 858.464448ms |  |  | cdced107
+  | admin | http://10.10.37.10/admin | http://10.10.37.10/admin/ | 525 | 301 | 233 | 14 | 8 | text/html; charset=iso-8859-1 | 232.983985ms |  |  | cdced20d
+  | atom | http://10.10.37.10/atom | http://10.10.37.10/feed/atom/ | 736 | 301 | 0 | 1 | 1 | text/html; charset=UTF-8 | 262.615047ms |  |  | cdced2e0
+  | audio | http://10.10.37.10/audio | http://10.10.37.10/audio/ | 746 | 301 | 233 | 14 | 8 | text/html; charset=iso-8859-1 | 221.603623ms |  |  | cdced2ea
+  | blog | http://10.10.37.10/blog | http://10.10.37.10/blog/ | 878 | 301 | 232 | 14 | 8 | text/html; charset=iso-8859-1 | 212.072563ms |  |  | cdced36e
+  | css | http://10.10.37.10/css | http://10.10.37.10/css/ | 1337 | 301 | 231 | 14 | 8 | text/html; charset=iso-8859-1 | 212.272785ms |  |  | cdced539
+  | dashboard | http://10.10.37.10/dashboard | http://10.10.37.10/wp-admin/ | 1371 | 302 | 0 | 1 | 1 | text/html; charset=UTF-8 | 411.450952ms |  |  | cdced55b
+  | favicon.ico | http://10.10.37.10/favicon.ico |  | 1769 | 200 | 0 | 1 | 1 | image/vnd.microsoft.icon | 356.428316ms |  |  | cdced6e9
+  | feed | http://10.10.37.10/feed | http://10.10.37.10/feed/ | 1786 | 301 | 0 | 1 | 1 | text/html; charset=UTF-8 | 440.43598ms |  |  | cdced6fa
+  | images | http://10.10.37.10/images | http://10.10.37.10/images/ | 2177 | 301 | 234 | 14 | 8 | text/html; charset=iso-8859-1 | 228.082468ms |  |  | cdced881
+  | image | http://10.10.37.10/image | http://10.10.37.10/image/ | 2172 | 301 | 0 | 1 | 1 | text/html; charset=UTF-8 | 462.509616ms |  |  | cdced87c
+  | index.html | http://10.10.37.10/index.html |  | 2204 | 200 | 1077 | 189 | 31 | text/html | 236.835ms |  |  | cdced89c
+  | index.php | http://10.10.37.10/index.php | http://10.10.37.10/ | 2205 | 301 | 0 | 1 | 1 | text/html; charset=UTF-8 | 434.334964ms |  |  | cdced89d
+  | js | http://10.10.37.10/js | http://10.10.37.10/js/ | 2361 | 301 | 230 | 14 | 8 | text/html; charset=iso-8859-1 | 215.774284ms |  |  | cdced939
+  | license | http://10.10.37.10/license |  | 2462 | 200 | 309 | 25 | 157 | text/plain | 495.258131ms |  |  | cdced99e
+  | login | http://10.10.37.10/login | http://10.10.37.10/wp-login.php | 2524 | 302 | 0 | 1 | 1 | text/html; charset=UTF-8 | 406.36257ms |  |  | cdced9dc
+  | intro | http://10.10.37.10/intro |  | 2279 | 200 | 516314 | 1 | 1 | video/webm | 220.637485ms |  |  | cdced8e7
+  | page1 | http://10.10.37.10/page1 | http://10.10.37.10/ | 3002 | 301 | 0 | 1 | 1 | text/html; charset=UTF-8 | 703.000327ms |  |  | cdcedbba
+  | phpmyadmin | http://10.10.37.10/phpmyadmin |  | 3120 | 403 | 94 | 14 | 1 | text/html; charset=iso-8859-1 | 222.483663ms |  |  | cdcedc30
+  | rdf | http://10.10.37.10/rdf | http://10.10.37.10/feed/rdf/ | 3441 | 301 | 0 | 1 | 1 | text/html; charset=UTF-8 | 266.264874ms |  |  | cdcedd71
+  | readme | http://10.10.37.10/readme |  | 3447 | 200 | 64 | 14 | 2 | text/html | 211.021444ms |  |  | cdcedd77
+  | render/https://www.google.com | http://10.10.37.10/render/https://www.google.com | http://10.10.37.10/render/https:/www.google.com | 3511 | 301 | 0 | 1 | 1 | text/html; charset=UTF-8 | 289.047246ms |  |  | cdceddb7
+  | robots.txt | http://10.10.37.10/robots.txt |  | 3585 | 200 | 41 | 2 | 4 | text/plain | 216.24873ms |  |  | cdcede01
+  | robots | http://10.10.37.10/robots |  | 3584 | 200 | 41 | 2 | 4 | text/plain | 218.564018ms |  |  | cdcede00
+  | rss | http://10.10.37.10/rss | http://10.10.37.10/feed/ | 3600 | 301 | 0 | 1 | 1 | text/html; charset=UTF-8 | 301.125024ms |  |  | cdcede10
+  | rss2 | http://10.10.37.10/rss2 | http://10.10.37.10/feed/ | 3602 | 301 | 0 | 1 | 1 | text/html; charset=UTF-8 | 291.408577ms |  |  | cdcede12
+  | sitemap.xml | http://10.10.37.10/sitemap.xml |  | 3833 | 200 | 0 | 1 | 1 | application/xml | 240.797399ms |  |  | cdcedef9
+  | sitemap | http://10.10.37.10/sitemap |  | 3831 | 200 | 0 | 1 | 1 | application/xml | 241.243305ms |  |  | cdcedef7
+  | video | http://10.10.37.10/video | http://10.10.37.10/video/ | 4410 | 301 | 233 | 14 | 8 | text/html; charset=iso-8859-1 | 220.206434ms |  |  | cdced113a
+  | wp-admin | http://10.10.37.10/wp-admin | http://10.10.37.10/wp-admin/ | 4587 | 301 | 236 | 14 | 8 | text/html; charset=iso-8859-1 | 223.078069ms |  |  | cdced11eb
+  | wp-content | http://10.10.37.10/wp-content | http://10.10.37.10/wp-content/ | 4594 | 301 | 238 | 14 | 8 | text/html; charset=iso-8859-1 | 231.291987ms |  |  | cdced11f2
+  | wp-includes | http://10.10.37.10/wp-includes | http://10.10.37.10/wp-includes/ | 4600 | 301 | 239 | 14 | 8 | text/html; charset=iso-8859-1 | 211.660034ms |  |  | cdced11f8
+  | wp-config | http://10.10.37.10/wp-config |  | 4593 | 200 | 0 | 1 | 1 | text/html; charset=UTF-8 | 372.686676ms |  |  | cdced11f1
+  | wp-cron | http://10.10.37.10/wp-cron |  | 4595 | 200 | 0 | 1 | 1 | text/html; charset=UTF-8 | 405.122627ms |  |  | cdced11f3
+  | wp-links-opml | http://10.10.37.10/wp-links-opml |  | 4601 | 200 | 227 | 13 | 11 | text/xml; charset=UTF-8 | 455.776287ms |  |  | cdced11f9
+  | wp-load | http://10.10.37.10/wp-load |  | 4602 | 200 | 0 | 1 | 1 | text/html; charset=UTF-8 | 460.814111ms |  |  | cdced11fa
+  | wp-login | http://10.10.37.10/wp-login |  | 4603 | 200 | 2657 | 115 | 53 | text/html; charset=UTF-8 | 462.563134ms |  |  | cdced11fb
+  | wp-settings | http://10.10.37.10/wp-settings |  | 4610 | 500 | 0 | 1 | 1 | text/html; charset=UTF-8 | 401.18219ms |  |  | cdced1202
+  | wp-signup | http://10.10.37.10/wp-signup | http://10.10.37.10/wp-login.php?action=register | 4611 | 302 | 0 | 1 | 1 | text/html; charset=UTF-8 | 439.518646ms |  |  | cdced1203
+  | wp-mail | http://10.10.37.10/wp-mail |  | 4604 | 500 | 3064 | 212 | 110 | text/html; charset=utf-8 | 549.099738ms |  |  | cdced11fc
+  | xmlrpc | http://10.10.37.10/xmlrpc |  | 4665 | 405 | 42 | 6 | 1 | text/plain;charset=UTF-8 | 581.668104ms |  |  | cdced1239
+  | xmlrpc.php | http://10.10.37.10/xmlrpc.php |  | 4666 | 405 | 42 | 6 | 1 | text/plain;charset=UTF-8 | 929.90371ms |  |  | cdced123a
+  

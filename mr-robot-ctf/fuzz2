@@ -1,0 +1,24 @@
+# FFUF Report
+
+  Command line : `ffuf -w /home/tomba/wordlists/seclists/dns/subdomains-top1million-5000.txt -u http://10.10.37.10/FUZZ -fw 18 -of md -o fuzz2`
+  Time: 2024-11-03T11:23:00&#43;07:00
+
+  | FUZZ | URL | Redirectlocation | Position | Status Code | Content Length | Content Words | Content Lines | Content Type | Duration | ResultFile | ScraperData | Ffufhash
+  | :- | :-- | :--------------- | :---- | :------- | :---------- | :------------- | :------------ | :--------- | :----------- | :------------ | :-------- |
+  | admin | http://10.10.37.10/admin | http://10.10.37.10/admin/ | 24 | 301 | 233 | 14 | 8 | text/html; charset=iso-8859-1 | 219.32457ms |  |  | 30eab18
+  | blog | http://10.10.37.10/blog | http://10.10.37.10/blog/ | 18 | 301 | 232 | 14 | 8 | text/html; charset=iso-8859-1 | 225.7645ms |  |  | 30eab12
+  | images | http://10.10.37.10/images | http://10.10.37.10/images/ | 53 | 301 | 234 | 14 | 8 | text/html; charset=iso-8859-1 | 242.966246ms |  |  | 30eab35
+  | video | http://10.10.37.10/video | http://10.10.37.10/video/ | 63 | 301 | 233 | 14 | 8 | text/html; charset=iso-8859-1 | 342.324992ms |  |  | 30eab3f
+  | login | http://10.10.37.10/login | http://10.10.37.10/wp-login.php | 110 | 302 | 0 | 1 | 1 | text/html; charset=UTF-8 | 680.446101ms |  |  | 30eab6e
+  | image | http://10.10.37.10/image | http://10.10.37.10/image/ | 177 | 301 | 0 | 1 | 1 | text/html; charset=UTF-8 | 581.516938ms |  |  | 30eabb1
+  | phpmyadmin | http://10.10.37.10/phpmyadmin |  | 225 | 403 | 94 | 14 | 1 | text/html; charset=iso-8859-1 | 236.895215ms |  |  | 30eabe1
+  | rss | http://10.10.37.10/rss | http://10.10.37.10/feed/ | 228 | 301 | 0 | 1 | 1 | text/html; charset=UTF-8 | 321.321948ms |  |  | 30eabe4
+  | css | http://10.10.37.10/css | http://10.10.37.10/css/ | 406 | 301 | 231 | 14 | 8 | text/html; charset=iso-8859-1 | 283.706583ms |  |  | 30eab196
+  | js | http://10.10.37.10/js | http://10.10.37.10/js/ | 454 | 301 | 230 | 14 | 8 | text/html; charset=iso-8859-1 | 217.743447ms |  |  | 30eab1c6
+  | dashboard | http://10.10.37.10/dashboard | http://10.10.37.10/wp-admin/ | 516 | 302 | 0 | 1 | 1 | text/html; charset=UTF-8 | 815.744332ms |  |  | 30eab204
+  | audio | http://10.10.37.10/audio | http://10.10.37.10/audio/ | 716 | 301 | 233 | 14 | 8 | text/html; charset=iso-8859-1 | 249.177084ms |  |  | 30eab2cc
+  | feed | http://10.10.37.10/feed | http://10.10.37.10/feed/ | 1031 | 301 | 0 | 1 | 1 | text/html; charset=UTF-8 | 582.27158ms |  |  | 30eab407
+  | license | http://10.10.37.10/license |  | 1245 | 200 | 309 | 25 | 157 | text/plain | 368.376934ms |  |  | 30eab4dd
+  | atom | http://10.10.37.10/atom | http://10.10.37.10/feed/atom/ | 1919 | 301 | 0 | 1 | 1 | text/html; charset=UTF-8 | 251.007728ms |  |  | 30eab77f
+  | sitemap | http://10.10.37.10/sitemap |  | 2388 | 200 | 0 | 1 | 1 | application/xml | 222.625905ms |  |  | 30eab954
+  

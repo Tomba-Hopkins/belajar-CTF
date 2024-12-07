@@ -1,0 +1,30 @@
+# Nmap 7.94SVN scan initiated Wed Nov  6 12:13:10 2024 as: nmap -p- -sC -sV --min-rate 1000 -oN scan -vv -Pn 10.10.244.247
+Increasing send delay for 10.10.244.247 from 10 to 20 due to 854 out of 2845 dropped probes since last increase.
+Increasing send delay for 10.10.244.247 from 40 to 80 due to 528 out of 1758 dropped probes since last increase.
+Increasing send delay for 10.10.244.247 from 80 to 160 due to 264 out of 878 dropped probes since last increase.
+Increasing send delay for 10.10.244.247 from 160 to 320 due to 1392 out of 4639 dropped probes since last increase.
+Increasing send delay for 10.10.244.247 from 320 to 640 due to 347 out of 1155 dropped probes since last increase.
+Increasing send delay for 10.10.244.247 from 640 to 1000 due to 379 out of 1261 dropped probes since last increase.
+Nmap scan report for cyprusbank.thm (10.10.244.247)
+Host is up, received user-set (0.27s latency).
+Scanned at 2024-11-06 12:13:10 WIB for 117s
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE REASON         VERSION
+22/tcp open  ssh     syn-ack ttl 63 OpenSSH 7.6p1 Ubuntu 4ubuntu0.7 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 b9:07:96:0d:c4:b6:0c:d6:22:1a:e4:6c:8e:ac:6f:7d (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCddbej9ZSf75uuDvLDeym5AYM+loP/3W862HTWjmksh0UuiuIz8UNTrf3ZpgtBej4y3E3EKvOmYFvJHZpFRV/hQBq1oZB3+XXVzb5RovazcnMgvFxI4y5nCQM8qTW09YvBOpzTyYmsKjVRJOfLR+F87g90vNdZ/u8uVl7IH0B6NmhGlCjPMVLRmhz7PuZih38t0WRWPruEY5qGliW0M3ngZXL6MmL1Jo146HtM8GASdt6yV9U3GLa3/OMFVjYgysqUQPrMwvUrQ8tIDnRAH1rsKBxDFotvcfW6mJ1OvojQf8PEw7iI/PNJZWGzkg+bm4/k+6PRjO2v/0V98DlU+gnn
+|   256 ba:ff:92:3e:0f:03:7e:da:30:ca:e3:52:8d:47:d9:6c (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBNMBr/zXjVQItMqdVH12/sZ3rIt2XFsPWRCy4bXCE7InUVg8Q9SVFkOW2LAi1UStP4A4W8yA8hW+1wJaEFP9ffs=
+|   256 5d:e4:14:39:ca:06:17:47:93:53:86:de:2b:77:09:7d (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIdJAkvDVqEAbac77yxYfkM0AU8puWxCyqCBJ9Pd9zCi
+80/tcp open  http    syn-ack ttl 63 nginx 1.14.0 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+|_http-server-header: nginx/1.14.0 (Ubuntu)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Nov  6 12:15:07 2024 -- 1 IP address (1 host up) scanned in 117.52 seconds

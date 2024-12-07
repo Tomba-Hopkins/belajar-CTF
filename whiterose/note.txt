@@ -1,0 +1,1 @@
+1. ip sama web nya kudu di catet /etc/hosts dulu jir -> nmap scan aja 

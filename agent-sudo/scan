@@ -1,0 +1,32 @@
+# Nmap 7.94SVN scan initiated Tue Nov  5 20:32:12 2024 as: nmap -p- -sC -sV -vv -oN scan --min-rate 1000 10.10.74.215
+Increasing send delay for 10.10.74.215 from 0 to 5 due to 235 out of 783 dropped probes since last increase.
+Increasing send delay for 10.10.74.215 from 10 to 20 due to 214 out of 712 dropped probes since last increase.
+Increasing send delay for 10.10.74.215 from 20 to 40 due to 253 out of 842 dropped probes since last increase.
+Increasing send delay for 10.10.74.215 from 80 to 160 due to 435 out of 1449 dropped probes since last increase.
+Increasing send delay for 10.10.74.215 from 160 to 320 due to 370 out of 1232 dropped probes since last increase.
+Increasing send delay for 10.10.74.215 from 320 to 640 due to 330 out of 1098 dropped probes since last increase.
+Increasing send delay for 10.10.74.215 from 640 to 1000 due to 437 out of 1456 dropped probes since last increase.
+Nmap scan report for 10.10.74.215
+Host is up, received reset ttl 63 (0.28s latency).
+Scanned at 2024-11-05 20:32:14 WIB for 139s
+Not shown: 65532 closed tcp ports (reset)
+PORT   STATE SERVICE REASON         VERSION
+21/tcp open  ftp     syn-ack ttl 63 vsftpd 3.0.3
+22/tcp open  ssh     syn-ack ttl 63 OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 ef:1f:5d:04:d4:77:95:06:60:72:ec:f0:58:f2:cc:07 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5hdrxDB30IcSGobuBxhwKJ8g+DJcUO5xzoaZP/vJBtWoSf4nWDqaqlJdEF0Vu7Sw7i0R3aHRKGc5mKmjRuhSEtuKKjKdZqzL3xNTI2cItmyKsMgZz+lbMnc3DouIHqlh748nQknD/28+RXREsNtQZtd0VmBZcY1TD0U4XJXPiwleilnsbwWA7pg26cAv9B7CcaqvMgldjSTdkT1QNgrx51g4IFxtMIFGeJDh2oJkfPcX6KDcYo6c9W1l+SCSivAQsJ1dXgA2bLFkG/wPaJaBgCzb8IOZOfxQjnIqBdUNFQPlwshX/nq26BMhNGKMENXJUpvUTshoJ/rFGgZ9Nj31r
+|   256 5e:02:d1:9a:c4:e7:43:06:62:c1:9e:25:84:8a:e7:ea (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBHdSVnnzMMv6VBLmga/Wpb94C9M2nOXyu36FCwzHtLB4S4lGXa2LzB5jqnAQa0ihI6IDtQUimgvooZCLNl6ob68=
+|   256 2d:00:5c:b9:fd:a8:c8:d8:80:e3:92:4f:8b:4f:18:e2 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOL3wRjJ5kmGs/hI4aXEwEndh81Pm/fvo8EvcpDHR5nt
+80/tcp open  http    syn-ack ttl 63 Apache httpd 2.4.29 ((Ubuntu))
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: Annoucement
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Nov  5 20:34:33 2024 -- 1 IP address (1 host up) scanned in 140.68 seconds

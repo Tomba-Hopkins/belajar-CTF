@@ -1,0 +1,52 @@
+# Nmap 7.94SVN scan initiated Sun Nov 10 12:46:04 2024 as: nmap -p 0-1000 -sV -sC -oN scan -vv --min-rate 1000 10.10.16.1
+Nmap scan report for 10.10.16.1
+Host is up, received echo-reply ttl 127 (0.22s latency).
+Scanned at 2024-11-10 12:46:05 WIB for 21s
+Not shown: 998 closed tcp ports (reset)
+PORT    STATE SERVICE      REASON          VERSION
+135/tcp open  msrpc        syn-ack ttl 127 Microsoft Windows RPC
+139/tcp open  netbios-ssn  syn-ack ttl 127 Microsoft Windows netbios-ssn
+445/tcp open  microsoft-ds syn-ack ttl 127 Windows 7 Professional 7601 Service Pack 1 microsoft-ds (workgroup: WORKGROUP)
+Service Info: Host: JON-PC; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-time: 
+|   date: 2024-11-10T05:46:17
+|_  start_date: 2024-11-10T05:45:58
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 24450/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 64152/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 46483/udp): CLEAN (Timeout)
+|   Check 4 (port 9633/udp): CLEAN (Failed to receive data)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb-os-discovery: 
+|   OS: Windows 7 Professional 7601 Service Pack 1 (Windows 7 Professional 6.1)
+|   OS CPE: cpe:/o:microsoft:windows_7::sp1:professional
+|   Computer name: Jon-PC
+|   NetBIOS computer name: JON-PC\x00
+|   Workgroup: WORKGROUP\x00
+|_  System time: 2024-11-09T23:46:17-06:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| nbstat: NetBIOS name: JON-PC, NetBIOS user: <unknown>, NetBIOS MAC: 02:9e:fd:bd:4e:45 (unknown)
+| Names:
+|   JON-PC<00>           Flags: <unique><active>
+|   WORKGROUP<00>        Flags: <group><active>
+|   JON-PC<20>           Flags: <unique><active>
+|   WORKGROUP<1e>        Flags: <group><active>
+| Statistics:
+|   02:9e:fd:bd:4e:45:00:00:00:00:00:00:00:00:00:00:00
+|   00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00
+|_  00:00:00:00:00:00:00:00:00:00:00:00:00:00
+| smb2-security-mode: 
+|   2:1:0: 
+|_    Message signing enabled but not required
+|_clock-skew: mean: 2h00m00s, deviation: 3h27m51s, median: 0s
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Nov 10 12:46:26 2024 -- 1 IP address (1 host up) scanned in 22.19 seconds

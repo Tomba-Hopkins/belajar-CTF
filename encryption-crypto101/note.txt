@@ -1,0 +1,2 @@
+1. ssh2john dulu ke id.rsa nya -> kalau udah hasilnya baru di john
+2. gpg: unzip dulu file nya -> gpg --import nama.key -> gpg --list-key -> gpg -d namafile.gpg -> ada outputnya

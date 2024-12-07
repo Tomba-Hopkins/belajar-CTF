@@ -1,0 +1,8 @@
+# FFUF Report
+
+  Command line : `ffuf -w /home/tomba/wordlists/seclists/dns/subdomains-top1million-5000.txt -H Host: FUZZ.cyprusbank.thm -u http://cyprusbank.thm/ -fw 18 -of md -o fuzz -t 50`
+  Time: 2024-11-09T19:31:49&#43;07:00
+
+  | FUZZ | URL | Redirectlocation | Position | Status Code | Content Length | Content Words | Content Lines | Content Type | Duration | ResultFile | ScraperData | Ffufhash
+  | :- | :-- | :--------------- | :---- | :------- | :---------- | :------------- | :------------ | :--------- | :----------- | :------------ | :-------- |
+  
