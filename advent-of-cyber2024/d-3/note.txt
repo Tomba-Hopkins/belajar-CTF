@@ -1,0 +1,11 @@
+1. login elastic -> http://ip:5601 -> ke discover -> atur collectionya ke wareville rails -> 1 oct 00.00 - 2 oct 00.00 
+2. bisa click filter2 di kanan -> analisis most ip yang serang -> filter in juga -> dari jam ini ampe itu bisa di filter
+3. gatau ah bingung bilang 1 oct ternyata 3 oct mana collectionnya yang frostypines -> jawab aja lah liat wu aja
+
+
+
+1. suruh jadi red team juga nanti akses shell nya ini root dir nya :  frostypines.thm
+2. set dulu di etc/hosts -> ip root-dir -> terus akses shellnya coba kasih param ?c=ls nanti cat flag
+3. bikin shell dulu copas dari deskripsi -> login admin admin@domainname pass nya admin -> ke room -> create room lah 
+4. img nya pake shell tadi, manip dulu jadi .png -> nanti upload intercept pake burp terus ganti ke .php  lagi
+5. terus coba refresh room room nya usut img nya berasal dari path mana -> kunjungi shell.php -> cat flag nya

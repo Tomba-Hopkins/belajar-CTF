@@ -1,0 +1,7 @@
+1. login siem: https://ip.p.thmlabs.com/ -> uname passwd nya elastic:elastic -> gas ke discover
+2. analisis activity dari 09.00 sampai 09.30 di 1 december -> pake absolute y -> sama 29 november 00.00 - 1 december 09.30
+3. filter field nya -> timestamp host.hostname user.name event.category process.command_line event.outcome source.ip
+4. atur2 aja filter true false nya, misal event.category: auth true, event.coutcome:  failure true -> itung jumlah nya
+5. filter juga source.ip nya bukan yang A nanti keliatan ip lain -> soalnya ada yg pattern nya ga spam login
+6. lacak juga berhasil loginnya tanggal apa bulan apa
+7. decode process.command_line nya tuh base64 di cyberchef -> base64 sama decode text -> atau echo n | base64 -d juga sabi

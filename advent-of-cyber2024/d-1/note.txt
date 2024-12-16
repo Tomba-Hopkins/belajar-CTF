@@ -1,0 +1,4 @@
+1. buka ip di browser -> coba copas link bebas yt -> convert kesitu -> kedownload file zip
+2. ekstrak -> ada 2 file -> file namafile.mp3 -> nanti ada data link github raw nya -> kunjungin -> stalk ke githubnya
+3. jawab jawab in -> analisis code nya ngarah kemana malicious powershell nya , server c2 -> analisis aja
+4. udah stalk github analisis code -> sekarang exiftool in 2 file tadi -> baca authornya -> jawab2 in lah

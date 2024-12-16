@@ -1,0 +1,9 @@
+1. baca baca dulu noh TTP tactic technique procedure -> mitre attack baca di deskripsinya noh ada
+2. disitu ada atomic red team framework -> buat nguji deteksi keamanan gitu dari atomic test [cyber att kecil2 an]
+3. di powershell ada atomicTest coba gini -> Get-Help Invoke-AtomicTest 
+4. spear phising ada di mitre att -> T1566.001
+5. coba sekarang run -> Invoke-AtomicTest T1566.001 -ShowDetails
+6. Invoke-AtomicTest kodeMitre -TestNumbers num -> buat langsung test -> -CheckPrereq buat cek prereq -> -Cleanup buat hapus atomic
+7. buka event viewer -> sysmon -> operational -> nah pas run nanti ada details cek aja dia ngarah buat file phising nya kemana
+8. mitre attack cari disini sesuai hint aja -> https://attack.mitre.org/techniques
+9. mitre attack baru yang T1059 tuh nanti di Invoke-AtomicTest T1059.003 -ShowDetails -> ada di nomer 3 yang simulated simulated

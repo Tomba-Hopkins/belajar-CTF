@@ -1,0 +1,6 @@
+T1566.001 Spear Phising: 
+number1: download macro enable phising attachment
+number2: word spawned a command shell and used an ip in a command line
+
+
+

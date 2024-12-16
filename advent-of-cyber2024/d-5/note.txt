@@ -1,0 +1,6 @@
+1. ini bug XXE -> buka burp -> sadap semua history cek di history sambil explore web -> beli barang -> cek wishes ampe ada error wishes tuh
+2. cek di request history yang ada xxe nya -> bawa ke repeater nanti manip xxe nya pake beberapa command
+3. manip dari /etc/host ke -> /var/www/html/path-web-yg-error -> nanti keliatan wish mu -> bawa ke intruder request nya
+4. ganti index -> index mu kan 21 -> brute force dari 1 ke 20 aja -> liat semua response nya okay
+5. nanti nemu flag
+6. sama ada lagi di deskripsi path ip/CHANGELOG disitu juga ada flag
