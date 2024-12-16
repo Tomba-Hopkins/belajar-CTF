@@ -1,0 +1,4 @@
+1. run jq -> jq itu kayak ngefilter json -r result -> jq -r '.[] | .nama_panjang' bio.json -> contoh gitu
+2. disini disuruh nganalisis log aws cloudtrail
+3. dahlah yang ini liat wu atau youtube papashell aja ngelag parah soalnya vm nya -> gabisa di ssh juga masalahnya jadi ngelag bgt jir command command lama
+4. 1 aja jawaban noh -> grep INSERT rds nya -> nanti ada account bank number nya copas noh -> paste di jawaban terakhir

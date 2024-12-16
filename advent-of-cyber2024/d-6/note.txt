@@ -1,0 +1,2 @@
+1. run jingle bells.exe -> kalau udah run coba run malware di tools/malware/christmas.exe -> nanti muncul notif di tab powershell ada flag catet
+2. ke floss -> floss.exe dir/cristmas.exe | Out-file dir/tujuan.txt -> terus buka file nya -> find aja ctrl + f -> cari yang THM nanti ada flag 
