@@ -1,0 +1,5 @@
+1. login ssh -> iw dev -> nah addr itu bssid/mac nya
+2. sudo iw dev namainterface scan -> interfacenya wlan2 disitu
+3. dah ngikut writeup walkthrough aja lah
+4. butuh 2 terminal -> satu listener nya -> satunya brute apa gitu
+5. dah nanti di listener nya ada kok  log nya essid campur ssid tuh nanti ada jawabannya ikut wu aja udah

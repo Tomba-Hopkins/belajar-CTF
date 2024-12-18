@@ -1,0 +1,5 @@
+1. GRC: Governance, Risk, and Compliance
+2. ada question jir ama identify impact level, likelihood level -> mana ada 3 vendor lagi jir
+3. baca wu aja udah walkthrough aja atau minta bantuan gpt aja -> bisa di ulang2 kok jawabnya hhhhh jadi aman
+4. nanti di akhir tinggal jumlahin tuh semua risk nya -> tentuin vendor mana yangg risknya paling kecil
+5. kalau udah di tentuin -> claim flag nya

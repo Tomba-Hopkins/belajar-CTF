@@ -1,0 +1,5 @@
+1. buka web nya -> ip:5000 -> login 110 tester -> coba dulu aja ini -> buka burp
+2. intercept pas method post transfer duit nya -> bawa ke repeater
+3. bawa ampe 10 -> klik kanan di plus untuk membuat grup -> semua repeater jadiin 1 grup
+4. nah klik kanan send -> taruh di send group in paralel -> send dah tuh barengan -> amount 500 * 10 tab 2500 lah ya
+5. nah nanti login ke 101 glitch -> lakuin hal yang sama biar dapet flag dari flash message
