@@ -3,3 +3,4 @@
 3. bawa ampe 10 -> klik kanan di plus untuk membuat grup -> semua repeater jadiin 1 grup
 4. nah klik kanan send -> taruh di send group in paralel -> send dah tuh barengan -> amount 500 * 10 tab 2500 lah ya
 5. nah nanti login ke 101 glitch -> lakuin hal yang sama biar dapet flag dari flash message
+6. ini race condition btw
