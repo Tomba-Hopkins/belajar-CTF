@@ -1,0 +1,5 @@
+1. websocket ini -> akses dulu web nya -> http://ip -> kalau udah nyalain proxy burp -> coba klik track 
+2. nah nanti ada manipulasi data id di interceptnya forward  -> ganti ke 8 id nya si villain -> nanti forward ada msg flag
+3. flag 2 ada di history websocket -> kirim pesan terus cek di history yang ngarah ke server berisi msg gitu
+4. bawa ke repeater -> ubah id sender nya jadi id villain 
+5. nanti ada flag ke 2 di msg -> manipulasi data di  websocket

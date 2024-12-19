@@ -1,0 +1,6 @@
+1. pertama ke event viewer -> ke windows log -> security
+2. nah coba find aja -> Glitch_Malware -> ada special logon coba cek tanggalnya -> dia formatnya mm/dd/yy -> ubah jadi dmy
+3. jawaban kelar next cari logon -> disitu ada event id nya itu jawaban selanjutnya
+4. next check di administrator -> appdata -> ke roaming -> microsoft powershell psreadline -> nah disitu ada history console 
+5. next search ke app and service logs -> windows powershell -> find password -> nah nanti coba cari2 tuh log nya 
+6. next tinggal GET-GPO -All nanti muncul display name yang mencurigakan 

@@ -1,0 +1,5 @@
+1. masukin ip target ke /etc/hosts dulu -> ip gift-scheduler.thm -> kalau udah kunjungin tuh web nya 
+2. kelar itu coba cek cert nya namanya apa organize nya -> kalau udah login apa yang disuruh 
+3. atur tuh cert burp nya jadi -> ip vpn:8080 -> gas abis itu download script yang dikasih route elf tuh -> chmod +x terus run aja
+4. kelar run nanti di history banyak banget request post get post get -> nah ada tuh credential nya -> cobain yang snowball terus logout login
+5. dapet flag 1, lanjut flag 2 ada di martha buat adminnya -> login martha -> dah klaim flag nya kelar
