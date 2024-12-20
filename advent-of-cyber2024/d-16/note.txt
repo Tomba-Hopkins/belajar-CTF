@@ -1,0 +1,3 @@
+1. ikutin instruksi belajar azure ad noh -> az ad group member list --group "Secret Recovery Group" dapet secret nanti location
+2. ikut dah walkthrough dah -> nanti redacted ada juga di ganti 
+3. dah itu value valuenya ada 

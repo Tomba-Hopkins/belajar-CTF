@@ -1,0 +1,19 @@
+1. login splunk link ada di deskripsi -> ke search n reports -> index=* set time ke alltime
+2. filter source type ada 2 dataset weblogs cctvlogs -> cek coba klik cctvlogs -> extract new field
+3. select first aja sample nya -> method pilih regex -> destructure jadi gini 
+4. timestamp, event, user_id, username, session_id -> kalau udah next -> validate next 
+5. explore the fields i just create in search -> klik aja -> tara ada field filter baru
+6. search gini index=_* OR index=* sourcetype=cctv_logs -> klik username nanti ada -> ato index=cctv_feed
+7. remove field extraction: setting -> field -> field extraction -> cari misal cctv yg ada username -> delete
+8. open field extraction -> update regex ini -> sourcetype cctvlogs alltime prefer write regexmyself
+9. regex nya ini: ^(?P<timestamp>\d+\-\d+\-\d+\s+\d+:\d+:\d+)\s+(?P<event>(Login\s\w+|\w+))\s+(?P<user_id>\d+)?\s?(?P<userName>\w+)\s+.*?(?P<session_id>\w+)$
+10. preview -> save finish explore -> lalu search index=cctv_feed | stats count(Event) by username
+11. visualization pie chart -> ini juga index=cctv_feed | stats count by event -> ini: sama | rare Event
+12. ini: index=cctv_feed *failed* | table _time username event session_id
+13. ini: index=cctv_feed *put_Session_id_here* | table _time username event session_id
+14. ini: index=cctv_feed *Delete*
+15. ini: index=web_logs *session+id+keknyai*
+16. ini: index=web_logs clientip="ip_sus" | table _time clientip status uri ur_path file
+17. ini: index=cctv_feed *session+id+keknya* -> connect the dots
+18. cobalah itu semua satu satu di chart login sukses berapa -> session id attacker -> attacker name
+19. cek cek aja dari visualisasi statistik atau log biasa sana lah pokoknya
