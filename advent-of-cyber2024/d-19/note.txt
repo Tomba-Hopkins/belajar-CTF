@@ -1,0 +1,7 @@
+1. interact with executable api, intercept and modify internal api using frida, hack game with the help of frida
+2. .so share object libraries
+3. lab nya gabisa di ssh jir lah mana lag bgt lagi di browser
+4. intinya ke dir app nya berasal -> terus jalanin game nya sambil nyalain frida ke lib game nya
+5. frida-trace ./TryUnlockMe -i 'libaocgame.so!*' -> o iya sebelum itu mending buka dulu lib nya di vscode
+6. cd /kelib nya -> code . -> nah baru run aja frida nya biar bisa main + manip lib nya + pantau log di terminal
+7. dah abis itu ikut aja deskripsinya 

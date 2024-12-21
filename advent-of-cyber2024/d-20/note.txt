@@ -1,0 +1,6 @@
+1. login rdp aja coba ini analyze traffic di wireshark ama understanding c2 server tipis tipis
+2. buka file pcap nya -> coba cari yang post -> follow http stream -> nanti ada message ama ip gitu
+3. sekarang buka yang get command -> nah follow http stream juga tuh coba
+4. cek post yang /exilfrate sama yang /beacon -> yang /exilfrate tuh ada nama file nya -> itu buat key ngedecrypt aes nanti ada disitu
+5. last cek /beacon -> disitu ada encrypted string -> decrypt di cyberchef pake aes tadi key nya sama jadiin mode ecb 
+6. inget key nya ga ampe ada -- -- nya jadi octet 1 aja di ambil -> dah dapet tuh ke decrypt
