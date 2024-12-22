@@ -1,0 +1,10 @@
+1. ini reverse engineering
+2. disassembly decompiling
+3. disassembly itu low level instruction machine nya
+4. kalau decompiling itu tergantung bahasa pemrogramannya 
+5. pakai pestudio buat analyst file exe nya
+6. pakai ilspy buatt decompile .net nya -> ini .exe nya dari .net soalnya
+7. demo -> demo binary -> main string
+8. stage 1 tuh di local -> jadi di ilspy 
+9. stage 2 coba kunjungin url di source code nya di browser -> cek lagi dah di ilspy
+10. explore aja function2 nya nanti nemu jawabannya
