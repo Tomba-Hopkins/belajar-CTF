@@ -1,0 +1,12 @@
+1. learn kubernetes, dfir, dan dfir bisa kelar dengan log analyst
+2. udah ikutin aja walkthrough di deskripsinya
+3. nyalain kubernetes -> minicube start
+4. cek logs di container kubernetes -> kalau udah out masuk ke dfir_artefact
+5. disitu cat logs pods apache coba terus analisis disana ada jawaban2 nya
+6. docker exec ke container id yg run terus ls /var/log nya
+7. docker logs container id 
+8. kalau udah sekarang coba analyst log2 di registry log disitu
+9. nah catet awal log, itu awal dia connect registry 
+10. catat juga awal patch itu juga awal pushed
+11. habis itu ikut walkthrough lagi aja
+12. sekarang analyst di audit log -> ikutin aja walkthrough nya -> nanti di akhir nemu pull creds secret
