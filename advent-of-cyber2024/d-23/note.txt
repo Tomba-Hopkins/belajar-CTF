@@ -1,0 +1,9 @@
+1. hash cracking -> bisa pake ssh nich
+2. diketahui username: mayor@email.thm -> pass nya masih di hash
+3. nah nyalain tuh hash-id py nya -> terus paste hash passwd nya 
+4. format raw-sha256 -> john --format=raw-sha256 --rules=wordlist --wordlist=/usr/share/wordlists/rockyou.txt hash1.txt
+5. flag nya ada di private pdf -> ls /opt/john/*2john* -> nanti pake yang pdf2john
+6. pdf2john file.pdf > hashpdf.hash -> john --rules=single --wordlist=wordlist.txt hashpdf.hash
+7. kalau dah ketemu passwd nya -> pdftotext private.pdf -upw passwd 
+8. kalau udah cat hasilnya -> cat private.txt -> paling atas -> atau head private.txt juga sabi 
+9. klaim flag nya

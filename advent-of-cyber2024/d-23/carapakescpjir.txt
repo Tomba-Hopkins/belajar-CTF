@@ -1,0 +1,1 @@
+scp james@10.10.226.103:/home/james/Alien_autospy.jpg .
