@@ -1,0 +1,6 @@
+1. ini iot ->  basic mqtt protocol -> wireshark mqtt traffic -> rev eng mqtt network
+2. kok gabisa connect ssh ya bisanya vnc
+3. buka wireshark arahin ke challenge pcap -> terus buka ./challenge.sh
+4. nah kalau udah cari message di wireshark nya keknya sama semua dah msg nya
+5. kalau udah jalanin di terminal -> mosquitto_pub -h localhost -t "messagetadi" -m "on"
+6. cek di remote nya disitu udah ada flag nya
