@@ -1,0 +1,3 @@
+1. social engineering: baca stuxnet nya
+2. phising: identify email di view site itu phisingg atau bukan, sampai dapet flag
+3. malware n ransomware: baca aja cari tau mata uang crypto yg di pake ama threat actor biasanya 
