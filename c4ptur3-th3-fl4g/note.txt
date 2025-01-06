@@ -1,0 +1,4 @@
+1. translation and shiffting :
+- biner to text -> codechef, rapidtable atau:  biner ke int -> terjemahin ke ascii char
+- base32 to text -> len str kelipatan 8, A - Z, 2 - 7, selalu kapital
+- base64 to text -> A - Z, a - z, 0 - 9, + /, bisa lowercase uppercase
