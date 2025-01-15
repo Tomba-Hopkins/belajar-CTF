@@ -1,0 +1,21 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.119.11:8080
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                dirwordlist.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+[2K/console              (Status: 302) [Size: 0] [--> /noredirect.html]
+[2K/website              (Status: 302) [Size: 0] [--> http://10.10.119.11:8080/website/]
+
+[2K/silverpeas           (Status: 302) [Size: 0] [--> http://10.10.119.11:8080/silverpeas/]
+===============================================================
+Finished
+===============================================================
