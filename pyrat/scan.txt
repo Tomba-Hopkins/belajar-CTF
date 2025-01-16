@@ -1,0 +1,80 @@
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-01-16 14:14 WIB
+NSE: Loaded 156 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 14:14
+Completed NSE at 14:14, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 14:14
+Completed NSE at 14:14, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 14:14
+Completed NSE at 14:14, 0.00s elapsed
+Initiating Ping Scan at 14:14
+Scanning 10.10.188.173 [4 ports]
+Completed Ping Scan at 14:14, 0.35s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 14:14
+Completed Parallel DNS resolution of 1 host. at 14:14, 0.15s elapsed
+Initiating SYN Stealth Scan at 14:14
+Scanning 10.10.188.173 [65535 ports]
+Discovered open port 22/tcp on 10.10.188.173
+Increasing send delay for 10.10.188.173 from 0 to 5 due to max_successful_tryno increase to 4
+Increasing send delay for 10.10.188.173 from 5 to 10 due to max_successful_tryno increase to 5
+Increasing send delay for 10.10.188.173 from 10 to 20 due to max_successful_tryno increase to 6
+Increasing send delay for 10.10.188.173 from 20 to 40 due to max_successful_tryno increase to 7
+Increasing send delay for 10.10.188.173 from 40 to 80 due to max_successful_tryno increase to 8
+SYN Stealth Scan Timing: About 35.11% done; ETC: 14:16 (0:00:57 remaining)
+Discovered open port 8000/tcp on 10.10.188.173
+Completed SYN Stealth Scan at 14:16, 84.15s elapsed (65535 total ports)
+Initiating Service scan at 14:16
+Scanning 2 services on 10.10.188.173
+Completed Service scan at 14:16, 16.23s elapsed (2 services on 1 host)
+NSE: Script scanning 10.10.188.173.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 14:16
+Completed NSE at 14:16, 13.63s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 14:16
+Completed NSE at 14:16, 2.12s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 14:16
+Completed NSE at 14:16, 0.00s elapsed
+Nmap scan report for 10.10.188.173
+Host is up, received reset ttl 63 (0.27s latency).
+Scanned at 2025-01-16 14:14:50 WIB for 117s
+Not shown: 65533 closed tcp ports (reset)
+PORT     STATE SERVICE  REASON         VERSION
+22/tcp   open  ssh      syn-ack ttl 63 OpenSSH 8.2p1 Ubuntu 4ubuntu0.7 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 44:5f:26:67:4b:4a:91:9b:59:7a:95:59:c8:4c:2e:04 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDMc4hLykriw3nBOsKHJK1Y6eauB8OllfLLlztbB4tu4c9cO8qyOXSfZaCcb92uq/Y3u02PPHWq2yXOLPler1AFGVhuSfIpokEnT2jgQzKL63uJMZtoFzL3RW8DAzunrHhi/nQqo8sw7wDCiIN9s4PDrAXmP6YXQ5ekK30om9kd5jHG6xJ+/gIThU4ODr/pHAqr28bSpuHQdgphSjmeShDMg8wu8Kk/B0bL2oEvVxaNNWYWc1qHzdgjV5HPtq6z3MEsLYzSiwxcjDJ+EnL564tJqej6R69mjII1uHStkrmewzpiYTBRdgi9A3Yb+x8NxervECFhUR2MoR1zD+0UJbRA2v1LQaGg9oYnYXNq3Lc5c4aXz638wAUtLtw2SwTvPxDrlCmDVtUhQFDhyFOu9bSmPY0oGH5To8niazWcTsCZlx2tpQLhF/gS3jP/fVw+H6Eyz/yge3RYeyTv3ehV6vXHAGuQLvkqhT6QS21PLzvM7bCqmo1YIqHfT2DLi7jZxdk=
+|   256 0a:4b:b9:b1:77:d2:48:79:fc:2f:8a:3d:64:3a:ad:94 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBJNL/iO8JI5DrcvPDFlmqtX/lzemir7W+WegC7hpoYpkPES6q+0/p4B2CgDD0Xr1AgUmLkUhe2+mIJ9odtlWW30=
+|   256 d3:3b:97:ea:54:bc:41:4d:03:39:f6:8f:ad:b6:a0:fb (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFG/Wi4PUTjReEdk2K4aFMi8WzesipJ0bp0iI0FM8AfE
+8000/tcp open  http-alt syn-ack ttl 63 SimpleHTTP/0.6 Python/3.11.2
+|_http-favicon: Unknown favicon MD5: FBD3DB4BEF1D598ED90E26610F23A63F
+|_http-server-header: SimpleHTTP/0.6 Python/3.11.2
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-open-proxy: Proxy might be redirecting requests
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port8000-TCP:V=7.94SVN%I=7%D=1/16%Time=6788B24A%P=x86_64-pc-linux-gnu%r
+SF:(GenericLines,1,"\n");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 14:16
+Completed NSE at 14:16, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 14:16
+Completed NSE at 14:16, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 14:16
+Completed NSE at 14:16, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 117.67 seconds
+           Raw packets sent: 83293 (3.665MB) | Rcvd: 79164 (3.167MB)
