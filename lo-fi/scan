@@ -1,0 +1,24 @@
+# Nmap 7.94SVN scan initiated Sun Jan 19 18:39:26 2025 as: nmap -sV -sC --min-rate 1000 -vv -oN scan 10.10.150.6
+Nmap scan report for 10.10.150.6
+Host is up, received reset ttl 63 (0.30s latency).
+Scanned at 2025-01-19 18:39:27 WIB for 20s
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE SERVICE REASON         VERSION
+22/tcp open  ssh     syn-ack ttl 63 OpenSSH 8.2p1 Ubuntu 4ubuntu0.4 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 25:fd:c3:6c:43:3b:da:36:31:95:f8:55:77:e7:5e:bb (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDgbipeaQg8mTMfy/n0xek7B3h41XcIE5oYnMSmnZAo0cfp420kz+TEFbnZHKM4Anc3LY/WOvbpsfRl16f7uLf1QpPazYGnesLHlFhPngilynTcaIRg+VSESSOeLitC9BsU8aEpjq73IyrE9/ebBNGEUU8SPPKalWH6GAWyT1JYhzl4G/RB0D04uMrXSTc1tVtWVsLJyd0dP125gd4Qg99JJHNssBs5UssZEZbfTgwExoBm7TlPjQpCRKFTzv0BNowyTFtQv7nWNfgTJlcU9E9URrAKcBs1JY9mLWiofsus/HGfoRkob00v2rFY2KphW3e7LmNuwB9+dZqnQKTJyut58lji6sjOrxOiUuXm/Xor7gGhL63BmZPdpN60aYJFzJ8qcFS/IctDwzykak5CRQ/RcMvUIs/rCKu3dDiazDWgPDQupH9mCLEuZaqgLxnYgOeqVnfrNEKTbrnw+GaQspYbq36WFEG6YBM320GAB90FW8djHhuOjx8gvjSt7U/i74E=
+|   256 9b:c9:fc:9c:a9:4d:a9:cb:66:ce:61:bb:ac:9e:e5:b8 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBLSDd8Y5oJC0uQhJI6wGHNtgzvfwgn1IXA0SUUxFCSkQzMbzQEdhFhDm59qXVU52md17FJSTQbBs0oKb4iFUoDw=
+|   256 16:6c:44:31:81:e8:da:6e:06:c1:fc:48:69:b6:a5:34 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILH9hU6WQNuxJZgoymspUEMw3R9kt2dXnWZc658p9JPF
+80/tcp open  http    syn-ack ttl 62 Apache httpd 2.2.22 ((Ubuntu))
+|_http-title: Lo-Fi Music
+|_http-server-header: Apache/2.2.22 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jan 19 18:39:47 2025 -- 1 IP address (1 host up) scanned in 21.36 seconds
