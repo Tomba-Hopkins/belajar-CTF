@@ -1,0 +1,68 @@
+# Nmap 7.94SVN scan initiated Mon Jan 20 11:09:01 2025 as: nmap -sC -sV -vv -p 1-50 -oN scan 10.10.240.189
+Nmap scan report for 10.10.240.189
+Host is up, received echo-reply ttl 63 (0.53s latency).
+Scanned at 2025-01-20 11:09:01 WIB for 16s
+
+PORT   STATE  SERVICE     REASON         VERSION
+1/tcp  closed tcpmux      reset ttl 63
+2/tcp  closed compressnet reset ttl 63
+3/tcp  closed compressnet reset ttl 63
+4/tcp  closed unknown     reset ttl 63
+5/tcp  closed rje         reset ttl 63
+6/tcp  closed unknown     reset ttl 63
+7/tcp  closed echo        reset ttl 63
+8/tcp  closed unknown     reset ttl 63
+9/tcp  closed discard     reset ttl 63
+10/tcp closed unknown     reset ttl 63
+11/tcp closed systat      reset ttl 63
+12/tcp closed unknown     reset ttl 63
+13/tcp closed daytime     reset ttl 63
+14/tcp closed unknown     reset ttl 63
+15/tcp closed netstat     reset ttl 63
+16/tcp closed unknown     reset ttl 63
+17/tcp closed qotd        reset ttl 63
+18/tcp closed msp         reset ttl 63
+19/tcp closed chargen     reset ttl 63
+20/tcp closed ftp-data    reset ttl 63
+21/tcp closed ftp         reset ttl 63
+22/tcp open   ssh         syn-ack ttl 63 OpenSSH 8.2p1 Ubuntu 4ubuntu0.9 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 61:c5:06:f2:4a:20:5b:cd:09:4d:72:b0:a5:aa:ce:71 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDHDmg0AqD9I7ucX8V8kF6SWjHNd781y7dPTKtWFP6P13CIAr/4nXbco7mCT5sic7UakZvz6PQnsMS59ApT/fo78HfVyXxRJFonBwNo+6qsCEMU/4RybK3urM4TuJrbjH9hUxWMK877coDG8kAj5JLXfBUlJgBv2tHR6ivMvyfTI2e1altZdQ1kZQA5nV8RKijBnQdu80Tf/stknGFW3q7KR2wU9wFhM9RtJvnxHhHjsBaoFyJIhNCr1e/rTZTccFLcEBNoxijtMlXBFh29wDHRTwQH/h3RWtoLs3UzPJBT7eSemAxeA7I0lU2AeOXHraRVJqUgrleP+cdGYrGDtlPed1pfySnIV6A12A3Uz99VR2HtjfXUcq5Vdy1/3fA+klcHv/QIFSCRC00MzTDulMwrAFtqLyxKQaT3ZIsg2WNKVK17xjQSqHskijvhatJ/8iYZFAO3NmxIWhE8pP4k+p9dYhDYfvKHFzbePv1iiuMVX2r+K6YLKPqUXMHk0nOF5Ek=
+|   256 51:e0:5f:fa:81:64:d3:d9:26:24:16:ca:45:94:c2:00 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBI+6jxWhfHwKe0pUQf6SgPaQ11uGBz2O33zpDq4f03v95iopBlIk2VuYLY9Vthhvwpnz/vQCia/1+pH+O/MZvHw=
+|   256 77:e1:36:3b:95:9d:e0:3e:0a:56:82:b2:9d:4c:fe:1a (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHGbIUGbnlw5rBjCUlUoCGtJ2diIuMH9UchJCy60fEZO
+23/tcp closed telnet      reset ttl 63
+24/tcp closed priv-mail   reset ttl 63
+25/tcp closed smtp        reset ttl 63
+26/tcp closed rsftp       reset ttl 63
+27/tcp closed nsw-fe      reset ttl 63
+28/tcp closed unknown     reset ttl 63
+29/tcp closed msg-icp     reset ttl 63
+30/tcp closed unknown     reset ttl 63
+31/tcp closed msg-auth    reset ttl 63
+32/tcp closed unknown     reset ttl 63
+33/tcp closed dsp         reset ttl 63
+34/tcp closed unknown     reset ttl 63
+35/tcp closed priv-print  reset ttl 63
+36/tcp closed unknown     reset ttl 63
+37/tcp closed time        reset ttl 63
+38/tcp closed rap         reset ttl 63
+39/tcp closed rlp         reset ttl 63
+40/tcp closed unknown     reset ttl 63
+41/tcp closed graphics    reset ttl 63
+42/tcp closed nameserver  reset ttl 63
+43/tcp closed whois       reset ttl 63
+44/tcp closed mpm-flags   reset ttl 63
+45/tcp closed mpm         reset ttl 63
+46/tcp closed mpm-snd     reset ttl 63
+47/tcp closed ni-ftp      reset ttl 63
+48/tcp closed auditd      reset ttl 63
+49/tcp closed tacacs      reset ttl 63
+50/tcp closed re-mail-ck  reset ttl 63
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Jan 20 11:09:17 2025 -- 1 IP address (1 host up) scanned in 16.87 seconds
