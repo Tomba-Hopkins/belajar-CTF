@@ -1,0 +1,20 @@
+e6722920bab2326f8217e4bf6b1b58ac
+dd2921cc76ee3abfd2beb60709056cfb
+Welcome to Valley Inc. Authenticator
+What is your username: 
+What is your password: 
+Authenticated
+Wrong Password or Username
+basic_string::_M_construct null not valid
+%02x
+basic_string::_M_construct null not valid
+terminate called recursively
+  what():  
+terminate called after throwing an instance of '
+terminate called without an active exception
+basic_string::append
+__gnu_cxx::__concurrence_lock_error
+__gnu_cxx::__concurrence_unlock_error
+locale::_S_normalize_category category not found
+locale::_Impl::_M_replace_facet
+NSt6locale5facetE
