@@ -1,0 +1,100 @@
+# Nmap 7.94SVN scan initiated Wed Jan 22 17:06:18 2025 as: nmap -sCV -p- -vv -oN scan.nmap --min-rate 1000 -Pn 10.10.232.10
+Increasing send delay for 10.10.232.10 from 0 to 5 due to 103 out of 343 dropped probes since last increase.
+Increasing send delay for 10.10.232.10 from 5 to 10 due to 199 out of 663 dropped probes since last increase.
+Increasing send delay for 10.10.232.10 from 160 to 320 due to 86 out of 286 dropped probes since last increase.
+Increasing send delay for 10.10.232.10 from 640 to 1000 due to 101 out of 336 dropped probes since last increase.
+Warning: 10.10.232.10 giving up on port because retransmission cap hit (10).
+Nmap scan report for 10.10.232.10
+Host is up, received user-set (0.23s latency).
+Scanned at 2025-01-22 17:06:31 WIB for 178s
+Not shown: 65518 closed tcp ports (reset)
+PORT      STATE SERVICE       REASON          VERSION
+80/tcp    open  http          syn-ack ttl 127 Apache httpd 2.4.57 ((Win64))
+|_http-server-header: Apache/2.4.57 (Win64)
+| http-methods: 
+|   Supported Methods: GET POST OPTIONS HEAD TRACE
+|_  Potentially risky methods: TRACE
+|_http-title: CyberLens: Unveiling the Hidden Matrix
+135/tcp   open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+139/tcp   open  netbios-ssn   syn-ack ttl 127 Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds? syn-ack ttl 127
+3389/tcp  open  ms-wbt-server syn-ack ttl 127 Microsoft Terminal Services
+|_ssl-date: 2025-01-22T10:09:29+00:00; 0s from scanner time.
+| rdp-ntlm-info: 
+|   Target_Name: CYBERLENS
+|   NetBIOS_Domain_Name: CYBERLENS
+|   NetBIOS_Computer_Name: CYBERLENS
+|   DNS_Domain_Name: CyberLens
+|   DNS_Computer_Name: CyberLens
+|   Product_Version: 10.0.17763
+|_  System_Time: 2025-01-22T10:09:18+00:00
+| ssl-cert: Subject: commonName=CyberLens
+| Issuer: commonName=CyberLens
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2025-01-21T10:05:18
+| Not valid after:  2025-07-23T10:05:18
+| MD5:   5cb5:e15c:6205:9560:3ef4:7591:0575:917f
+| SHA-1: 5d7f:1103:6942:0363:88eb:b057:3373:9004:a63f:93fd
+| -----BEGIN CERTIFICATE-----
+| MIIC1jCCAb6gAwIBAgIQFdYJGpVMLJxCMJzWnsIf7jANBgkqhkiG9w0BAQsFADAU
+| MRIwEAYDVQQDEwlDeWJlckxlbnMwHhcNMjUwMTIxMTAwNTE4WhcNMjUwNzIzMTAw
+| NTE4WjAUMRIwEAYDVQQDEwlDeWJlckxlbnMwggEiMA0GCSqGSIb3DQEBAQUAA4IB
+| DwAwggEKAoIBAQDZgRDZF94Vc32c+D7672S92ZVmGdUKV/yaEzDNqmioJQRBv2GX
+| aLKMk3s3ikJD6ac4s0Bz8BX1CWlsDuzovQuKITa5oWMU2SKNtUxy4E+uF0W/orjU
+| c/CNyTNs3ssAna8tIR9mHk8SCiVF7N+nNHPB6koaF+NDUECEKiDnlPQa8UBDpaAD
+| HoIL55F0vGrKrHlDKVNvSJ6aNFNGuz/r2XzXC0pZLInj0aIbqBjvBbXYXgj3XyBX
+| MQtuVM5wuAhSdJs02TfzlvGPQB4CNPZsJz3Bfe7MoFjDCqQn9gSQ2sThE8ixdutQ
+| 2tWcGaRBiyUXRMTwDLt07X8TRViUtRj2YUx9AgMBAAGjJDAiMBMGA1UdJQQMMAoG
+| CCsGAQUFBwMBMAsGA1UdDwQEAwIEMDANBgkqhkiG9w0BAQsFAAOCAQEAeDgobCmg
+| 0szK3glfoWN5rR9NOMmh7gOvrqHPNMX3+Mj/h2qYwuuiX4sWJ3ck6uMBoPOF5+oB
+| oU7ctcN4istKrkrOJ/Gst/IrBCniozZj3//8gz4qgT7Ri09/ds9YZAsqBwHTy3B2
+| fMbYGUXABqZ8kC35S4H8PjeTlgeTVPSO79T99rwD1Nue4iL9yuEyT2lQGus9DgFE
+| sSezT4S8KBSuL11/Rm3OtRa3qMJ4j43O1XnLp369w/F+Xk0MPUJpE60wcH6QYEVm
+| SQf2GCtAZn3BA/JMkFv4NJ+25sbi4GwyMYlDPlzra/VLE5zW8qNrySW892GY+yMR
+| raoWNOyVf5HYBg==
+|_-----END CERTIFICATE-----
+5985/tcp  open  http          syn-ack ttl 127 Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+7680/tcp  open  pando-pub?    syn-ack ttl 127
+47001/tcp open  http          syn-ack ttl 127 Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+49664/tcp open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+49665/tcp open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+49666/tcp open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+49667/tcp open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+49668/tcp open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+49669/tcp open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+49670/tcp open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+49675/tcp open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+61777/tcp open  http          syn-ack ttl 127 Jetty 8.y.z-SNAPSHOT
+|_http-cors: HEAD GET
+|_http-server-header: Jetty(8.y.z-SNAPSHOT)
+| http-methods: 
+|   Supported Methods: POST GET PUT OPTIONS HEAD
+|_  Potentially risky methods: PUT
+|_http-title: Welcome to the Apache Tika 1.17 Server
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-time: 
+|   date: 2025-01-22T10:09:21
+|_  start_date: N/A
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+|_clock-skew: mean: 0s, deviation: 0s, median: 0s
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 60866/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 9474/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 63741/udp): CLEAN (Failed to receive data)
+|   Check 4 (port 27574/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Jan 22 17:09:30 2025 -- 1 IP address (1 host up) scanned in 192.01 seconds

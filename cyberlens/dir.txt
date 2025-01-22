@@ -1,0 +1,37 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.232.10
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /home/tomba/wordlists/seclists/web-content/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+[2K/.htpasswd            (Status: 403) [Size: 199]
+[2K/.hta                 (Status: 403) [Size: 199]
+[2K/.htaccess            (Status: 403) [Size: 199]
+[2K/Images               (Status: 301) [Size: 235] [--> http://10.10.232.10/Images/]
+[2K/aux                  (Status: 403) [Size: 199]
+[2K/cgi-bin/             (Status: 403) [Size: 199]
+[2K/com1                 (Status: 403) [Size: 199]
+[2K/com3                 (Status: 403) [Size: 199]
+[2K/com2                 (Status: 403) [Size: 199]
+[2K/com4                 (Status: 403) [Size: 199]
+[2K/con                  (Status: 403) [Size: 199]
+[2K/css                  (Status: 301) [Size: 232] [--> http://10.10.232.10/css/]
+[2K/images               (Status: 301) [Size: 235] [--> http://10.10.232.10/images/]
+[2K/index.html           (Status: 200) [Size: 8780]
+[2K/js                   (Status: 301) [Size: 231] [--> http://10.10.232.10/js/]
+[2K/lpt2                 (Status: 403) [Size: 199]
+[2K/lpt1                 (Status: 403) [Size: 199]
+[2K/nul                  (Status: 403) [Size: 199]
+[2K/prn                  (Status: 403) [Size: 199]
+
+===============================================================
+Finished
+===============================================================
