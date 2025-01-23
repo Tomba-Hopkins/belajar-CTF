@@ -1,0 +1,1 @@
+[2Kcmd                     [Status: 200, Size: 72, Words: 3, Lines: 3, Duration: 214ms][0m
