@@ -1,0 +1,52 @@
+# Nmap 7.94SVN scan initiated Fri Jan 24 09:19:10 2025 as: nmap -sCV -p- -vv -oN scan.nmap --min-rate 1000 -Pn 10.10.36.228
+Nmap scan report for 10.10.36.228
+Host is up, received user-set (0.26s latency).
+Scanned at 2025-01-24 09:19:11 WIB for 145s
+Not shown: 65533 filtered tcp ports (no-response)
+PORT     STATE SERVICE          REASON          VERSION
+3389/tcp open  ms-wbt-server    syn-ack ttl 127 Microsoft Terminal Services
+|_ssl-date: 2025-01-24T02:21:37+00:00; +1s from scanner time.
+| rdp-ntlm-info: 
+|   Target_Name: WIN-EOM4PK0578N
+|   NetBIOS_Domain_Name: WIN-EOM4PK0578N
+|   NetBIOS_Computer_Name: WIN-EOM4PK0578N
+|   DNS_Domain_Name: WIN-EOM4PK0578N
+|   DNS_Computer_Name: WIN-EOM4PK0578N
+|   Product_Version: 10.0.17763
+|_  System_Time: 2025-01-24T02:21:35+00:00
+| ssl-cert: Subject: commonName=WIN-EOM4PK0578N
+| Issuer: commonName=WIN-EOM4PK0578N
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2025-01-23T02:16:23
+| Not valid after:  2025-07-25T02:16:23
+| MD5:   c5ca:f68e:1158:41a6:3a30:e4af:5646:af94
+| SHA-1: 3964:12a5:1866:cb09:447b:9455:4ed4:b84c:e103:ed9c
+| -----BEGIN CERTIFICATE-----
+| MIIC4jCCAcqgAwIBAgIQTg2voMN4sYVE5vJ+AumagDANBgkqhkiG9w0BAQsFADAa
+| MRgwFgYDVQQDEw9XSU4tRU9NNFBLMDU3OE4wHhcNMjUwMTIzMDIxNjIzWhcNMjUw
+| NzI1MDIxNjIzWjAaMRgwFgYDVQQDEw9XSU4tRU9NNFBLMDU3OE4wggEiMA0GCSqG
+| SIb3DQEBAQUAA4IBDwAwggEKAoIBAQCrgercF35Qk8inAMuJdBonKmvyINKe6qOW
+| tUhtQ9cak+5zYySohueaz7FQmmNEnWFPOguY3YEKnOUfmWWbaNY4ZisBSPbC9XQN
+| f3tR99UZKCosINLSt+dGLKr+sqrW6Pa2zifKXcdJY0RESq+nGgtEwng5sIRldi+Z
+| nwUPYUcdg6iovVdm4v+JleCb13UFQeoIsnqqjCb8XmkwJGFeIy23VF5wOw07M07Z
+| 4Ad/jJsaIm838hOpGE7BuKC9NMk2+uprrHZquQ5hEKPXrfW+MLzYnwjJFisPeua8
+| WY5B/a7B5CFZRwf8Dlg+AifoPJTm+IwdnbG9uCKk3/ig9m65ni/BAgMBAAGjJDAi
+| MBMGA1UdJQQMMAoGCCsGAQUFBwMBMAsGA1UdDwQEAwIEMDANBgkqhkiG9w0BAQsF
+| AAOCAQEAptzFkMsKwqx6wnI35+CF6uNIXjw6dq4v7Wd3nUPkBLhar3DhFVkCi0Ug
+| 9DKZfqlVOWa9n38Xp7uXV8PFjrYfqogAlCAB2+pDYBjGJ5phLgq5VgH44t/dJoza
+| V9rjG/Lk/JoPoW/UvfqpaGCcfRDH0Pl8mVYzHq9gHUUZOJg1YXpC78/gszscgmlK
+| Q/mIrxAnB6bfZ7UW9uA9h3mFA2bWHO9Sle2HBN3/tvn7VUsTI116MqwwMwWrrb6C
+| 3XkmdmpBTv+SIw/hvUJZmjHfBaJh9cjxYfvj9EHrRvvWaAW41Km+jMMvLaxsO/LP
+| I0iDGeBDlnb++XbFWGWtN8zr3prkzg==
+|_-----END CERTIFICATE-----
+8021/tcp open  freeswitch-event syn-ack ttl 127 FreeSWITCH mod_event_socket
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 0s, deviation: 0s, median: 0s
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Jan 24 09:21:36 2025 -- 1 IP address (1 host up) scanned in 146.11 seconds

