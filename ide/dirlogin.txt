@@ -1,0 +1,31 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.7.17:62337/
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /home/tomba/wordlists/seclists/web-content/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+[2K/.hta                 (Status: 403) [Size: 278]
+[2K/.htaccess            (Status: 403) [Size: 278]
+[2K/.htpasswd            (Status: 403) [Size: 278]
+[2K/components           (Status: 301) [Size: 322] [--> http://10.10.7.17:62337/components/]
+[2K/data                 (Status: 301) [Size: 316] [--> http://10.10.7.17:62337/data/]
+[2K/favicon.ico          (Status: 200) [Size: 1150]
+[2K/index.php            (Status: 200) [Size: 5239]
+[2K/js                   (Status: 301) [Size: 314] [--> http://10.10.7.17:62337/js/]
+[2K/languages            (Status: 301) [Size: 321] [--> http://10.10.7.17:62337/languages/]
+[2K/lib                  (Status: 301) [Size: 315] [--> http://10.10.7.17:62337/lib/]
+[2K/plugins              (Status: 301) [Size: 319] [--> http://10.10.7.17:62337/plugins/]
+[2K/server-status        (Status: 403) [Size: 278]
+[2K/themes               (Status: 301) [Size: 318] [--> http://10.10.7.17:62337/themes/]
+
+===============================================================
+Finished
+===============================================================
