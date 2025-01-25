@@ -1,0 +1,132 @@
+# Nmap 7.94SVN scan initiated Sat Jan 25 15:32:06 2025 as: nmap -sCV -p- -vv -oN scan.nmap --min-rate 1000 10.10.117.248
+Increasing send delay for 10.10.117.248 from 0 to 5 due to 129 out of 428 dropped probes since last increase.
+Increasing send delay for 10.10.117.248 from 40 to 80 due to 229 out of 762 dropped probes since last increase.
+Increasing send delay for 10.10.117.248 from 80 to 160 due to 363 out of 1209 dropped probes since last increase.
+Increasing send delay for 10.10.117.248 from 160 to 320 due to 499 out of 1663 dropped probes since last increase.
+Increasing send delay for 10.10.117.248 from 320 to 640 due to 192 out of 638 dropped probes since last increase.
+Increasing send delay for 10.10.117.248 from 640 to 1000 due to 231 out of 769 dropped probes since last increase.
+Nmap scan report for 10.10.117.248
+Host is up, received reset ttl 63 (0.25s latency).
+Scanned at 2025-01-25 15:32:07 WIB for 178s
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE REASON         VERSION
+22/tcp open  ssh     syn-ack ttl 63 OpenSSH 8.2p1 Ubuntu 4ubuntu0.2 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 5b:2d:9d:60:a7:45:de:7a:99:20:3e:42:94:ce:19:3c (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDEav+HAGw7xuVSR7QKeKvPc2ZpLfgIJ2azj8wt8S3VdC0yPI5cgFTwrdyZ/b9nHwZb2ibA2Ld12zn4zObnoRLU05emZ0qSpyssEN6+xF2E9SSbe9o79UuJX7KoCAc4oKHdL6vme9Gt1NpmL7UVXaK8LG0wMJ0PAi90NPSp6yCqX+Zh3ox5/ozOw6J0fVWJhq+OpMq3uRdh4C4XQF5ZAN+Yf9uGy5er+VOCOt2Gio2Y+4O2VmQa+d16qJXziOV3tCwronfd8C2FXvbGWNjKnEpn7qmf5TFW7DmOs6lbvhNSqNImKHYPKeMJHDj/0MyjXMHrmYSMvQ/jHsdi1e8wUz4tIOkjrVkEy1BF6rJ20e0mdsJOnk4CrGqbNCvPoCCV0Sn4+IeOsDTqmXjzI6oVZZ/mEJM0p+AxC+a8NUU7IRtDOXQH9bl2/g5N0n3UfpGjz+gmQxQMhcziZobRVUY8b+6TneDi4WLD889XWh0kemP8srXb/BR/DUsCvXJvAZ1gDbU=
+|   256 bf:32:78:01:83:af:78:5e:e7:fe:9c:83:4a:7d:aa:6b (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBKWImj6zzJJnO+2iTNXciJVkpCVcDC82aeGnvA3GVC4G1J7mwk1TYrRemrCBlwhm+BUzvs0q2qKk/9VCh1+kKlA=
+|   256 12:ab:13:80:e5:ad:73:07:c8:48:d5:ca:7c:7d:e0:af (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINEIOgTDXXq96o6fNCrn3mQ8JpGFHhx6AtZGEOG4Z+oF
+80/tcp open  http    syn-ack ttl 63
+|_http-trane-info: Problem with XML parsing of /evox/about
+| fingerprint-strings: 
+|   GetRequest: 
+|     HTTP/1.1 200 OK
+|     Content-Type: text/html
+|     Date: Sat, 25 Jan 2025 08:34:02 GMT
+|     Connection: close
+|     <html><head>
+|     <title>Horror LLC</title>
+|     <style>
+|     body {
+|     background: linear-gradient(253deg, #4a040d, #3b0b54, #3a343b);
+|     background-size: 300% 300%;
+|     -webkit-animation: Background 10s ease infinite;
+|     -moz-animation: Background 10s ease infinite;
+|     animation: Background 10s ease infinite;
+|     @-webkit-keyframes Background {
+|     background-position: 0% 50%
+|     background-position: 100% 50%
+|     100% {
+|     background-position: 0% 50%
+|     @-moz-keyframes Background {
+|     background-position: 0% 50%
+|     background-position: 100% 50%
+|     100% {
+|     background-position: 0% 50%
+|     @keyframes Background {
+|     background-position: 0% 50%
+|     background-posi
+|   HTTPOptions: 
+|     HTTP/1.1 200 OK
+|     Content-Type: text/html
+|     Date: Sat, 25 Jan 2025 08:34:03 GMT
+|     Connection: close
+|     <html><head>
+|     <title>Horror LLC</title>
+|     <style>
+|     body {
+|     background: linear-gradient(253deg, #4a040d, #3b0b54, #3a343b);
+|     background-size: 300% 300%;
+|     -webkit-animation: Background 10s ease infinite;
+|     -moz-animation: Background 10s ease infinite;
+|     animation: Background 10s ease infinite;
+|     @-webkit-keyframes Background {
+|     background-position: 0% 50%
+|     background-position: 100% 50%
+|     100% {
+|     background-position: 0% 50%
+|     @-moz-keyframes Background {
+|     background-position: 0% 50%
+|     background-position: 100% 50%
+|     100% {
+|     background-position: 0% 50%
+|     @keyframes Background {
+|     background-position: 0% 50%
+|_    background-posi
+|_http-title: Horror LLC
+| http-methods: 
+|_  Supported Methods: GET HEAD OPTIONS
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port80-TCP:V=7.94SVN%I=7%D=1/25%Time=6794A1F8%P=x86_64-pc-linux-gnu%r(G
+SF:etRequest,E4B,"HTTP/1\.1\x20200\x20OK\r\nContent-Type:\x20text/html\r\n
+SF:Date:\x20Sat,\x2025\x20Jan\x202025\x2008:34:02\x20GMT\r\nConnection:\x2
+SF:0close\r\n\r\n<html><head>\n<title>Horror\x20LLC</title>\n<style>\n\x20
+SF:\x20body\x20{\n\x20\x20\x20\x20background:\x20linear-gradient\(253deg,\
+SF:x20#4a040d,\x20#3b0b54,\x20#3a343b\);\n\x20\x20\x20\x20background-size:
+SF:\x20300%\x20300%;\n\x20\x20\x20\x20-webkit-animation:\x20Background\x20
+SF:10s\x20ease\x20infinite;\n\x20\x20\x20\x20-moz-animation:\x20Background
+SF:\x2010s\x20ease\x20infinite;\n\x20\x20\x20\x20animation:\x20Background\
+SF:x2010s\x20ease\x20infinite;\n\x20\x20}\n\x20\x20\n\x20\x20@-webkit-keyf
+SF:rames\x20Background\x20{\n\x20\x20\x20\x200%\x20{\n\x20\x20\x20\x20\x20
+SF:\x20background-position:\x200%\x2050%\n\x20\x20\x20\x20}\n\x20\x20\x20\
+SF:x2050%\x20{\n\x20\x20\x20\x20\x20\x20background-position:\x20100%\x2050
+SF:%\n\x20\x20\x20\x20}\n\x20\x20\x20\x20100%\x20{\n\x20\x20\x20\x20\x20\x
+SF:20background-position:\x200%\x2050%\n\x20\x20\x20\x20}\n\x20\x20}\n\x20
+SF:\x20\n\x20\x20@-moz-keyframes\x20Background\x20{\n\x20\x20\x20\x200%\x2
+SF:0{\n\x20\x20\x20\x20\x20\x20background-position:\x200%\x2050%\n\x20\x20
+SF:\x20\x20}\n\x20\x20\x20\x2050%\x20{\n\x20\x20\x20\x20\x20\x20background
+SF:-position:\x20100%\x2050%\n\x20\x20\x20\x20}\n\x20\x20\x20\x20100%\x20{
+SF:\n\x20\x20\x20\x20\x20\x20background-position:\x200%\x2050%\n\x20\x20\x
+SF:20\x20}\n\x20\x20}\n\x20\x20\n\x20\x20@keyframes\x20Background\x20{\n\x
+SF:20\x20\x20\x200%\x20{\n\x20\x20\x20\x20\x20\x20background-position:\x20
+SF:0%\x2050%\n\x20\x20\x20\x20}\n\x20\x20\x20\x2050%\x20{\n\x20\x20\x20\x2
+SF:0\x20\x20background-posi")%r(HTTPOptions,E4B,"HTTP/1\.1\x20200\x20OK\r\
+SF:nContent-Type:\x20text/html\r\nDate:\x20Sat,\x2025\x20Jan\x202025\x2008
+SF::34:03\x20GMT\r\nConnection:\x20close\r\n\r\n<html><head>\n<title>Horro
+SF:r\x20LLC</title>\n<style>\n\x20\x20body\x20{\n\x20\x20\x20\x20backgroun
+SF:d:\x20linear-gradient\(253deg,\x20#4a040d,\x20#3b0b54,\x20#3a343b\);\n\
+SF:x20\x20\x20\x20background-size:\x20300%\x20300%;\n\x20\x20\x20\x20-webk
+SF:it-animation:\x20Background\x2010s\x20ease\x20infinite;\n\x20\x20\x20\x
+SF:20-moz-animation:\x20Background\x2010s\x20ease\x20infinite;\n\x20\x20\x
+SF:20\x20animation:\x20Background\x2010s\x20ease\x20infinite;\n\x20\x20}\n
+SF:\x20\x20\n\x20\x20@-webkit-keyframes\x20Background\x20{\n\x20\x20\x20\x
+SF:200%\x20{\n\x20\x20\x20\x20\x20\x20background-position:\x200%\x2050%\n\
+SF:x20\x20\x20\x20}\n\x20\x20\x20\x2050%\x20{\n\x20\x20\x20\x20\x20\x20bac
+SF:kground-position:\x20100%\x2050%\n\x20\x20\x20\x20}\n\x20\x20\x20\x2010
+SF:0%\x20{\n\x20\x20\x20\x20\x20\x20background-position:\x200%\x2050%\n\x2
+SF:0\x20\x20\x20}\n\x20\x20}\n\x20\x20\n\x20\x20@-moz-keyframes\x20Backgro
+SF:und\x20{\n\x20\x20\x20\x200%\x20{\n\x20\x20\x20\x20\x20\x20background-p
+SF:osition:\x200%\x2050%\n\x20\x20\x20\x20}\n\x20\x20\x20\x2050%\x20{\n\x2
+SF:0\x20\x20\x20\x20\x20background-position:\x20100%\x2050%\n\x20\x20\x20\
+SF:x20}\n\x20\x20\x20\x20100%\x20{\n\x20\x20\x20\x20\x20\x20background-pos
+SF:ition:\x200%\x2050%\n\x20\x20\x20\x20}\n\x20\x20}\n\x20\x20\n\x20\x20@k
+SF:eyframes\x20Background\x20{\n\x20\x20\x20\x200%\x20{\n\x20\x20\x20\x20\
+SF:x20\x20background-position:\x200%\x2050%\n\x20\x20\x20\x20}\n\x20\x20\x
+SF:20\x2050%\x20{\n\x20\x20\x20\x20\x20\x20background-posi");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jan 25 15:35:05 2025 -- 1 IP address (1 host up) scanned in 179.22 seconds
