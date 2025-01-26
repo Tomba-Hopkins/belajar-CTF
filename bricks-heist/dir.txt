@@ -1,0 +1,51 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     https://bricks.thm/
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /home/tomba/wordlists/seclists/web-content/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+[2K/.hta                 (Status: 403) [Size: 199]
+[2K/.htaccess            (Status: 403) [Size: 199]
+[2K/.htpasswd            (Status: 403) [Size: 199]
+[2K/0                    (Status: 301) [Size: 0] [--> https://bricks.thm/0/]
+[2K/B                    (Status: 301) [Size: 0] [--> https://bricks.thm/2024/04/02/brick-by-brick/]
+[2K/S                    (Status: 301) [Size: 0] [--> https://bricks.thm/sample-page/]
+[2K/admin                (Status: 302) [Size: 0] [--> https://bricks.thm/wp-admin/]
+[2K/atom                 (Status: 301) [Size: 0] [--> https://bricks.thm/feed/atom/]
+[2K/b                    (Status: 301) [Size: 0] [--> https://bricks.thm/2024/04/02/brick-by-brick/]
+[2K/br                   (Status: 301) [Size: 0] [--> https://bricks.thm/2024/04/02/brick-by-brick/]
+[2K/dashboard            (Status: 302) [Size: 0] [--> https://bricks.thm/wp-admin/]
+[2K/embed                (Status: 301) [Size: 0] [--> https://bricks.thm/embed/]
+[2K/favicon.ico          (Status: 302) [Size: 0] [--> https://bricks.thm/wp-includes/images/w-logo-blue-white-bg.png]
+[2K/feed                 (Status: 301) [Size: 0] [--> https://bricks.thm/feed/]
+[2K/index.php            (Status: 301) [Size: 0] [--> https://bricks.thm/]
+[2K/login                (Status: 302) [Size: 0] [--> https://bricks.thm/wp-login.php]
+[2K/page1                (Status: 301) [Size: 0] [--> https://bricks.thm/]
+[2K/phpmyadmin           (Status: 301) [Size: 238] [--> https://bricks.thm/phpmyadmin/]
+[2K/rdf                  (Status: 301) [Size: 0] [--> https://bricks.thm/feed/rdf/]
+[2K/render/https://www.google.com (Status: 301) [Size: 0] [--> https://bricks.thm/render/https:/www.google.com]
+[2K/robots.txt           (Status: 200) [Size: 67]
+[2K/rss                  (Status: 301) [Size: 0] [--> https://bricks.thm/feed/]
+[2K/rss2                 (Status: 301) [Size: 0] [--> https://bricks.thm/feed/]
+[2K/sa                   (Status: 301) [Size: 0] [--> https://bricks.thm/sample-page/]
+[2K/s                    (Status: 301) [Size: 0] [--> https://bricks.thm/sample-page/]
+[2K/sam                  (Status: 301) [Size: 0] [--> https://bricks.thm/sample-page/]
+[2K/sample               (Status: 301) [Size: 0] [--> https://bricks.thm/sample-page/]
+[2K/server-status        (Status: 403) [Size: 199]
+[2K/server-info          (Status: 403) [Size: 199]
+[2K/wp-admin             (Status: 301) [Size: 236] [--> https://bricks.thm/wp-admin/]
+[2K/wp-content           (Status: 301) [Size: 238] [--> https://bricks.thm/wp-content/]
+[2K/wp-includes          (Status: 301) [Size: 239] [--> https://bricks.thm/wp-includes/]
+[2K/xmlrpc.php           (Status: 405) [Size: 42]
+
+===============================================================
+Finished
+===============================================================

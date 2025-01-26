@@ -1,0 +1,19 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:             https://bricks.thm/
+[+] Method:          GET
+[+] Threads:         10
+[+] Wordlist:        /home/tomba/wordlists/seclists/dns/subdomains-top1million-5000.txt
+[+] User Agent:      gobuster/3.6
+[+] Timeout:         10s
+[+] Append Domain:   true
+===============================================================
+Starting gobuster in VHOST enumeration mode
+===============================================================
+[2KFound: www.bricks.thm Status: 301 [Size: 0] [--> https://bricks.thm/]
+
+===============================================================
+Finished
+===============================================================

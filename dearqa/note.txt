@@ -1,0 +1,3 @@
+1. bin file -> gada ghidra -> bisa gdb sih tapi ga ah
+2. file namafile -> ldd namafile -> strings namafile -> objdump -d namafile -> atau -t aja -> readelf -h namafile
+3. 

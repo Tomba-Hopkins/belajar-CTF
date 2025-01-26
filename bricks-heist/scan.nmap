@@ -1,0 +1,140 @@
+# Nmap 7.94SVN scan initiated Sun Jan 26 11:13:10 2025 as: nmap -sCV -p- -vv -oN scan.nmap --min-rate 1000 10.10.92.100
+Increasing send delay for 10.10.92.100 from 20 to 40 due to 460 out of 1531 dropped probes since last increase.
+Nmap scan report for bricks.thm (10.10.92.100)
+Host is up, received echo-reply ttl 63 (0.22s latency).
+Scanned at 2025-01-26 11:13:11 WIB for 205s
+Not shown: 65531 closed tcp ports (reset)
+PORT     STATE SERVICE   REASON         VERSION
+22/tcp   open  ssh       syn-ack ttl 63 OpenSSH 8.2p1 Ubuntu 4ubuntu0.11 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 79:42:e9:ce:eb:90:0f:cd:e1:72:b3:9d:6d:dc:c1:76 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC3GARza3A1WIT+GZDzOBnuguTWg2UGoyPWqZ4mxhuI46DytY4sPmifOuCbWUKK3HoOXovCwnK4oW9aLzuhK40fOhoO20GCadNfJ09m1DZTP7hmlEWYlWyPTMu3MMkvLMxxl1XPa54VZ592EuLmoGgo/WbpMYkE+lXbuGKgm+yKqnOzLf6WaUZ+LvCKfYBWNy58J5Ec4sA1Hb+XUemlbAfEBJJ3rjYohEFRmocQzmo/1hNTtZrrPX9mxa6Nf+yb5f3CWPwNtWEkT79CiOhKVSW8njyiXKl/HheLPolqN3Cw+qlcD0IFS7T44OUnLUSgV+4gVXxowNluKe8CNRf1WaA9DbPz3FvlDSTTFOexZZiQZaGRsy4sKdPvl36cmFcmL2Qqldgqdrjg37MR2OtNCmsaLjs1DRtpYh6UbUtbK6MeOXUkhmW5FlQQ6LIzH/Ioq51LZK5V9U9EBr9RgUNyk5kHimYZVJfRJbtgmYDZQt6bZa6Sn/5xcSCboIr27JOz0gs=
+|   256 73:1c:49:47:ba:ae:7f:66:9a:13:8b:ae:12:c9:1b:d5 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBIEaywWjjqZfendEaMnuA4tMe5nkL8BktOBo+R40qqZD4GjbVj2O/aCKhQyF8J3FrE9/sXuVfywh0D/Vh7M3ksA=
+|   256 10:de:1f:74:31:eb:a5:1d:a5:20:41:27:7b:1e:f1:07 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICqlb4bqCB3V5PifRzF5gr17fUF1tSK3jSPFYHmI5Hg/
+80/tcp   open  http      syn-ack ttl 63 WebSockify Python/3.8.10
+|_http-server-header: WebSockify Python/3.8.10
+|_http-title: Error response
+| fingerprint-strings: 
+|   GetRequest: 
+|     HTTP/1.1 405 Method Not Allowed
+|     Server: WebSockify Python/3.8.10
+|     Date: Sun, 26 Jan 2025 04:14:42 GMT
+|     Connection: close
+|     Content-Type: text/html;charset=utf-8
+|     Content-Length: 472
+|     <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+|     "http://www.w3.org/TR/html4/strict.dtd">
+|     <html>
+|     <head>
+|     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+|     <title>Error response</title>
+|     </head>
+|     <body>
+|     <h1>Error response</h1>
+|     <p>Error code: 405</p>
+|     <p>Message: Method Not Allowed.</p>
+|     <p>Error code explanation: 405 - Specified method is invalid for this resource.</p>
+|     </body>
+|     </html>
+|   HTTPOptions: 
+|     HTTP/1.1 501 Unsupported method ('OPTIONS')
+|     Server: WebSockify Python/3.8.10
+|     Date: Sun, 26 Jan 2025 04:14:44 GMT
+|     Connection: close
+|     Content-Type: text/html;charset=utf-8
+|     Content-Length: 500
+|     <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+|     "http://www.w3.org/TR/html4/strict.dtd">
+|     <html>
+|     <head>
+|     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+|     <title>Error response</title>
+|     </head>
+|     <body>
+|     <h1>Error response</h1>
+|     <p>Error code: 501</p>
+|     <p>Message: Unsupported method ('OPTIONS').</p>
+|     <p>Error code explanation: HTTPStatus.NOT_IMPLEMENTED - Server does not support this operation.</p>
+|     </body>
+|_    </html>
+443/tcp  open  ssl/https syn-ack ttl 63 Apache
+|_http-server-header: Apache
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|   h2
+|_  http/1.1
+| ssl-cert: Subject: organizationName=Internet Widgits Pty Ltd/stateOrProvinceName=Some-State/countryName=US
+| Issuer: organizationName=Internet Widgits Pty Ltd/stateOrProvinceName=Some-State/countryName=US
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2024-04-02T11:59:14
+| Not valid after:  2025-04-02T11:59:14
+| MD5:   f1df:99bc:d5ab:5a5a:5709:5099:4add:a385
+| SHA-1: 1f26:54bb:e2c5:b4a1:1f62:5ea0:af00:0261:35da:23c3
+| -----BEGIN CERTIFICATE-----
+| MIIDazCCAlOgAwIBAgIUPbOGG+Xi6dsd8rNRzG/wI3DvA8MwDQYJKoZIhvcNAQEL
+| BQAwRTELMAkGA1UEBhMCVVMxEzARBgNVBAgMClNvbWUtU3RhdGUxITAfBgNVBAoM
+| GEludGVybmV0IFdpZGdpdHMgUHR5IEx0ZDAeFw0yNDA0MDIxMTU5MTRaFw0yNTA0
+| MDIxMTU5MTRaMEUxCzAJBgNVBAYTAlVTMRMwEQYDVQQIDApTb21lLVN0YXRlMSEw
+| HwYDVQQKDBhJbnRlcm5ldCBXaWRnaXRzIFB0eSBMdGQwggEiMA0GCSqGSIb3DQEB
+| AQUAA4IBDwAwggEKAoIBAQCtzw+eboW61zIzd/tl7LdrZCO86nc/MN0DkZfTngO7
+| lJq/VQgR617FfExm26yI+wZSEkUWO5dg+1BYJbkYlayzr0Dyor3E2l73dIsM2Ur4
+| s6hET6gYFD8pCu9z6YvMqxcq/1YWN+pOGsicAFeT6t8uQBYyA9NZZXSAISnorUbV
+| aRW/Z8cwijQquIfwIiBaVhOnqBAqoudHQ5yLb461PGgVpioNeS9DDe3I7+J5LPe7
+| va5wcnTJ2xfKrCHIPipuAgj5lCJ7lihlvT0KDB1elFxy5yIPABR5MthRs36eiO4+
+| 1AKfPDVrvC5IpBvycgT95qhR0AnS+N9CwmO4HUWq5AJtAgMBAAGjUzBRMB0GA1Ud
+| DgQWBBQHb6dwgvFLizbay0+nIgxlfzZYtjAfBgNVHSMEGDAWgBQHb6dwgvFLizba
+| y0+nIgxlfzZYtjAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQBJ
+| gjQinsS5AIb/LJT4KVhHgDAVezICOx3kg6foyMV3z6CcU9e6QLuMpyMCR/UGqUqs
+| m0iJH8sR1jJdS3tDPTEmJXW8gBux3Y4xl9/A1sMhm97O5O7KHiBiwiW47Pwfo4/a
+| wchcSEcU/4jfivY7ifGcIBSN4GInUHjwfD63J0/LHh1GPEo/Wsoekk0586psicaV
+| dv3UqrFcLFztwKGDgs+51Oc9a70xT96bko0huCZ1NFOh4zchZ3kno9mueURi/SJO
+| ibgwFMBWO7mQHKnlnQxxQwxER+QyftgnO+gXvkPGQU+o4rMnjHX5EAjyfoutRjjN
+| tQWUR7AJRMC+3VGdRcVV
+|_-----END CERTIFICATE-----
+|_http-favicon: Unknown favicon MD5: 000BF649CC8F6BF27CFB04D1BCDCD3C7
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: 400 Bad Request
+3306/tcp open  mysql     syn-ack ttl 63 MySQL (unauthorized)
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port80-TCP:V=7.94SVN%I=7%D=1/26%Time=6795B6B1%P=x86_64-pc-linux-gnu%r(G
+SF:etRequest,291,"HTTP/1\.1\x20405\x20Method\x20Not\x20Allowed\r\nServer:\
+SF:x20WebSockify\x20Python/3\.8\.10\r\nDate:\x20Sun,\x2026\x20Jan\x202025\
+SF:x2004:14:42\x20GMT\r\nConnection:\x20close\r\nContent-Type:\x20text/htm
+SF:l;charset=utf-8\r\nContent-Length:\x20472\r\n\r\n<!DOCTYPE\x20HTML\x20P
+SF:UBLIC\x20\"-//W3C//DTD\x20HTML\x204\.01//EN\"\n\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\"http://www\.w3\.org/TR/html4/strict\.dtd\">\n<html>\n\x20\x20
+SF:\x20\x20<head>\n\x20\x20\x20\x20\x20\x20\x20\x20<meta\x20http-equiv=\"C
+SF:ontent-Type\"\x20content=\"text/html;charset=utf-8\">\n\x20\x20\x20\x20
+SF:\x20\x20\x20\x20<title>Error\x20response</title>\n\x20\x20\x20\x20</hea
+SF:d>\n\x20\x20\x20\x20<body>\n\x20\x20\x20\x20\x20\x20\x20\x20<h1>Error\x
+SF:20response</h1>\n\x20\x20\x20\x20\x20\x20\x20\x20<p>Error\x20code:\x204
+SF:05</p>\n\x20\x20\x20\x20\x20\x20\x20\x20<p>Message:\x20Method\x20Not\x2
+SF:0Allowed\.</p>\n\x20\x20\x20\x20\x20\x20\x20\x20<p>Error\x20code\x20exp
+SF:lanation:\x20405\x20-\x20Specified\x20method\x20is\x20invalid\x20for\x2
+SF:0this\x20resource\.</p>\n\x20\x20\x20\x20</body>\n</html>\n")%r(HTTPOpt
+SF:ions,2B9,"HTTP/1\.1\x20501\x20Unsupported\x20method\x20\('OPTIONS'\)\r\
+SF:nServer:\x20WebSockify\x20Python/3\.8\.10\r\nDate:\x20Sun,\x2026\x20Jan
+SF:\x202025\x2004:14:44\x20GMT\r\nConnection:\x20close\r\nContent-Type:\x2
+SF:0text/html;charset=utf-8\r\nContent-Length:\x20500\r\n\r\n<!DOCTYPE\x20
+SF:HTML\x20PUBLIC\x20\"-//W3C//DTD\x20HTML\x204\.01//EN\"\n\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20\"http://www\.w3\.org/TR/html4/strict\.dtd\">\n<html>\
+SF:n\x20\x20\x20\x20<head>\n\x20\x20\x20\x20\x20\x20\x20\x20<meta\x20http-
+SF:equiv=\"Content-Type\"\x20content=\"text/html;charset=utf-8\">\n\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20<title>Error\x20response</title>\n\x20\x20\x20
+SF:\x20</head>\n\x20\x20\x20\x20<body>\n\x20\x20\x20\x20\x20\x20\x20\x20<h
+SF:1>Error\x20response</h1>\n\x20\x20\x20\x20\x20\x20\x20\x20<p>Error\x20c
+SF:ode:\x20501</p>\n\x20\x20\x20\x20\x20\x20\x20\x20<p>Message:\x20Unsuppo
+SF:rted\x20method\x20\('OPTIONS'\)\.</p>\n\x20\x20\x20\x20\x20\x20\x20\x20
+SF:<p>Error\x20code\x20explanation:\x20HTTPStatus\.NOT_IMPLEMENTED\x20-\x2
+SF:0Server\x20does\x20not\x20support\x20this\x20operation\.</p>\n\x20\x20\
+SF:x20\x20</body>\n</html>\n");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jan 26 11:16:36 2025 -- 1 IP address (1 host up) scanned in 205.38 seconds
