@@ -1,0 +1,2 @@
+ffuf -u http://target.com/login -X POST -d "username=FUZZ&password=randompass" -H "Content-Type: application/x-www-form-urlencoded" -mr "username does not exist" -w usernames.txt
+
