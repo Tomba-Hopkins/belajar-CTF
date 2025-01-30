@@ -1,0 +1,69 @@
+# Nmap 7.94SVN scan initiated Thu Jan 30 14:48:49 2025 as: nmap -sCV -p- -vv -oN scan.nmap --min-rate 1000 10.10.87.106
+Increasing send delay for 10.10.87.106 from 10 to 20 due to 382 out of 1272 dropped probes since last increase.
+Increasing send delay for 10.10.87.106 from 40 to 80 due to 893 out of 2976 dropped probes since last increase.
+Increasing send delay for 10.10.87.106 from 80 to 160 due to 133 out of 442 dropped probes since last increase.
+Increasing send delay for 10.10.87.106 from 160 to 320 due to 583 out of 1941 dropped probes since last increase.
+Increasing send delay for 10.10.87.106 from 320 to 640 due to 280 out of 931 dropped probes since last increase.
+Increasing send delay for 10.10.87.106 from 640 to 1000 due to 123 out of 408 dropped probes since last increase.
+Nmap scan report for futurevera.thm (10.10.87.106)
+Host is up, received echo-reply ttl 63 (0.23s latency).
+Scanned at 2025-01-30 14:48:50 WIB for 122s
+Not shown: 65532 closed tcp ports (reset)
+PORT    STATE SERVICE  REASON         VERSION
+22/tcp  open  ssh      syn-ack ttl 63 OpenSSH 8.2p1 Ubuntu 4ubuntu0.4 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 dd:29:a7:0c:05:69:1f:f6:26:0a:d9:28:cd:40:f0:20 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDJYXIbsuzRQDZhDmxc3ysgKo1zGHLwFIgTVOUzY7mUBk6pvX9WRlNRq/QE/I2AcViSdL99H7XGs2AE1yQBvE5z2abvIvRhAnViXcTMTMg0jwXuEN8FJMMK7PLFZTI+BoUmHH+aNKKGEOtpqM8IlBcujC9fkHsfcTuEUOsf1oB4rh56MRXgk1BI0G0HZ1tATZ0oka+JdQo3q092bjnhB78Jt636GfRSlRtFeW9XWsLX9/inRe1xw0r6l7QkN3Q0eTohHLEhQBoEVoxJ2duc/Nx/BZDWK101eI9OW4wG3Mt169HE4QuU0G7XhkskQZnmDhqjtmrqrQ3TEsX9PrGVc6UHrdqj7ylLhshz1sYqPj6xb1uANZk5FExEQe9D3vbS5Z0Nrnopo4jMokCii8t/ZY8iHn3aWcPlnf3mT7vLOcbKt8Q/bUyxptOfoTwb+4qx5rwC9uPK5yH74XhQ165R7wBwywmzW3RX9tl1YnL+uzs93PZ69u1Iatdcdp5VgZRcN8M=
+|   256 cb:2e:a8:6d:03:66:e9:70:eb:96:e1:f5:ba:25:cb:4e (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBKQJTJFkvkwNTQLf9L+hjby2vSMriTeszWldCj+y2TDnTJpyvG1KvBlbzOPuFai3cxpZS/Y0/yU3JxK37I9T6cI=
+|   256 50:d3:4b:a8:a2:4d:1d:79:e1:7d:ac:bb:ff:0b:24:13 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIF1HW9ff2E4eEhE6FZYXtcpuWX46Kg80Hl22peqirx25
+80/tcp  open  http     syn-ack ttl 63 Apache httpd 2.4.41 ((Ubuntu))
+|_http-title: Did not follow redirect to https://futurevera.thm/
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+443/tcp open  ssl/http syn-ack ttl 63 Apache httpd 2.4.41 ((Ubuntu))
+|_http-title: FutureVera
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|_  http/1.1
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+| ssl-cert: Subject: commonName=futurevera.thm/organizationName=Futurevera/stateOrProvinceName=Oregon/countryName=US/localityName=Portland/organizationalUnitName=Thm
+| Issuer: commonName=futurevera.thm/organizationName=Futurevera/stateOrProvinceName=Oregon/countryName=US/localityName=Portland/organizationalUnitName=Thm
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2022-03-13T10:05:19
+| Not valid after:  2023-03-13T10:05:19
+| MD5:   2e8d:6097:6b23:188c:06d5:f2cd:8def:dd3a
+| SHA-1: 8023:fcfc:5e63:a29b:3d5e:eaaf:8f70:8b35:d8eb:c120
+| -----BEGIN CERTIFICATE-----
+| MIIDuzCCAqOgAwIBAgIUMx0OgCh/xob6nWlsHR+iKDXKZRkwDQYJKoZIhvcNAQEL
+| BQAwbTELMAkGA1UEBhMCVVMxDzANBgNVBAgMBk9yZWdvbjERMA8GA1UEBwwIUG9y
+| dGxhbmQxEzARBgNVBAoMCkZ1dHVyZXZlcmExDDAKBgNVBAsMA1RobTEXMBUGA1UE
+| AwwOZnV0dXJldmVyYS50aG0wHhcNMjIwMzEzMTAwNTE5WhcNMjMwMzEzMTAwNTE5
+| WjBtMQswCQYDVQQGEwJVUzEPMA0GA1UECAwGT3JlZ29uMREwDwYDVQQHDAhQb3J0
+| bGFuZDETMBEGA1UECgwKRnV0dXJldmVyYTEMMAoGA1UECwwDVGhtMRcwFQYDVQQD
+| DA5mdXR1cmV2ZXJhLnRobTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEB
+| AKZio9bT9ebOivcm+9xKKCUAobE2cdU5VFbi1Ve7oxsSGKWWEcsQlUn7tFj1jjKq
+| hWDMZXxEW6aN3jU5p5zF6ATmwIuvNQqwZOaK8iKjXs8IWEBIQyz/iKBF6deWrN+8
+| II+whTaSberFaND2G0VchB7OrOu/mlP1KNhm2kEKwak7YHxvFkSp7Nmu2yTQAnyp
+| WK2CBh3tdeGSq7/lyo8W3la/kPKhb4lmtBMS/tKPFslMxlOv0cSbNsvFVgJQ7jti
+| OZKPo/DAeaFIFB/32HocscQXM2VdQNXnQQ6M1cbBNskYWzvwp6di+wYzjjCWtM4o
+| Rg+3c/k5hqkEftEiwV7xAXcCAwEAAaNTMFEwHQYDVR0OBBYEFD23WEwlBMTDTpWI
+| 0eMU0IMaJyPJMB8GA1UdIwQYMBaAFD23WEwlBMTDTpWI0eMU0IMaJyPJMA8GA1Ud
+| EwEB/wQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEBACu3W2VV8zRdD4M7oUWN8S6f
+| lM1z8aCkSckgFDEX7jtyJjWMQVwPizKkX17XQs6EgnWqD/PVt2Tf9dRhUH6FQmTK
+| qh35hnsSOdO3sQB8CnQ3SnlbeUYXY2mY/aUhz/lAkx6mURGuSen8BSbuL4mcm5Dk
+| AXxfa+SHc5XAjuYSlXVUSPy8noqFOLxvcGz+zPN2RQYwQkMDgQtUX2n0VcjwgTLN
+| bEuEm210+IGPX+ZEQWsnSSmz0SyUryBwc5BsjMaFUdAncxEBKCn1p4oN8gm6NQ32
+| FHFbghTgLgMTahuLWpXdeuVF87+pHUlroRHdgblQtb2wSwqVaDGHaLFiZcUMv/Y=
+|_-----END CERTIFICATE-----
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Jan 30 14:50:52 2025 -- 1 IP address (1 host up) scanned in 123.12 seconds

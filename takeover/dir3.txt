@@ -1,0 +1,26 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     https://support.futurevera.thm/
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /home/tomba/wordlists/seclists/web-content/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+[2K/.hta                 (Status: 403) [Size: 288]
+[2K/.htaccess            (Status: 403) [Size: 288]
+[2K/.htpasswd            (Status: 403) [Size: 288]
+[2K/assets               (Status: 301) [Size: 335] [--> https://support.futurevera.thm/assets/]
+[2K/css                  (Status: 301) [Size: 332] [--> https://support.futurevera.thm/css/]
+[2K/index.html           (Status: 200) [Size: 1522]
+[2K/js                   (Status: 301) [Size: 331] [--> https://support.futurevera.thm/js/]
+[2K/server-status        (Status: 403) [Size: 288]
+
+===============================================================
+Finished
+===============================================================

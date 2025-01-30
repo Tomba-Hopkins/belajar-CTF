@@ -1,0 +1,21 @@
+# Nmap 7.94SVN scan initiated Thu Jan 30 19:04:58 2025 as: nmap -sCV -p- -vv -oN scan.nmap --min-rate 1000 10.10.151.166
+Increasing send delay for 10.10.151.166 from 0 to 5 due to 403 out of 1342 dropped probes since last increase.
+Increasing send delay for 10.10.151.166 from 10 to 20 due to 362 out of 1205 dropped probes since last increase.
+Increasing send delay for 10.10.151.166 from 40 to 80 due to 671 out of 2236 dropped probes since last increase.
+Increasing send delay for 10.10.151.166 from 80 to 160 due to 749 out of 2496 dropped probes since last increase.
+Increasing send delay for 10.10.151.166 from 160 to 320 due to 446 out of 1485 dropped probes since last increase.
+Increasing send delay for 10.10.151.166 from 640 to 1000 due to 652 out of 2171 dropped probes since last increase.
+Warning: 10.10.151.166 giving up on port because retransmission cap hit (10).
+Nmap scan report for 10.10.151.166
+Host is up, received echo-reply ttl 63 (0.22s latency).
+Scanned at 2025-01-30 19:04:59 WIB for 160s
+Not shown: 65534 closed tcp ports (reset)
+PORT   STATE SERVICE REASON         VERSION
+80/tcp open  http    syn-ack ttl 62 PHP cli server 5.5 or later (PHP 8.1.0-dev)
+| http-methods: 
+|_  Supported Methods: HEAD OPTIONS
+|_http-title:  Admin Dashboard
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Jan 30 19:07:39 2025 -- 1 IP address (1 host up) scanned in 161.14 seconds

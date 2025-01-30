@@ -1,0 +1,5 @@
+1. scan nmap gada apa apa
+2. fuzz kosong -> fuzz vhost subdo ada
+3. cek certificate tls -> view ada dns nya
+4. klik kanan open link
+5. di url ada flag
