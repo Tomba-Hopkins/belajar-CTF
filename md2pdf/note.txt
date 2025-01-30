@@ -1,0 +1,5 @@
+1. scan nmap 5000 80 kebuka 
+2. fuzz 2 2 nya -> ada /admin cuman bisa di 5000 katanya
+3. coba bebas buat pdf terus download pdf nya -> exiftool -> cek creator nya di google
+4. bisa buat html di pdf -> coba buat iframe src nya localhost /admin di 5000 itu gambar nya keliatan
+5. klaim flag  

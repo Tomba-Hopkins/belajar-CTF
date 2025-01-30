@@ -1,0 +1,52 @@
+# Nmap 7.94SVN scan initiated Thu Jan 30 12:58:15 2025 as: nmap -sCV -p- -vv -oN scan.nmap --min-rate 1000 10.10.209.23
+Increasing send delay for 10.10.209.23 from 0 to 5 due to 275 out of 916 dropped probes since last increase.
+Increasing send delay for 10.10.209.23 from 20 to 40 due to 238 out of 792 dropped probes since last increase.
+Increasing send delay for 10.10.209.23 from 40 to 80 due to 358 out of 1191 dropped probes since last increase.
+Increasing send delay for 10.10.209.23 from 320 to 640 due to 1928 out of 6425 dropped probes since last increase.
+Increasing send delay for 10.10.209.23 from 640 to 1000 due to 370 out of 1231 dropped probes since last increase.
+Nmap scan report for 10.10.209.23
+Host is up, received echo-reply ttl 63 (0.22s latency).
+Scanned at 2025-01-30 12:58:17 WIB for 102s
+Not shown: 65534 closed tcp ports (reset)
+PORT     STATE SERVICE                  REASON         VERSION
+1883/tcp open  mosquitto version 2.0.14 syn-ack ttl 62
+| mqtt-subscribe: 
+|   Topics and their most recent payloads: 
+|     $SYS/broker/publish/bytes/received: 4885
+|     $SYS/broker/load/bytes/sent/15min: 35.55
+|     storage/thermostat: {"id":16864474132927439827,"temperature":23.460882}
+|     $SYS/broker/load/bytes/sent/1min: 286.84
+|     $SYS/broker/bytes/sent: 561
+|     $SYS/broker/messages/stored: 52
+|     $SYS/broker/load/messages/received/5min: 24.12
+|     $SYS/broker/load/bytes/sent/5min: 96.64
+|     livingroom/speaker: {"id":3533187517415864330,"gain":52}
+|     $SYS/broker/load/messages/sent/1min: 71.65
+|     $SYS/broker/store/messages/count: 52
+|     $SYS/broker/load/messages/received/15min: 8.87
+|     $SYS/broker/clients/active: 2
+|     $SYS/broker/load/bytes/received/15min: 433.18
+|     $SYS/broker/clients/disconnected: -1
+|     $SYS/broker/load/connections/1min: 0.25
+|     $SYS/broker/clients/connected: 2
+|     $SYS/broker/bytes/received: 6835
+|     $SYS/broker/messages/received: 140
+|     kitchen/toaster: {"id":11604320140684605092,"in_use":false,"temperature":140.00671,"toast_time":343}
+|     $SYS/broker/load/messages/sent/15min: 8.87
+|     $SYS/broker/uptime: 99 seconds
+|     frontdeck/camera: {"id":13007239239951038445,"yaxis":134.47415,"xaxis":-91.302795,"zoom":4.6048856,"movement":false}
+|     $SYS/broker/store/messages/bytes: 296
+|     $SYS/broker/messages/sent: 140
+|     $SYS/broker/load/bytes/received/5min: 1177.54
+|     $SYS/broker/load/sockets/1min: 1.17
+|     $SYS/broker/load/messages/sent/5min: 24.12
+|     $SYS/broker/clients/inactive: -1
+|     $SYS/broker/load/sockets/15min: 0.13
+|     $SYS/broker/version: mosquitto version 2.0.14
+|     $SYS/broker/load/messages/received/1min: 71.65
+|     $SYS/broker/load/bytes/received/1min: 3502.29
+|_    $SYS/broker/load/sockets/5min: 0.35
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Jan 30 12:59:59 2025 -- 1 IP address (1 host up) scanned in 104.34 seconds
