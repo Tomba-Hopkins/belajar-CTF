@@ -1,11 +1,10 @@
-# Nmap 7.94SVN scan initiated Fri Jan 24 09:19:10 2025 as: nmap -sCV -p- -vv -oN scan.nmap --min-rate 1000 -Pn 10.10.36.228
-Nmap scan report for 10.10.36.228
-Host is up, received user-set (0.26s latency).
-Scanned at 2025-01-24 09:19:11 WIB for 145s
+# Nmap 7.94SVN scan initiated Mon Feb  3 07:22:20 2025 as: nmap -sCV -p- -vv -oN scan.nmap --min-rate 1000 -Pn 10.10.240.185
+Nmap scan report for 10.10.240.185
+Host is up, received user-set (0.23s latency).
+Scanned at 2025-02-03 07:22:20 WIB for 153s
 Not shown: 65533 filtered tcp ports (no-response)
 PORT     STATE SERVICE          REASON          VERSION
 3389/tcp open  ms-wbt-server    syn-ack ttl 127 Microsoft Terminal Services
-|_ssl-date: 2025-01-24T02:21:37+00:00; +1s from scanner time.
 | rdp-ntlm-info: 
 |   Target_Name: WIN-EOM4PK0578N
 |   NetBIOS_Domain_Name: WIN-EOM4PK0578N
@@ -13,34 +12,35 @@ PORT     STATE SERVICE          REASON          VERSION
 |   DNS_Domain_Name: WIN-EOM4PK0578N
 |   DNS_Computer_Name: WIN-EOM4PK0578N
 |   Product_Version: 10.0.17763
-|_  System_Time: 2025-01-24T02:21:35+00:00
+|_  System_Time: 2025-02-03T00:24:49+00:00
 | ssl-cert: Subject: commonName=WIN-EOM4PK0578N
 | Issuer: commonName=WIN-EOM4PK0578N
 | Public Key type: rsa
 | Public Key bits: 2048
 | Signature Algorithm: sha256WithRSAEncryption
-| Not valid before: 2025-01-23T02:16:23
-| Not valid after:  2025-07-25T02:16:23
-| MD5:   c5ca:f68e:1158:41a6:3a30:e4af:5646:af94
-| SHA-1: 3964:12a5:1866:cb09:447b:9455:4ed4:b84c:e103:ed9c
+| Not valid before: 2025-02-02T00:19:02
+| Not valid after:  2025-08-04T00:19:02
+| MD5:   7a73:c4b1:b9f5:37b4:c03f:df69:45d7:3bad
+| SHA-1: b31b:7d1f:5121:c15d:682f:3201:ed77:be51:48c6:c2cf
 | -----BEGIN CERTIFICATE-----
-| MIIC4jCCAcqgAwIBAgIQTg2voMN4sYVE5vJ+AumagDANBgkqhkiG9w0BAQsFADAa
-| MRgwFgYDVQQDEw9XSU4tRU9NNFBLMDU3OE4wHhcNMjUwMTIzMDIxNjIzWhcNMjUw
-| NzI1MDIxNjIzWjAaMRgwFgYDVQQDEw9XSU4tRU9NNFBLMDU3OE4wggEiMA0GCSqG
-| SIb3DQEBAQUAA4IBDwAwggEKAoIBAQCrgercF35Qk8inAMuJdBonKmvyINKe6qOW
-| tUhtQ9cak+5zYySohueaz7FQmmNEnWFPOguY3YEKnOUfmWWbaNY4ZisBSPbC9XQN
-| f3tR99UZKCosINLSt+dGLKr+sqrW6Pa2zifKXcdJY0RESq+nGgtEwng5sIRldi+Z
-| nwUPYUcdg6iovVdm4v+JleCb13UFQeoIsnqqjCb8XmkwJGFeIy23VF5wOw07M07Z
-| 4Ad/jJsaIm838hOpGE7BuKC9NMk2+uprrHZquQ5hEKPXrfW+MLzYnwjJFisPeua8
-| WY5B/a7B5CFZRwf8Dlg+AifoPJTm+IwdnbG9uCKk3/ig9m65ni/BAgMBAAGjJDAi
+| MIIC4jCCAcqgAwIBAgIQL+woGzvudqpDXmTRLIB7ETANBgkqhkiG9w0BAQsFADAa
+| MRgwFgYDVQQDEw9XSU4tRU9NNFBLMDU3OE4wHhcNMjUwMjAyMDAxOTAyWhcNMjUw
+| ODA0MDAxOTAyWjAaMRgwFgYDVQQDEw9XSU4tRU9NNFBLMDU3OE4wggEiMA0GCSqG
+| SIb3DQEBAQUAA4IBDwAwggEKAoIBAQC2l4N4QRnF/RvxLcwVrSAo1G6A1V4Ftb7w
+| 3tOZU2XAxLPzX0DQUG1Fhy8/7FWsGcTK+M8+ptVjMo4uXXA88sjRgN+snE6F1mFZ
+| DtErFAVV+owAMJWvlkO0wzPO+4RT7nNqrpQz1KYPRHnThvofFAKnpCqBJeTWcVle
+| Wp12j+i1afzbUeWlqwjH8/VZXWvebP/FMiNg/qNnW8IRaHbnQeMADV30oP2xOhER
+| rXFng+V96GwgVwvM//kOWAqsjFpKJx0mVny1RC1OlVc20fIcLgibLVggg0yVklDB
+| SUaN+xffVhKTTLBn5HWnfdKbR/LYmOFkks7akiKhXl2UlWEZhIM5AgMBAAGjJDAi
 | MBMGA1UdJQQMMAoGCCsGAQUFBwMBMAsGA1UdDwQEAwIEMDANBgkqhkiG9w0BAQsF
-| AAOCAQEAptzFkMsKwqx6wnI35+CF6uNIXjw6dq4v7Wd3nUPkBLhar3DhFVkCi0Ug
-| 9DKZfqlVOWa9n38Xp7uXV8PFjrYfqogAlCAB2+pDYBjGJ5phLgq5VgH44t/dJoza
-| V9rjG/Lk/JoPoW/UvfqpaGCcfRDH0Pl8mVYzHq9gHUUZOJg1YXpC78/gszscgmlK
-| Q/mIrxAnB6bfZ7UW9uA9h3mFA2bWHO9Sle2HBN3/tvn7VUsTI116MqwwMwWrrb6C
-| 3XkmdmpBTv+SIw/hvUJZmjHfBaJh9cjxYfvj9EHrRvvWaAW41Km+jMMvLaxsO/LP
-| I0iDGeBDlnb++XbFWGWtN8zr3prkzg==
+| AAOCAQEAM8gvSFln4TvOt4VXkklerkfrrj8Ysk671VQQWQMvFtmhk7wLqo1o8vg4
+| ouh8yCzd0gjHWIlzCCY3+uJ+rrccptms94sLwiKYCo9OEbm02PMH+LRhFh2ijS2M
+| raPLxuSGYt99GWIEkgWFIaXz/Tpw8segD7ID+pVZZCe3rL9xfw+hTWb8WUesMp35
+| DhJfTax6qNdFUPVNDV7G0oGkycJ5tmAUWFaAL0Hh3/WO8abmtd++hIOyxNX2ruPL
+| QFtGKmqX3EY46NtoA12LOk0gwpXHl1Wz3a0GnaBKrOUPQ5z52wmEuaCO70tSXKaX
+| u4rl8CpLJf4Xv5ScStvRMyPdICTJDA==
 |_-----END CERTIFICATE-----
+|_ssl-date: 2025-02-03T00:24:51+00:00; +1s from scanner time.
 8021/tcp open  freeswitch-event syn-ack ttl 127 FreeSWITCH mod_event_socket
 Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 
@@ -49,4 +49,4 @@ Host script results:
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Fri Jan 24 09:21:36 2025 -- 1 IP address (1 host up) scanned in 146.11 seconds
+# Nmap done at Mon Feb  3 07:24:53 2025 -- 1 IP address (1 host up) scanned in 152.73 seconds
