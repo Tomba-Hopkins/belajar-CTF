@@ -1,0 +1,29 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.51.229/simple
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /home/tomba/wordlists/seclists/web-content/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+[2K/.hta                 (Status: 403) [Size: 298]
+[2K/.htpasswd            (Status: 403) [Size: 303]
+[2K/.htaccess            (Status: 403) [Size: 303]
+[2K/admin                (Status: 301) [Size: 319] [--> http://10.10.51.229/simple/admin/]
+[2K/assets               (Status: 301) [Size: 320] [--> http://10.10.51.229/simple/assets/]
+[2K/doc                  (Status: 301) [Size: 317] [--> http://10.10.51.229/simple/doc/]
+[2K/index.php            (Status: 200) [Size: 19913]
+[2K/lib                  (Status: 301) [Size: 317] [--> http://10.10.51.229/simple/lib/]
+[2K/modules              (Status: 301) [Size: 321] [--> http://10.10.51.229/simple/modules/]
+[2K/tmp                  (Status: 301) [Size: 317] [--> http://10.10.51.229/simple/tmp/]
+[2K/uploads              (Status: 301) [Size: 321] [--> http://10.10.51.229/simple/uploads/]
+
+===============================================================
+Finished
+===============================================================
