@@ -1,0 +1,27 @@
+1. scan nmap 22 80 kebuka -> explore sesuai guide
+2. ada file js tapi mode inline ga enak dibaca -> ke js de4js atau beautifier js biar enak dibaca
+3. itu masih obfusc coba ke de4js buat di decode
+4. next ada function nya follow aja api nya terus coba curl tes api nya
+5. curl -X POST "http://ip/api/v1/invite/how/to/generate" -H "Content-Type: application/json"
+6. response nya di ubah jadi rot13 -> ke cyberchef nanti ada message how to nya
+7. cek di endpoint itu nanti ada code invite nya di encode base64 decode aja
+8. dah sign up pake invite itu -> buat akun di dashboard masuk -> ke access soalnya dia nanya kalau klik connect
+9. coba connect aja nanti liat di network -> dia ngirim request ke endpoint mana jawab aja dari /api/gitu
+10. ada untuk user ternyata -> pasti ada untuk /admin juga test aja
+11. tips daripada fuzz endpoint mending lewat burp -> req ke /api tapi intercept biar ga tiba tiba redirect
+12. nanti tes tes in aja /api /api/v1 -> nemu dah
+13. api nemu 1 1 coba dari burp aja request2 nya mulai put settings update is admin itu
+14. dia butuh content-type, data json email ama is admin -> kalau  di burp ada issue klik kanan aja biar curl bash
+15. coba2 aja -> next command inject di endpoint generate vpn -> bisa kirim data username value nya: "adf; ls #;"
+16. coba2 command lain aja -> "username":"adf; command #;" -> ls -la aja disitu ada .env creds db bisa ssh 
+17. ssh aja -> next suruh cari email ternyata email ada di /var/mail 
+18. yang cve itu gatau apa coba uname -r -> di wu orang uname -r soalnya -> cari exploit nya
+
+
+pe: 
+1. ini ref nya: https://securitylabs.datadoghq.com/articles/overlayfs-cve-2023-0386/
+2. tinggal buat aja exp nya -> wget kesitu -> gcc -Wall nama.c nama -> chmod +x -> run gabisa
+3. chown root:root nama -> chmod +s nama -> run -> ah gabisa cari exp nya orang aja
+4. disini: https://github.com/sxlmnwb/CVE-2023-0386
+5. tinggal make all -> ./fuse ./ovlcap/lower ./gc aja abis itu
+6. pake cara lain yang ldd --version juga bisa        

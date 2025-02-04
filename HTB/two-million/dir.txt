@@ -1,0 +1,26 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://2million.htb/
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /home/tomba/wordlists/seclists/web-content/common.txt
+[+] Negative Status codes:   404
+[+] Exclude Length:          162
+[+] User Agent:              gobuster/3.6
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+[2K/404                  (Status: 200) [Size: 1674]
+[2K/api                  (Status: 401) [Size: 0]
+[2K/home                 (Status: 302) [Size: 0] [--> /]
+[2K/invite               (Status: 200) [Size: 3859]
+[2K/login                (Status: 200) [Size: 3704]
+[2K/logout               (Status: 302) [Size: 0] [--> /]
+[2K/register             (Status: 200) [Size: 4527]
+
+===============================================================
+Finished
+===============================================================
