@@ -1,0 +1,10 @@
+1. scan nmap -> fuzz dir
+2. cek yang di snapshot -> itu bisa idor data nya -> ke 1 - 7 coba dulu -> gada ke 0 coba
+3. buka pcap yg kedownload 1 per 1 ampe nemu traffic selain tcp -> baca yg di sekitaran login successful
+4. disitu follow aja stream nya klik kanan
+5. ada creds disitu -> bisa login ssh ftp
+
+pe: 
+1. sudo -l gabisa -> pake linpeas nemu orange di python
+2. ke gtfobins python coba deh coba aja -> langsung yg capabil aja
+3.  python -c 'import os; os.setuid(0); os.system("/bin/sh")' -> klaim root
