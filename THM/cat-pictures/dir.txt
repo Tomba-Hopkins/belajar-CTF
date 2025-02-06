@@ -1,0 +1,41 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.253.235:8080/
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /home/tomba/wordlists/seclists/web-content/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Follow Redirect:         true
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+[2K/.hta                 (Status: 403) [Size: 199]
+[2K/.htaccess            (Status: 403) [Size: 199]
+[2K/.htpasswd            (Status: 403) [Size: 199]
+[2K/assets               (Status: 403) [Size: 199]
+[2K/bin                  (Status: 403) [Size: 199]
+[2K/cache                (Status: 403) [Size: 199]
+[2K/config               (Status: 403) [Size: 199]
+[2K/docs                 (Status: 403) [Size: 199]
+[2K/download             (Status: 200) [Size: 169]
+[2K/ext                  (Status: 200) [Size: 169]
+[2K/feed                 (Status: 200) [Size: 1471]
+[2K/files                (Status: 403) [Size: 199]
+[2K/images               (Status: 200) [Size: 169]
+[2K/includes             (Status: 403) [Size: 199]
+[2K/index.php            (Status: 200) [Size: 13110]
+[2K/language             (Status: 200) [Size: 169]
+[2K/licenses             (Status: 403) [Size: 199]
+[2K/phpbb                (Status: 403) [Size: 199]
+[2K/store                (Status: 403) [Size: 199]
+[2K/styles               (Status: 403) [Size: 199]
+[2K/vendor               (Status: 403) [Size: 199]
+[2K/web.config           (Status: 200) [Size: 1177]
+
+===============================================================
+Finished
+===============================================================
