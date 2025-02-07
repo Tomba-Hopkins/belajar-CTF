@@ -1,0 +1,19 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:              http://10.10.176.226/api/items?FUZZ=id
+[+] Method:           POST
+[+] Threads:          10
+[+] Wordlist:         /home/tomba/wordlists/seclists/web-content/api/objects.txt
+[+] Exclude Length:   45
+[+] User Agent:       gobuster/3.6
+[+] Timeout:          10s
+===============================================================
+Starting gobuster in fuzzing mode
+===============================================================
+[2KFound: [Status=500] [Length=1079] [Word=cmd] http://10.10.176.226/api/items?cmd=id
+
+===============================================================
+Finished
+===============================================================

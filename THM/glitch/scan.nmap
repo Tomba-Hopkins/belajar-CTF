@@ -1,0 +1,16 @@
+# Nmap 7.94SVN scan initiated Fri Feb  7 09:03:28 2025 as: nmap -sCV -p- -vv -oN scan.nmap --min-rate 1000 10.10.176.226
+Nmap scan report for 10.10.176.226
+Host is up, received echo-reply ttl 60 (0.39s latency).
+Scanned at 2025-02-07 09:03:29 WIB for 149s
+Not shown: 65534 filtered tcp ports (no-response)
+PORT   STATE SERVICE REASON         VERSION
+80/tcp open  http    syn-ack ttl 60 nginx 1.14.0 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: nginx/1.14.0 (Ubuntu)
+|_http-title: not allowed
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Feb  7 09:05:58 2025 -- 1 IP address (1 host up) scanned in 149.35 seconds
