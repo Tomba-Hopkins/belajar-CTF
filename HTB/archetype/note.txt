@@ -1,0 +1,8 @@
+1. scan nmap -> ada sql server dll banyak port soalnya
+2. masuk smb -> smbclient -L  //ip/ -> nanti passwd nya Anonymous aja
+3. nah ketauan dah non admin share nya yg gada $ pokoknya
+4. tinggal connect smb aja -> smb //ip/non_admin
+5. nah dapet catatan creds microsoft sql -> cari aja gini : impacket microsoft sql server
+6. dapet tuh toolsnya juga dapet jalanin gini aja -> python3 tool.py db@ip -windows-auth -> kan di creds tadi ada gibi SEBUS/sql_srv nah pake sql_srv@ip 
+7. ato gini aja -> python3 mssqlclient.py ARCHETYPE\sql_svc@10.129.186.114 -windows-auth
+8. udah di shell sql -> help dulu aja ->  

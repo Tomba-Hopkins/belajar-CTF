@@ -1,0 +1,21 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:             http://team.thm
+[+] Method:          GET
+[+] Threads:         10
+[+] Wordlist:        /home/tomba/wordlists/seclists/dns/subdomains-top1million-5000.txt
+[+] User Agent:      gobuster/3.6
+[+] Timeout:         10s
+[+] Append Domain:   true
+===============================================================
+Starting gobuster in VHOST enumeration mode
+===============================================================
+[2KFound: dev.team.thm Status: 200 [Size: 187]
+[2KFound: www.dev.team.thm Status: 200 [Size: 187]
+[2KFound: gc._msdcs.team.thm Status: 400 [Size: 422]
+
+===============================================================
+Finished
+===============================================================
