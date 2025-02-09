@@ -1,3 +1,12 @@
 1. scan port -> cek web soalnya 80 kebuka -> ctrl + u explore aja -> nemu script js yang di path login
 2. as guest aja -> ke account -> bisa idor disitu -> ganti2 aja id nya 
-3. ada tuh access id bisa buat di cookie 
+3. ada tuh access id bisa buat di cookie -> ganti cookie ke admin login ulang
+4. ada fitur upload 10000000 hari gabisa2 upload ternyata issue di vpn nya pake udp ini pindah tcp lancar upload
+5. upload revshell php jangan lupa namain brand nya sama aja biar bisa di akses -> tadi brand kosong malah 404 not found soalnua
+6. dapet shell tuh  -> explore /opt /home user dulu -> ada flag user klaim aja
+7. ke /var/www/html biasanya ada config.php gada ke cdn-cgi login -> ada db.php catat creds
+
+pe: 
+1. cek di find / -type f -perm -u=s sih ada bugtracker -> coba jalanin masukin angka gede nanti gada cat
+2. echo '/bin/bash' > cat -> cat cat -> export PATH=/tmp:$PATH -> echo $PATH -> ke tmp -> bugtracker
+3. nanti masukin ../root.txt -> klaim root

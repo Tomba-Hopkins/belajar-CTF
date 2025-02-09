@@ -21,4 +21,4 @@
 pe:
 1. kan dapat creds tuh dari log winpeas yang history itu
 2. pake aja psexec -> impacket-psexec administrator@ip -> passwd nya tadi
-3. klaim aja flag2 nya   
+3. klaim aja flag2 nya -> sebenernya issuenya ada di vpn pake ygg tcp upload psexec nya aman padahal    
