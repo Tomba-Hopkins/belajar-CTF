@@ -1,0 +1,19 @@
+# Nmap 7.94SVN scan initiated Sun Feb  9 09:36:20 2025 as: nmap -sCV -p- -vv -oN scan.nmap --min-rate 1000 10.10.40.201
+Increasing send delay for 10.10.40.201 from 160 to 320 due to 365 out of 1216 dropped probes since last increase.
+Nmap scan report for magician.thm (10.10.40.201)
+Host is up, received echo-reply ttl 60 (0.42s latency).
+Scanned at 2025-02-09 09:36:21 WIB for 123s
+Not shown: 65533 closed tcp ports (reset)
+PORT     STATE SERVICE REASON         VERSION
+21/tcp   open  ftp     syn-ack ttl 60 vsftpd 2.0.8 or later
+8081/tcp open  http    syn-ack ttl 60 nginx 1.14.0 (Ubuntu)
+|_http-server-header: nginx/1.14.0 (Ubuntu)
+|_http-title: magician
+|_http-favicon: Unknown favicon MD5: CA4D0E532A1010F93901DFCB3A9FC682
+| http-methods: 
+|_  Supported Methods: GET HEAD
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Feb  9 09:38:24 2025 -- 1 IP address (1 host up) scanned in 123.78 seconds

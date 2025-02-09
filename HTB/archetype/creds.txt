@@ -1,1 +1,2 @@
 microsoft sql server: ARCHETYPE\sql_svc:M3g4c0rp123
+admin: administrator:MEGACORP_4dm1n!!
