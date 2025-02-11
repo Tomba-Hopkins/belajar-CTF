@@ -1,0 +1,24 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://underpass.thm/daloradius/app
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /home/tomba/wordlists/seclists/web-content/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+[2K/operators            (Status: 301) [Size: 333] [--> http://underpass.thm/daloradius/app/operators/]
+[2K/.hta                 (Status: 403) [Size: 278]
+[2K/.htaccess            (Status: 403) [Size: 278]
+[2K/.htpasswd            (Status: 403) [Size: 278]
+[2K/common               (Status: 301) [Size: 330] [--> http://underpass.thm/daloradius/app/common/]
+[2K/users                (Status: 301) [Size: 329] [--> http://underpass.thm/daloradius/app/users/]
+
+===============================================================
+Finished
+===============================================================

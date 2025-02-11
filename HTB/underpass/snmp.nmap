@@ -1,0 +1,12 @@
+# Nmap 7.94SVN scan initiated Tue Feb 11 18:34:26 2025 as: nmap -sV -sU -p 161 -oN snmp.nmap -vv 10.10.11.48
+Nmap scan report for 10.10.11.48
+Host is up, received echo-reply ttl 63 (0.046s latency).
+Scanned at 2025-02-11 18:34:26 WIB for 1s
+
+PORT    STATE SERVICE REASON              VERSION
+161/udp open  snmp    udp-response ttl 63 SNMPv1 server; net-snmp SNMPv3 server (public)
+Service Info: Host: UnDerPass.htb is the only daloradius server in the basin!
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Feb 11 18:34:27 2025 -- 1 IP address (1 host up) scanned in 0.55 seconds

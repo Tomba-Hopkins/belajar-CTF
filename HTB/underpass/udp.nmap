@@ -1,0 +1,20 @@
+# Nmap 7.94SVN scan initiated Tue Feb 11 10:42:13 2025 as: nmap -vv -sU -oN udp.nmap --min-rate 1000 10.10.11.48
+Increasing send delay for 10.10.11.48 from 0 to 50 due to 11 out of 17 dropped probes since last increase.
+Nmap scan report for 10.10.11.48
+Host is up, received echo-reply ttl 63 (0.29s latency).
+Scanned at 2025-02-11 10:42:14 WIB for 7s
+Not shown: 990 open|filtered udp ports (no-response)
+PORT      STATE  SERVICE         REASON
+161/udp   open   snmp            udp-response ttl 63
+17989/udp closed unknown         port-unreach ttl 63
+18331/udp closed unknown         port-unreach ttl 63
+20411/udp closed unknown         port-unreach ttl 63
+21514/udp closed unknown         port-unreach ttl 63
+23557/udp closed unknown         port-unreach ttl 63
+27482/udp closed unknown         port-unreach ttl 63
+32774/udp closed sometimes-rpc12 port-unreach ttl 63
+34758/udp closed unknown         port-unreach ttl 63
+49182/udp closed unknown         port-unreach ttl 63
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Tue Feb 11 10:42:21 2025 -- 1 IP address (1 host up) scanned in 8.28 seconds

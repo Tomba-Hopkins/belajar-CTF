@@ -1,0 +1,12 @@
+1. scan nmap 22 80 kebuka -> cek nmap udp coba -sU nanti ada yang open
+2. -sV aja port udp nya nanti nemu host /daloradius
+3. fuzz dapet app -> fuzz dapet operators (ku tambahin ke wordlist sih) 
+4. cari default creds nya disini: https://cloudswit.ch/blogs/sonic-aaa-authentication-using-freeradius/
+5. ctrl + f aja buat nyari keyword "default"
+6. tar nemu buat login -> nemu creds lgsg ke crackstation aja
+7. dapet creds langsung gas coba ssh aja
+
+pe: 
+1. sudo -l -> bin nya gabisa di apa apain jir
+2. di linpeas ada init.d juga bisa di edit tapi kok gabisa ke trigger ya revshell nya
+3. baca wu ternyata gini -> mosh --server="sudo /usr/bin/mosh-server" localhost -> dah klaim root    
