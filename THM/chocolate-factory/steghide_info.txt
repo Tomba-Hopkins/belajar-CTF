@@ -1,0 +1,10 @@
+"gum_room.jpg":
+  format: jpeg
+  capacity: 10.9 KB
+Try to get information about embedded data ? (y/n) y
+Enter passphrase: 
+  embedded file "b64.txt":
+    size: 2.5 KB
+    encrypted: rijndael-128, cbc
+    compressed: yes
+
