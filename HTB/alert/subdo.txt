@@ -1,0 +1,357 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:             http://alert.htb
+[+] Method:          GET
+[+] Threads:         10
+[+] Wordlist:        /home/tomba/wordlists/seclists/dns/subdomains-top1million-5000.txt
+[+] User Agent:      gobuster/3.6
+[+] Timeout:         10s
+[+] Append Domain:   true
+===============================================================
+Starting gobuster in VHOST enumeration mode
+===============================================================
+[2KFound: whm.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: localhost.alert.htb Status: 301 [Size: 310] [--> http://alert.htb/]
+[2KFound: webmail.alert.htb Status: 301 [Size: 308] [--> http://alert.htb/]
+[2KFound: cpanel.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: smtp.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: pop.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: webdisk.alert.htb Status: 301 [Size: 308] [--> http://alert.htb/]
+[2KFound: www.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: ftp.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: mail.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: ns1.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: ns2.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: test.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: autoconfig.alert.htb Status: 301 [Size: 311] [--> http://alert.htb/]
+[2KFound: ns.alert.htb Status: 301 [Size: 303] [--> http://alert.htb/]
+[2KFound: autodiscover.alert.htb Status: 301 [Size: 313] [--> http://alert.htb/]
+[2KFound: dev.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: m.alert.htb Status: 301 [Size: 302] [--> http://alert.htb/]
+[2KFound: ns3.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: www2.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: blog.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: pop3.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: forum.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: mx.alert.htb Status: 301 [Size: 303] [--> http://alert.htb/]
+[2KFound: mail2.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: admin.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: vpn.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: imap.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: old.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: new.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: mobile.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: mysql.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: beta.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: support.alert.htb Status: 301 [Size: 308] [--> http://alert.htb/]
+[2KFound: cp.alert.htb Status: 301 [Size: 303] [--> http://alert.htb/]
+[2KFound: secure.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: shop.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: demo.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: dns1.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: ns4.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: dns2.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: lists.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: static.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: img.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: www1.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: web.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: news.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: wiki.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: api.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: server.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: media.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: images.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: portal.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: dns.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: www.blog.alert.htb Status: 301 [Size: 309] [--> http://alert.htb/]
+[2KFound: www.test.alert.htb Status: 301 [Size: 309] [--> http://alert.htb/]
+[2KFound: www.forum.alert.htb Status: 301 [Size: 310] [--> http://alert.htb/]
+[2KFound: sql.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: backup.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: intranet.alert.htb Status: 301 [Size: 309] [--> http://alert.htb/]
+[2KFound: www3.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: host.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: mail1.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: video.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: stats.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: staging.alert.htb Status: 301 [Size: 308] [--> http://alert.htb/]
+[2KFound: www.m.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: sip.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: mx1.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: chat.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: crm.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: search.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: mx2.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: ads.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: remote.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: ipv4.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: download.alert.htb Status: 301 [Size: 309] [--> http://alert.htb/]
+[2KFound: store.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: cms.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: svn.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: email.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: wap.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: my.alert.htb Status: 301 [Size: 303] [--> http://alert.htb/]
+[2KFound: www.dev.alert.htb Status: 301 [Size: 308] [--> http://alert.htb/]
+[2KFound: proxy.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: apps.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: mssql.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: mail3.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: exchange.alert.htb Status: 301 [Size: 309] [--> http://alert.htb/]
+[2KFound: ns5.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: forums.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: dns3.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: live.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: office.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: files.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: db.alert.htb Status: 301 [Size: 303] [--> http://alert.htb/]
+[2KFound: info.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: owa.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: panel.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: monitor.alert.htb Status: 301 [Size: 308] [--> http://alert.htb/]
+[2KFound: helpdesk.alert.htb Status: 301 [Size: 309] [--> http://alert.htb/]
+[2KFound: newsletter.alert.htb Status: 301 [Size: 311] [--> http://alert.htb/]
+[2KFound: sms.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: web1.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: web2.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: upload.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: ftp2.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: bbs.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: login.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: home.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: app.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: en.alert.htb Status: 301 [Size: 303] [--> http://alert.htb/]
+[2KFound: it.alert.htb Status: 301 [Size: 303] [--> http://alert.htb/]
+[2KFound: blogs.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: cdn.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: gw.alert.htb Status: 301 [Size: 303] [--> http://alert.htb/]
+[2KFound: stage.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: ssl.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: dns4.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: vps.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: cn.alert.htb Status: 301 [Size: 303] [--> http://alert.htb/]
+[2KFound: www.demo.alert.htb Status: 301 [Size: 309] [--> http://alert.htb/]
+[2KFound: smtp2.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: relay.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: service.alert.htb Status: 301 [Size: 308] [--> http://alert.htb/]
+[2KFound: test2.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: ns6.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: online.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: ntp.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: radio.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: help.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: extranet.alert.htb Status: 301 [Size: 309] [--> http://alert.htb/]
+[2KFound: www.shop.alert.htb Status: 301 [Size: 309] [--> http://alert.htb/]
+[2KFound: tv.alert.htb Status: 301 [Size: 303] [--> http://alert.htb/]
+[2KFound: members.alert.htb Status: 301 [Size: 308] [--> http://alert.htb/]
+[2KFound: www4.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: library.alert.htb Status: 301 [Size: 308] [--> http://alert.htb/]
+[2KFound: services.alert.htb Status: 301 [Size: 309] [--> http://alert.htb/]
+[2KFound: hosting.alert.htb Status: 301 [Size: 308] [--> http://alert.htb/]
+[2KFound: ldap.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: s.alert.htb Status: 301 [Size: 302] [--> http://alert.htb/]
+[2KFound: www.new.alert.htb Status: 301 [Size: 308] [--> http://alert.htb/]
+[2KFound: www.mail.alert.htb Status: 301 [Size: 309] [--> http://alert.htb/]
+[2KFound: s1.alert.htb Status: 301 [Size: 303] [--> http://alert.htb/]
+[2KFound: i.alert.htb Status: 301 [Size: 302] [--> http://alert.htb/]
+[2KFound: webdisk.blog.alert.htb Status: 301 [Size: 313] [--> http://alert.htb/]
+[2KFound: data.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: survey.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: c-n7k-v03-01.rz.alert.htb Status: 301 [Size: 316] [--> http://alert.htb/]
+[2KFound: c-n7k-n04-01.rz.alert.htb Status: 301 [Size: 316] [--> http://alert.htb/]
+[2KFound: ad.alert.htb Status: 301 [Size: 303] [--> http://alert.htb/]
+[2KFound: docs.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: legacy.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: router.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: de.alert.htb Status: 301 [Size: 303] [--> http://alert.htb/]
+[2KFound: av.alert.htb Status: 301 [Size: 303] [--> http://alert.htb/]
+[2KFound: meet.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: cs.alert.htb Status: 301 [Size: 303] [--> http://alert.htb/]
+[2KFound: server1.alert.htb Status: 301 [Size: 308] [--> http://alert.htb/]
+[2KFound: facebook.alert.htb Status: 301 [Size: 309] [--> http://alert.htb/]
+[2KFound: stat.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: sftp.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: nagios.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: mrtg.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: test1.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: moodle.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: photo.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: s2.alert.htb Status: 301 [Size: 303] [--> http://alert.htb/]
+[2KFound: ts.alert.htb Status: 301 [Size: 303] [--> http://alert.htb/]
+[2KFound: dev2.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: partner.alert.htb Status: 301 [Size: 308] [--> http://alert.htb/]
+[2KFound: mailadmin.alert.htb Status: 301 [Size: 310] [--> http://alert.htb/]
+[2KFound: autoconfig.blog.alert.htb Status: 301 [Size: 316] [--> http://alert.htb/]
+[2KFound: autodiscover.blog.alert.htb Status: 301 [Size: 318] [--> http://alert.htb/]
+[2KFound: games.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: jobs.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: gateway.alert.htb Status: 301 [Size: 308] [--> http://alert.htb/]
+[2KFound: image.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: correo.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: preview.alert.htb Status: 301 [Size: 308] [--> http://alert.htb/]
+[2KFound: www.support.alert.htb Status: 301 [Size: 312] [--> http://alert.htb/]
+[2KFound: host2.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: ssh.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: control.alert.htb Status: 301 [Size: 308] [--> http://alert.htb/]
+[2KFound: im.alert.htb Status: 301 [Size: 303] [--> http://alert.htb/]
+[2KFound: vpn2.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: ns0.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: cloud.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: archive.alert.htb Status: 301 [Size: 308] [--> http://alert.htb/]
+[2KFound: citrix.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: voip.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: connect.alert.htb Status: 301 [Size: 308] [--> http://alert.htb/]
+[2KFound: webdisk.m.alert.htb Status: 301 [Size: 310] [--> http://alert.htb/]
+[2KFound: game.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: smtp1.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: redmine.alert.htb Status: 301 [Size: 308] [--> http://alert.htb/]
+[2KFound: gallery.alert.htb Status: 301 [Size: 308] [--> http://alert.htb/]
+[2KFound: www5.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: lib.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: es.alert.htb Status: 301 [Size: 303] [--> http://alert.htb/]
+[2KFound: access.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: qa.alert.htb Status: 301 [Size: 303] [--> http://alert.htb/]
+[2KFound: stream.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: irc.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: painel.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: projects.alert.htb Status: 301 [Size: 309] [--> http://alert.htb/]
+[2KFound: dl.alert.htb Status: 301 [Size: 303] [--> http://alert.htb/]
+[2KFound: lyncdiscover.alert.htb Status: 301 [Size: 313] [--> http://alert.htb/]
+[2KFound: billing.alert.htb Status: 301 [Size: 308] [--> http://alert.htb/]
+[2KFound: construtor.alert.htb Status: 301 [Size: 311] [--> http://alert.htb/]
+[2KFound: fr.alert.htb Status: 301 [Size: 303] [--> http://alert.htb/]
+[2KFound: tools.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: mail4.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: pgsql.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: a.alert.htb Status: 301 [Size: 302] [--> http://alert.htb/]
+[2KFound: iphone.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: jabber.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: music.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: server2.alert.htb Status: 301 [Size: 308] [--> http://alert.htb/]
+[2KFound: dbadmin.alert.htb Status: 301 [Size: 308] [--> http://alert.htb/]
+[2KFound: manage.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: mailer.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: webmail2.alert.htb Status: 301 [Size: 309] [--> http://alert.htb/]
+[2KFound: phpmyadmin.alert.htb Status: 301 [Size: 311] [--> http://alert.htb/]
+[2KFound: www.beta.alert.htb Status: 301 [Size: 309] [--> http://alert.htb/]
+[2KFound: t.alert.htb Status: 301 [Size: 302] [--> http://alert.htb/]
+[2KFound: reports.alert.htb Status: 301 [Size: 308] [--> http://alert.htb/]
+[2KFound: ws.alert.htb Status: 301 [Size: 303] [--> http://alert.htb/]
+[2KFound: content.alert.htb Status: 301 [Size: 308] [--> http://alert.htb/]
+[2KFound: images2.alert.htb Status: 301 [Size: 308] [--> http://alert.htb/]
+[2KFound: mx3.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: pgadmin.alert.htb Status: 301 [Size: 308] [--> http://alert.htb/]
+[2KFound: rss.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: www.webmail.alert.htb Status: 301 [Size: 312] [--> http://alert.htb/]
+[2KFound: web3.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: sv.alert.htb Status: 301 [Size: 303] [--> http://alert.htb/]
+[2KFound: us.alert.htb Status: 301 [Size: 303] [--> http://alert.htb/]
+[2KFound: poczta.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: ftp1.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: sp.alert.htb Status: 301 [Size: 303] [--> http://alert.htb/]
+[2KFound: dialin.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: community.alert.htb Status: 301 [Size: 310] [--> http://alert.htb/]
+[2KFound: panelstats.alert.htb Status: 301 [Size: 311] [--> http://alert.htb/]
+[2KFound: www.mobile.alert.htb Status: 301 [Size: 311] [--> http://alert.htb/]
+[2KFound: vip.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: s3.alert.htb Status: 301 [Size: 303] [--> http://alert.htb/]
+[2KFound: cacti.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: ns7.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: alpha.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: sitedefender.alert.htb Status: 301 [Size: 313] [--> http://alert.htb/]
+[2KFound: videos.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: promo.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: testing.alert.htb Status: 301 [Size: 308] [--> http://alert.htb/]
+[2KFound: marketing.alert.htb Status: 301 [Size: 310] [--> http://alert.htb/]
+[2KFound: sharepoint.alert.htb Status: 301 [Size: 311] [--> http://alert.htb/]
+[2KFound: member.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: emkt.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: webdisk.dev.alert.htb Status: 301 [Size: 312] [--> http://alert.htb/]
+[2KFound: training.alert.htb Status: 301 [Size: 309] [--> http://alert.htb/]
+[2KFound: autodiscover.m.alert.htb Status: 301 [Size: 315] [--> http://alert.htb/]
+[2KFound: autoconfig.m.alert.htb Status: 301 [Size: 313] [--> http://alert.htb/]
+[2KFound: edu.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: webdisk.test.alert.htb Status: 301 [Size: 313] [--> http://alert.htb/]
+[2KFound: catalog.alert.htb Status: 301 [Size: 308] [--> http://alert.htb/]
+[2KFound: git.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: www.news.alert.htb Status: 301 [Size: 309] [--> http://alert.htb/]
+[2KFound: ww2.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: job.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: fb.alert.htb Status: 301 [Size: 303] [--> http://alert.htb/]
+[2KFound: sandbox.alert.htb Status: 301 [Size: 308] [--> http://alert.htb/]
+[2KFound: elearning.alert.htb Status: 301 [Size: 310] [--> http://alert.htb/]
+[2KFound: downloads.alert.htb Status: 301 [Size: 310] [--> http://alert.htb/]
+[2KFound: webmail.cp.alert.htb Status: 301 [Size: 311] [--> http://alert.htb/]
+[2KFound: design.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: speedtest.alert.htb Status: 301 [Size: 310] [--> http://alert.htb/]
+[2KFound: panelstatsmail.alert.htb Status: 301 [Size: 315] [--> http://alert.htb/]
+[2KFound: mailserver.alert.htb Status: 301 [Size: 311] [--> http://alert.htb/]
+[2KFound: db1.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: v2.alert.htb Status: 301 [Size: 303] [--> http://alert.htb/]
+[2KFound: master.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: staff.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: mirror.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: builder.cp.alert.htb Status: 301 [Size: 311] [--> http://alert.htb/]
+[2KFound: travel.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: tickets.alert.htb Status: 301 [Size: 308] [--> http://alert.htb/]
+[2KFound: sso.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: ca.alert.htb Status: 301 [Size: 303] [--> http://alert.htb/]
+[2KFound: sitebuilder.alert.htb Status: 301 [Size: 312] [--> http://alert.htb/]
+[2KFound: auth.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: alumni.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: www.admin.alert.htb Status: 301 [Size: 310] [--> http://alert.htb/]
+[2KFound: images1.alert.htb Status: 301 [Size: 308] [--> http://alert.htb/]
+[2KFound: ml.alert.htb Status: 301 [Size: 303] [--> http://alert.htb/]
+[2KFound: club.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: list.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: jira.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: partners.alert.htb Status: 301 [Size: 309] [--> http://alert.htb/]
+[2KFound: business.alert.htb Status: 301 [Size: 309] [--> http://alert.htb/]
+[2KFound: update.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: ns8.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: streaming.alert.htb Status: 301 [Size: 310] [--> http://alert.htb/]
+[2KFound: fw.alert.htb Status: 301 [Size: 303] [--> http://alert.htb/]
+[2KFound: zeus.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: wp.alert.htb Status: 301 [Size: 303] [--> http://alert.htb/]
+[2KFound: devel.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: local.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: images3.alert.htb Status: 301 [Size: 308] [--> http://alert.htb/]
+[2KFound: adm.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: gate.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: status.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: seo.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: img2.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: file.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: maps.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: pay.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: share.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: webdisk.forum.alert.htb Status: 301 [Size: 314] [--> http://alert.htb/]
+[2KFound: zimbra.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: sales.alert.htb Status: 301 [Size: 306] [--> http://alert.htb/]
+[2KFound: post.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: trac.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: events.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: xml.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: oa.alert.htb Status: 301 [Size: 303] [--> http://alert.htb/]
+[2KFound: project.alert.htb Status: 301 [Size: 308] [--> http://alert.htb/]
+[2KFound: images4.alert.htb Status: 301 [Size: 308] [--> http://alert.htb/]
+[2KFound: main.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: wordpress.alert.htb Status: 301 [Size: 310] [--> http://alert.htb/]
+[2KFound: english.alert.htb Status: 301 [Size: 308] [--> http://alert.htb/]
+[2KFound: e.alert.htb Status: 301 [Size: 302] [--> http://alert.htb/]
+[2KFound: db2.alert.htb Status: 301 [Size: 304] [--> http://alert.htb/]
+[2KFound: img1.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: redirect.alert.htb Status: 301 [Size: 309] [--> http://alert.htb/]
+[2KFound: time.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: development.alert.htb Status: 301 [Size: 312] [--> http://alert.htb/]
+[2KFound: social.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: www6.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: direct.alert.htb Status: 301 [Size: 307] [--> http://alert.htb/]
+[2KFound: bugs.alert.htb Status: 301 [Size: 305] [--> http://alert.htb/]
+[2KFound: go.alert.htb Status: 301 [Size: 303] [--> http://alert.htb/]
+[2KFound: www.old.alert.htb Status: 301 [Size: 308] [--> http://alert.htb/]
+[2KFound: calendar.alert.htb Status: 301 [Size: 309] [--> http://alert.htb/]
+[2KFound: ru.alert.htb Status: 301 [Size: 303] [--> http://alert.htb/]

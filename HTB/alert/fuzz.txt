@@ -1,0 +1,26 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:              http://alert.htb/index.php?page=FUZZ
+[+] Method:           GET
+[+] Threads:          10
+[+] Wordlist:         /home/tomba/wordlists/seclists/web-content/common.txt
+[+] Exclude Length:   690
+[+] User Agent:       gobuster/3.6
+[+] Timeout:          10s
+===============================================================
+Starting gobuster in fuzzing mode
+===============================================================
+[2KFound: [Status=400] [Length=301] [Word=Documents and Settings] http://alert.htb/index.php?page=Documents and Settings
+[2KFound: [Status=400] [Length=301] [Word=Program Files] http://alert.htb/index.php?page=Program Files
+[2KFound: [Status=200] [Length=1046] [Word=about] http://alert.htb/index.php?page=about
+[2KFound: [Status=200] [Length=966] [Word=alert] http://alert.htb/index.php?page=alert
+[2KFound: [Status=200] [Length=1000] [Word=contact] http://alert.htb/index.php?page=contact
+[2KFound: [Status=200] [Length=1116] [Word=donate] http://alert.htb/index.php?page=donate
+[2KFound: [Status=200] [Length=661] [Word=messages] http://alert.htb/index.php?page=messages
+[2KFound: [Status=400] [Length=301] [Word=reports list] http://alert.htb/index.php?page=reports list
+
+===============================================================
+Finished
+===============================================================

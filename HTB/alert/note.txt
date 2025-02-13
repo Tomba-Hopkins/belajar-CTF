@@ -1,0 +1,19 @@
+1. scan nmap ada 80 22 -> ada hostsnya masukin etc hosts aja -> fuzz web dir nya
+2. gada apa apa -> next fuzz param nya aja yang page itu pake gobuster fuzz
+3. ada param message -> masuk situ kosong -> cari info markdown vuln ada xss
+4. buat .md isinya xss -> steal cookie dah
+5. share link ke page contact nanti nc -nvlp jan lupa
+6. inget nc nya harus nangkep yang send contact bukan yang buka md nya
+7. nanti dapet -> coba kesini: http://alert.htb/messages.php?file=2024-03-10_15-48-34.txt
+8. ganti scriptnya biar lfi lewat .md  -> yang di cek banyak ada /etc passwd hosts
+9. apache2/sites-available/000-default.conf -> nanti dapet creds metodenya sama upload md aja ke contact
+10. dapet creds: john --format=md5crypt-long --wordlist=/usr/share/wordlists/rockyou.txt hash
+11. dapet creds ssh aja kesitu klaim flag
+
+
+PE:
+1. sudo -l gada -> ke /opt ada -> di linpeas ada service lain di 8080
+2. port forwarding: ssh -L 8080:127.0.0.1:8080 albert@alert.htb -> buka di browsermu 127.0.0.1:8080
+3. di mesin dia ke /opt/webmonitor/config bikin revshell .php disitu 
+4. buka di browser /config/sebus_revshell.php -> nyalain nc 
+5. klaim flag -> di suid -perm -u=s juga itu monitor muncul sandbox sih tapi    

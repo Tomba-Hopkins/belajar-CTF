@@ -1,0 +1,26 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://alert.htb/
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /home/tomba/wordlists/seclists/web-content/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+[2K/.hta                 (Status: 403) [Size: 274]
+[2K/.htaccess            (Status: 403) [Size: 274]
+[2K/.htpasswd            (Status: 403) [Size: 274]
+[2K/css                  (Status: 301) [Size: 304] [--> http://alert.htb/css/]
+[2K/index.php            (Status: 302) [Size: 660] [--> index.php?page=alert]
+[2K/messages             (Status: 301) [Size: 309] [--> http://alert.htb/messages/]
+[2K/server-status        (Status: 403) [Size: 274]
+[2K/uploads              (Status: 301) [Size: 308] [--> http://alert.htb/uploads/]
+
+===============================================================
+Finished
+===============================================================
