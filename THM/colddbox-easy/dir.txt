@@ -1,0 +1,28 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.179.7/
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /home/tomba/wordlists/seclists/web-content/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+[2K/.htaccess            (Status: 403) [Size: 276]
+[2K/.htpasswd            (Status: 403) [Size: 276]
+[2K/.hta                 (Status: 403) [Size: 276]
+[2K/hidden               (Status: 301) [Size: 311] [--> http://10.10.179.7/hidden/]
+[2K/index.php            (Status: 301) [Size: 0] [--> http://10.10.179.7/]
+[2K/server-status        (Status: 403) [Size: 276]
+[2K/wp-admin             (Status: 301) [Size: 313] [--> http://10.10.179.7/wp-admin/]
+[2K/wp-content           (Status: 301) [Size: 315] [--> http://10.10.179.7/wp-content/]
+[2K/wp-includes          (Status: 301) [Size: 316] [--> http://10.10.179.7/wp-includes/]
+[2K/xmlrpc.php           (Status: 200) [Size: 42]
+
+===============================================================
+Finished
+===============================================================
