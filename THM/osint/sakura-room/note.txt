@@ -1,0 +1,4 @@
+1. jawabnnya ada di path export filename -> kan ada path /home/user -> nah usernya itu
+2. cari aja uname tadi di google -> ada github pgp -> wget aja filenya -> gpg namafile -> muncul isinya email
+3. kalau nama asli sih dia di twit username filename tadi ada -> cek aja post2 kebawahnya
+4.   

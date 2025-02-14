@@ -1,0 +1,10 @@
+1. dapetin fotonya dulu -> next exif aja nanti ada copyright by user -> cari user di google dapet user twit
+2. twit skrg keknya kudu login dulu biar bisa stalk -> next stalk cek pp nya
+3. position di exif ga akurat cek lagi aja satuin bssid sama longlat
+4. lokasi dia ada di github -> https://github.com/OWoodfl1nt/people_finder
+5. ini nyari ssid -> ke wigle net -> cari bssid dari view -> query -> di aku gada gatau kenapa aku baca wu aja
+6. orang di wu dapat UnileverWiFi -> itu ssid nya
+7. email -> email ada di github juga kok 
+8. kalau liburan kemana cek aja di wp dia
+9. https://oliverwoodflint.wordpress.com/author/owoodflint/
+10. di source code juga ada passwdnya    

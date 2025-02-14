@@ -1,0 +1,29 @@
+# Nmap 7.94SVN scan initiated Fri Feb 14 12:57:17 2025 as: nmap -sCV -vv -p- -oN scan.nmap --min-rate 1000 10.10.11.34
+Increasing send delay for 10.10.11.34 from 0 to 5 due to 94 out of 313 dropped probes since last increase.
+Increasing send delay for 10.10.11.34 from 5 to 10 due to 46 out of 153 dropped probes since last increase.
+Increasing send delay for 10.10.11.34 from 80 to 160 due to 39 out of 128 dropped probes since last increase.
+Increasing send delay for 10.10.11.34 from 160 to 320 due to 40 out of 133 dropped probes since last increase.
+Increasing send delay for 10.10.11.34 from 320 to 640 due to 39 out of 128 dropped probes since last increase.
+Increasing send delay for 10.10.11.34 from 640 to 1000 due to 31 out of 103 dropped probes since last increase.
+Warning: 10.10.11.34 giving up on port because retransmission cap hit (10).
+Nmap scan report for 10.10.11.34
+Host is up, received echo-reply ttl 63 (0.15s latency).
+Scanned at 2025-02-14 12:57:20 WIB for 151s
+Not shown: 65189 closed tcp ports (reset), 344 filtered tcp ports (no-response)
+PORT   STATE SERVICE REASON         VERSION
+22/tcp open  ssh     syn-ack ttl 63 OpenSSH 8.9p1 Ubuntu 3ubuntu0.10 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 8c:01:0e:7b:b4:da:b7:2f:bb:2f:d3:a3:8c:a6:6d:87 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCk493Dw3qOjrvMEEvPT6uj4aIc7vb9chLLQr0Wzjiaf8hZ1yXMO6kwPuBjNaP6GouvFd0L7UnpacFnIqkQ9GOk=
+|   256 90:c6:f3:d8:3f:96:99:94:69:fe:d3:72:cb:fe:6c:c5 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ3pOUJRCVS6Y1fhIFs4QlMFAh2S8pCDFUCkAfaQFoJw
+80/tcp open  http    syn-ack ttl 63 Apache httpd 2.4.52
+| http-methods: 
+|_  Supported Methods: HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.52 (Ubuntu)
+|_http-title: Did not follow redirect to http://trickster.htb/
+Service Info: Host: _; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Feb 14 12:59:51 2025 -- 1 IP address (1 host up) scanned in 154.03 seconds

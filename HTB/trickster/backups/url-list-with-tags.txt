@@ -1,0 +1,2 @@
+https://news.ycombinator.com/ ['81d1365d-4ceb-4609-88d6-22afcd84d5bd']
+https://changedetection.io/CHANGELOG.txt ['3b1f652a-68f8-4540-9c97-4a95ec6a131b']
