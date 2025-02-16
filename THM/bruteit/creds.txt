@@ -1,0 +1,4 @@
+admin:xavier
+
+rsa pass -> rockinroll
+root:football
