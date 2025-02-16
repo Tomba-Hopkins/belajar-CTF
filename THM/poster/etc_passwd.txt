@@ -1,0 +1,4 @@
+alison:x:1000:1000:Poster,,,:/home/alison:/bin/bash
+sshd:x:108:65534::/var/run/sshd:/usr/sbin/nologin
+postgres:x:109:117:PostgreSQL administrator,,,:/var/lib/postgresql:/bin/bash
+dark:x:1001:1001::/home/dark:
