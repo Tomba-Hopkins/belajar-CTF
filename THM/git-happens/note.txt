@@ -1,0 +1,3 @@
+1. langsung aja scan nmap cuman 80 fuzz .git doang
+2. dumper cek semua -> gada creds -> git log cek pas buat creds -> git show [id commit] 
+3. baca 
