@@ -1,0 +1,9 @@
+1. nmap 22 80 aja fuzz gada apa apa cek source code baru ada 
+2. ada syntax yg mirip creds ssh -> coba masuk aja
+3. di document unzip aja -> di hex decode aja
+4. next clue bilang di web jadi /var/www -> cek aja disitu di encode rot13 caesar cipher -> ke cyberchef rot13 amount > 0
+5. next nyari -> find / -name fire-type* 2>/dev/null
+6. cari di dir video ada creds su aja
+
+PE :
+1. sudo -l -> gada apa apa sudo su aja coba flag nya di home  
