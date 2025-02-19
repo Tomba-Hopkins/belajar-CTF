@@ -6,4 +6,16 @@
 6. next dapet config nya -> ada di db -> coba ganti arahin ke .db itu
 7. run command yg dari wu -> next sunat aja itu biar admin aja disitu
 8. hashcat gitea.hashes  /usr/share/wordlists/rockyou.txt --user -> isinya admin aja 
-9.    
+9. issue issue issue lama ternyata salah di user nya , kemarin pilih admin aja ternyata di wu orang yg developer
+10. ampe analyze digit juga gini
+11. grep '^25[0-9]\{6\}$' /usr/share/wordlists/rockyou.txt | jadi wordlist
+12. gas dapet hashcat namahash.hash --user --show -> login ssh -> klaim user flag
+
+PE: 
+1. sudo -l gabisa run -perm -u=s juga gada 
+2. di wu orang pake ini find / -writable -type d 2>/dev/null ada di opt
+3. cek di script ada yg run magick dan ada working dir nya sendiri cari vuln ini 
+4. https://github.com/ImageMagick/ImageMagick/security/advisories/GHSA-8rxc-922v-phg8
+5. gas run aja run nya tapi di active dir  
+6. run aja yg di wu orang itu di working dir nya /image itu
+7. dapet root flag cat aja 
