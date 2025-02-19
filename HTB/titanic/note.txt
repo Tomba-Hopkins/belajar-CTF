@@ -1,0 +1,9 @@
+1. scan nmap 22 80 kebuka -> fuzz dir ada yg  download tuh ada vuln dir traversal
+2. fuzz subdo ada juga -> ada source code app nya bisa analyze di gpt vuln nya tau dir traversal dari source code itu
+3. ada config mysql docker juga 
+4. next dir traversal etc passwd bisa sshd_config bisa
+5. di wu orang ternyata disini -> /home/developer/gitea/data/gitea/conf/app.ini
+6. next dapet config nya -> ada di db -> coba ganti arahin ke .db itu
+7. run command yg dari wu -> next sunat aja itu biar admin aja disitu
+8. hashcat gitea.hashes  /usr/share/wordlists/rockyou.txt --user -> isinya admin aja 
+9.    
