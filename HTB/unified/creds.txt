@@ -1,0 +1,2 @@
+administrator:sidu
+root:NotACrackablePassword4U2022

