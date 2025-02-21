@@ -1,0 +1,4 @@
+1. jawab2 sqli -> A03:2021-injection (owasp 2021)
+2. jawab2 aja pertanyaan nya ez kok ez
+3. sqli nya pake pager kata quiz -> admin'# => 'admin'#[comment] -> klaim dah
+  

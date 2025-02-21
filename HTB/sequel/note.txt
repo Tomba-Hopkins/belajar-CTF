@@ -1,0 +1,3 @@
+1. scan aja -> ada port sql -> mariadb -> default root
+2. coba2 aja dah ez kok ini -> mysql -h ip -u root
+3. klaim flag dah 
