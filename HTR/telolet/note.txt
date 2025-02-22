@@ -1,0 +1,16 @@
+1. scan nmap 80 aja kebuka -> fuzz subdo gada dir ada
+2. dipercakapan ada ini -> T3l0lET0mBis44444!!
+3. dah login aja ada credsnya kok -> admin ama itu passwd nya
+4. nyari lama ternyata nemu exploitnya : https://github.com/sharpicx/CVE-2024-1651-PoC/tree/main
+5. python3 exploit.py -u admin -p "T3l0lET0mBis44444\!\!" -s telolet.htr -f 1 
+6. dapet rce -> revshell aja rce nya biar enak
+7. cek cek file di teloletnya ls -la ada creds pokoknya passwd buat su user
+8. klaim user flag
+
+
+PE :
+1. sudo -l -> cari di documentasi -> ctrl + f aja bagian --listen -> nanti suruh gpt jelasin post data nya 
+2. post data pake nc ama post curl juga gabisa pokoknya
+3. curl -XPOST localhost:1337 -d 'execute(/bin/bash -p)'
+4. di target  harus nyalaian sudo [bin root nya sudo -l]
+5. klaim root 

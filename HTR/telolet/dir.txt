@@ -1,0 +1,60 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://telolet.htr/
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /home/tomba/wordlists/seclists/web-content/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+[2K/.env                 (Status: 403) [Size: 261]
+[2K/login.php            (Status: 200) [Size: 11040]
+[2K/.gitignore           (Status: 200) [Size: 459]
+[2K/.htaccess            (Status: 403) [Size: 261]
+[2K/.hta                 (Status: 403) [Size: 261]
+[2K/.htpasswd            (Status: 403) [Size: 261]
+[2K/.mysql_history       (Status: 403) [Size: 261]
+[2K/LICENSE              (Status: 200) [Size: 1073]
+[2K/Thumbs.db            (Status: 403) [Size: 261]
+[2K/admin                (Status: 301) [Size: 295] [--> http://telolet.htr/admin/]
+[2K/akeeba.backend.log   (Status: 403) [Size: 261]
+[2K/bt                   (Status: 301) [Size: 292] [--> http://telolet.htr/bt/]
+[2K/data                 (Status: 301) [Size: 294] [--> http://telolet.htr/data/]
+[2K/development.log      (Status: 403) [Size: 261]
+[2K/index.php            (Status: 200) [Size: 17489]
+[2K/info.php             (Status: 200) [Size: 5377]
+[2K/install.mysql        (Status: 403) [Size: 261]
+[2K/install.pgsql        (Status: 403) [Size: 261]
+[2K/library              (Status: 301) [Size: 297] [--> http://telolet.htr/library/]
+[2K/main.mdb             (Status: 403) [Size: 261]
+[2K/production.log       (Status: 403) [Size: 261]
+[2K/robots.txt           (Status: 200) [Size: 207]
+[2K/server-status        (Status: 403) [Size: 261]
+[2K/sitemap              (Status: 301) [Size: 297] [--> http://telolet.htr/sitemap/]
+[2K/sitemap.xml          (Status: 200) [Size: 205]
+[2K/spamlog.log          (Status: 403) [Size: 261]
+[2K/src                  (Status: 301) [Size: 293] [--> http://telolet.htr/src/]
+[2K/styles               (Status: 301) [Size: 296] [--> http://telolet.htr/styles/]
+[2K/thumbs.db            (Status: 403) [Size: 261]
+[2K/vendor               (Status: 301) [Size: 296] [--> http://telolet.htr/vendor/]
+
+===============================================================
+Finished
+
+Disallow: /bt/*
+Disallow: /dl.php
+Disallow: /group.php
+Disallow: /login.php
+Disallow: /memberlist.php
+Disallow: /modcp.php
+Disallow: /posting.php
+Disallow: /privmsg.php
+Disallow: /profile.php
+
+
+===============================================================
