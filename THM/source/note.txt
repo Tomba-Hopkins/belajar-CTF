@@ -1,0 +1,5 @@
+1. scan nmap cuman ada 1 awalnya tapi hapus -p- nya biar nemu port 10000
+2. cek service nya cari aja searchsploit webmin ada tuh di msfconsole ambil yg backdoor dah sesuaiin 
+3. di msfconsole ssl nya nyalain soalnya di web kudu ssl juga
+4. tunggu shell aktif shell aja
+5. klaim user flag ama root flag 

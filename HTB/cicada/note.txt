@@ -1,0 +1,3 @@
+1. scan banyak port yg kebuka cek aja sendiri 
+2. smbclient -L //ip/ -> yg gada $ coba dulu -> smbclient //ip/hr
+3.  
