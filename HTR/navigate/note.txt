@@ -1,0 +1,17 @@
+1. scan nmap 22 80 kebuka -> next fuzz gada apa apa ada info.php cek aja
+2. cek di context document root -> sebenernya kukira /info.php tuh udah disitu
+3. tambahin aja /navigate -> sama host jan lupa soalnya disitu ada di env keknya hostnya
+4. searcsploit aja navigate cms -> ada .rb coba di msfconsole -> search navigate cms
+5. use aja sesuain run di msfconsole coba aja dulu
+6. ada sus di session.php coba kesana -> ada sus pokoknya di linpeas juga
+7. disini: /var/www/html/navigate/navigate/private/sessions/sess_v1ef6a04sam2l8lcumhe202ip6 
+8. gada ternyata kosong ke cfg aja -> ke global -> disitu ada passwd 
+9. ls /home -> cobain su 1 1 pake passwd itu
+10. klaim user flag
+
+PE :
+1. sudo -l -> ada ld preload + netstat -> netstat gatau pe nya jadi ld_prload + netstat
+2. gcc -shared -o nama.so -fPIC namaexp.c
+3. sudo LD_PRELOAD=/kefile.so /bin/sudol/netstatnya
+4. file exploitnya kudu bener sih -> cari di google aja pokoknya
+5. klaim root     
