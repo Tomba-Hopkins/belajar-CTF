@@ -1,0 +1,20 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:          http://10.1.2.152/?page=FUZZ.php
+[+] Method:       GET
+[+] Threads:      10
+[+] Wordlist:     /home/tomba/wordlists/seclists/web-content/common.txt
+[+] User Agent:   gobuster/3.6
+[+] Timeout:      10s
+===============================================================
+Starting gobuster in fuzzing mode
+===============================================================
+[2KFound: [Status=400] [Length=301] [Word=Documents and Settings] http://10.1.2.152/?page=Documents and Settings.php
+[2KFound: [Status=400] [Length=301] [Word=Program Files] http://10.1.2.152/?page=Program Files.php
+[2KFound: [Status=400] [Length=301] [Word=reports list] http://10.1.2.152/?page=reports list.php
+
+===============================================================
+Finished
+===============================================================
