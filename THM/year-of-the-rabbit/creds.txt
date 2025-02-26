@@ -1,0 +1,2 @@
+ftp -> ftpuser:5iez1wGXKfPKQ
+ssh -> eli:DSpDiM1wAEwid -> gwendoline:MniVCQVhQHUNI
