@@ -1,4 +1,30 @@
-# Nmap 7.95 scan initiated Fri Feb 28 17:24:55 2025 as: /usr/lib/nmap/nmap -sCV -vv -p- -oN scan.nmap --min-rate 1000 10.10.155.114
-Nmap scan report for 10.10.155.114 [host down, received no-response]
+# Nmap 7.95 scan initiated Sun Mar  2 00:03:45 2025 as: /usr/lib/nmap/nmap -sCV -vv -oN scan.nmap --min-rate 1000 10.10.22.67
+Nmap scan report for 10.10.22.67
+Host is up, received reset ttl 60 (0.24s latency).
+Scanned at 2025-03-02 00:03:46 WIB for 17s
+Not shown: 996 closed tcp ports (reset)
+PORT     STATE SERVICE REASON         VERSION
+21/tcp   open  ftp     syn-ack ttl 60 vsftpd 3.0.3
+22/tcp   open  ssh     syn-ack ttl 60 OpenSSH 7.6p1 Ubuntu 4ubuntu0.7 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 91:c4:f2:aa:6a:f2:d2:33:03:7d:f6:89:c1:47:9d:6e (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCtzeNBMlBQS17pg5EAwpvr+atUNnDyvrxR6Hp+bZepNlNNMo5bR2uPnUaMQIzfr7k2Mvo6uqMmhXEascxTdv/zGHGEghnEKdQhPYbYN6mM0C5hBiuQF/psYvq8D2CC8tu6BapB8qypGq2Kv9JMs82GdVCPWZSvrFCbznQR+XMLFyWoCzdzONvlUeAO0+PQBNvNSVxQWr4Samludv06r1fGrbuPVE0BPwpMZICPS+Yl4W2Oi7nJXurNk1luOHIG+oVMRA+9ktS3ENS5aDhAyKXFY7WZITnwV7GAr3ft30rq/rTnwi19CQhy0VTzhYPPU7JCH4etVnYclDnZHCfvmpc5
+|   256 fc:9d:92:a1:c6:26:6a:0a:44:e5:aa:b9:cb:a2:bc:cc (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBBW8nEd50GuhJ1hAuBBG7X9pPm3my1VEueHtfw2wp2tELbiLh04RtwkJnl+psVw9BCsV+xq5ePS/iFBrg3TopLQ=
+|   256 b8:fe:63:e1:f9:4a:90:dc:7c:80:bd:cf:26:ae:81:8c (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBfQJjFSBelk+CemIUh+hgwubJph8u2ndAPOf6M+uLpG
+80/tcp   open  http    syn-ack ttl 60 Apache httpd 2.4.29 ((Ubuntu))
+| http-robots.txt: 2 disallowed entries 
+|_/username_ftp_is /nasgor_ftp
+|_http-title: The nasgor
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: OPTIONS HEAD GET POST
+|_http-favicon: Unknown favicon MD5: 7374AF6CE7DB4CDBE703CAA75677E65E
+8080/tcp open  http    syn-ack ttl 60 Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+|_http-title: Site doesn't have a title (text/plain; charset=utf-8).
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
 Read data files from: /usr/share/nmap
-# Nmap done at Fri Feb 28 17:24:58 2025 -- 1 IP address (0 hosts up) scanned in 2.45 seconds
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Mar  2 00:04:03 2025 -- 1 IP address (1 host up) scanned in 17.36 seconds

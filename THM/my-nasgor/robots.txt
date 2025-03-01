@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /username_ftp_is
+Disallow: /nasgor_ftp

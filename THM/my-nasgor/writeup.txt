@@ -1,0 +1,10 @@
+1. scan nmap
+2. open http -> fuzz dir 
+3. there is robots.txt and /secret -> robots.txt is username ftp -> secret is wordlist for login page and ftp
+4. go to ftp with uname from robots.txt and brute with our wordlist
+5. get file -> dont forget to ls -la
+6. got a username ssh and login page -> bruteforce login page with burp intruder or hydra
+7. got a path -> decode that secret path with base64 -d
+8. go to that path -> check source code is a blank white
+9. you got the ssh password -> login ssh -> and sudo -l -> search gtfobins for that bin
+10. claim your all flag
