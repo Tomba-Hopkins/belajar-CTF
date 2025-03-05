@@ -1,0 +1,22 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.1.2.142:5000/
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /home/tomba/wordlists/seclists/web-content/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+[2K/console              (Status: 200) [Size: 1563]
+[2K/images               (Status: 401) [Size: 317]
+[2K/login                (Status: 200) [Size: 3220]
+[2K/logout               (Status: 401) [Size: 317]
+
+===============================================================
+Finished
+===============================================================

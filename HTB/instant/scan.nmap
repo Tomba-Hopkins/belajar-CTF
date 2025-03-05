@@ -1,0 +1,22 @@
+# Nmap 7.95 scan initiated Tue Mar  4 20:05:31 2025 as: /usr/lib/nmap/nmap -sCV -vv -oN scan.nmap --min-rate 1000 10.10.11.37
+Nmap scan report for instant.htb (10.10.11.37)
+Host is up, received echo-reply ttl 63 (0.068s latency).
+Scanned at 2025-03-04 20:05:31 WIB for 12s
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE SERVICE REASON         VERSION
+22/tcp open  ssh     syn-ack ttl 63 OpenSSH 9.6p1 Ubuntu 3ubuntu13.5 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 31:83:eb:9f:15:f8:40:a5:04:9c:cb:3f:f6:ec:49:76 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBMM6fK04LJ4jNNL950Ft7YHPO9NKONYVCbau/+tQKoy3u7J9d8xw2sJaajQGLqTvyWMolbN3fKzp7t/s/ZMiZNo=
+|   256 6f:66:03:47:0e:8a:e0:03:97:67:5b:41:cf:e2:c7:c7 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL+zjgyGvnf4lMAlvdgVHlwHd+/U4NcThn1bx5/4DZYY
+80/tcp open  http    syn-ack ttl 63 Apache httpd 2.4.58
+| http-methods: 
+|_  Supported Methods: POST OPTIONS HEAD GET
+|_http-server-header: Apache/2.4.58 (Ubuntu)
+|_http-title: Instant Wallet
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Mar  4 20:05:43 2025 -- 1 IP address (1 host up) scanned in 12.19 seconds

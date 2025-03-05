@@ -1,0 +1,9 @@
+1. scan nmap 22 80 -> fuzz robots -> rockyou di robot -> penulis meliodas
+2. brute ssh aja dah baca wu gitu soalnya
+3. ssh kesana -> klaim root
+
+PE :
+1. sudo -l -> write gabisa -> rm -rf aja -> gantiin baru jadi -> import pty; pty.spawn("/bin/bash")
+2. run yang di sudo -l -> sudo command 
+3. klaim root 
+ 
