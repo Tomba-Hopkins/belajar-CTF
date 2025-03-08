@@ -1,0 +1,7 @@
+1. scan nmap 80 -> cms fuel -> searchsploit yang rce python cari aja -> pake aja python3 -u yang /fuel
+2. dapet rce -> revshell biar enak jadi www-data ke home klaim flag
+
+PE :
+1. di web ada dir config coba ke app config cat db.php ada user mysql sebenernya
+2. su root pake itu aja coba passwd
+3. klaim root

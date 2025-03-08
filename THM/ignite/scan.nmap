@@ -1,0 +1,17 @@
+# Nmap 7.95 scan initiated Sat Mar  8 09:04:34 2025 as: /usr/lib/nmap/nmap -sCV -vv -oN scan.nmap --min-rate 1000 10.10.243.140
+Nmap scan report for 10.10.243.140
+Host is up, received reset ttl 60 (0.35s latency).
+Scanned at 2025-03-08 09:04:34 WIB for 23s
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE REASON         VERSION
+80/tcp open  http    syn-ack ttl 60 Apache httpd 2.4.18 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Welcome to FUEL CMS
+| http-robots.txt: 1 disallowed entry 
+|_/fuel/
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Mar  8 09:04:57 2025 -- 1 IP address (1 host up) scanned in 23.06 seconds
