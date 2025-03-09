@@ -1,0 +1,35 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.168.210/mbilling/
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /home/tomba/wordlists/seclists/web-content/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+[2K/.htpasswd            (Status: 403) [Size: 278]
+[2K/.htaccess            (Status: 403) [Size: 278]
+[2K/.hta                 (Status: 403) [Size: 278]
+[2K/LICENSE              (Status: 200) [Size: 7652]
+[2K/akeeba.backend.log   (Status: 403) [Size: 278]
+[2K/archive              (Status: 301) [Size: 325] [--> http://10.10.168.210/mbilling/archive/]
+[2K/assets               (Status: 301) [Size: 324] [--> http://10.10.168.210/mbilling/assets/]
+[2K/development.log      (Status: 403) [Size: 278]
+[2K/fpdf                 (Status: 301) [Size: 322] [--> http://10.10.168.210/mbilling/fpdf/]
+[2K/index.php            (Status: 200) [Size: 663]
+[2K/index.html           (Status: 200) [Size: 30760]
+[2K/lib                  (Status: 301) [Size: 321] [--> http://10.10.168.210/mbilling/lib/]
+[2K/production.log       (Status: 403) [Size: 278]
+[2K/protected            (Status: 403) [Size: 278]
+[2K/resources            (Status: 301) [Size: 327] [--> http://10.10.168.210/mbilling/resources/]
+[2K/spamlog.log          (Status: 403) [Size: 278]
+[2K/tmp                  (Status: 301) [Size: 321] [--> http://10.10.168.210/mbilling/tmp/]
+
+===============================================================
+Finished
+===============================================================
