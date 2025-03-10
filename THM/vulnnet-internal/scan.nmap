@@ -1,0 +1,78 @@
+# Nmap 7.95 scan initiated Mon Mar 10 09:28:22 2025 as: /usr/lib/nmap/nmap -sCV -vv -oN scan.nmap --min-rate 1000 10.10.55.82
+Nmap scan report for 10.10.55.82
+Host is up, received reset ttl 60 (0.40s latency).
+Scanned at 2025-03-10 09:28:23 WIB for 29s
+Not shown: 993 closed tcp ports (reset)
+PORT     STATE    SERVICE     REASON         VERSION
+22/tcp   open     ssh         syn-ack ttl 60 OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 5e:27:8f:48:ae:2f:f8:89:bb:89:13:e3:9a:fd:63:40 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDagA3GVO7hKpJpO1Vr6+z3Y9xjoeihZFWXSrBG2MImbpPH6jk+1KyJwQpGmhMEGhGADM1LbmYf3goHku11Ttb0gbXaCt+mw1Ea+K0H00jA0ce2gBqev+PwZz0ysxCLUbYXCSv5Dd1XSa67ITSg7A6h+aRfkEVN2zrbM5xBQiQv6aBgyaAvEHqQ73nZbPdtwoIGkm7VL9DATomofcEykaXo3tmjF2vRTN614H0PpfZBteRpHoJI4uzjwXeGVOU/VZcl7EMBd/MRHdspvULJXiI476ID/ZoQLT2zQf5Q2vqI3ulMj5CB29ryxq58TVGSz/sFv1ZBPbfOl9OvuBM5BTBV
+|   256 f4:fe:0b:e2:5c:88:b5:63:13:85:50:dd:d5:86:ab:bd (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBNM0XfxK0hrF7d4C5DCyQGK3ml9U0y3Nhcvm6N9R+qv2iKW21CNEFjYf+ZEEi7lInOU9uP2A0HZG35kEVmuideE=
+|   256 82:ea:48:85:f0:2a:23:7e:0e:a9:d9:14:0a:60:2f:ad (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJPRO3XCBfxEo0XhViW8m/V+IlTWehTvWOyMDOWNJj+i
+111/tcp  open     rpcbind     syn-ack ttl 60 2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  3,4          111/tcp6  rpcbind
+|   100000  3,4          111/udp6  rpcbind
+|   100005  1,2,3      37281/tcp6  mountd
+|   100005  1,2,3      37945/udp   mountd
+|   100005  1,2,3      51561/udp6  mountd
+|   100005  1,2,3      56873/tcp   mountd
+|   100227  3           2049/tcp   nfs_acl
+|   100227  3           2049/tcp6  nfs_acl
+|   100227  3           2049/udp   nfs_acl
+|_  100227  3           2049/udp6  nfs_acl
+139/tcp  open     netbios-ssn syn-ack ttl 60 Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp  open     netbios-ssn syn-ack ttl 60 Samba smbd 4.7.6-Ubuntu (workgroup: WORKGROUP)
+873/tcp  open     rsync       syn-ack ttl 60 (protocol version 31)
+2049/tcp open     nfs_acl     syn-ack ttl 60 3 (RPC #100227)
+9090/tcp filtered zeus-admin  no-response
+Service Info: Host: VULNNET-INTERNAL; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_clock-skew: mean: -19m58s, deviation: 34m37s, median: 0s
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 27276/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 28794/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 43502/udp): CLEAN (Timeout)
+|   Check 4 (port 23066/udp): CLEAN (Failed to receive data)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| nbstat: NetBIOS name: VULNNET-INTERNA, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+| Names:
+|   VULNNET-INTERNA<00>  Flags: <unique><active>
+|   VULNNET-INTERNA<03>  Flags: <unique><active>
+|   VULNNET-INTERNA<20>  Flags: <unique><active>
+|   WORKGROUP<00>        Flags: <group><active>
+|   WORKGROUP<1e>        Flags: <group><active>
+| Statistics:
+|   00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00
+|   00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00
+|_  00:00:00:00:00:00:00:00:00:00:00:00:00:00
+| smb-os-discovery: 
+|   OS: Windows 6.1 (Samba 4.7.6-Ubuntu)
+|   Computer name: vulnnet-internal
+|   NetBIOS computer name: VULNNET-INTERNAL\x00
+|   Domain name: \x00
+|   FQDN: vulnnet-internal
+|_  System time: 2025-03-10T03:28:40+01:00
+| smb2-time: 
+|   date: 2025-03-10T02:28:40
+|_  start_date: N/A
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Mar 10 09:28:52 2025 -- 1 IP address (1 host up) scanned in 31.02 seconds
