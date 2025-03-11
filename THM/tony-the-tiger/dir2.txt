@@ -1,0 +1,27 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.188.245:8080
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /home/tomba/wordlists/seclists/web-content/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+[2K/WEB-INF              (Status: 302) [Size: 0] [--> http://10.10.188.245:8080/WEB-INF/]
+[2K/admin-console        (Status: 302) [Size: 0] [--> http://10.10.188.245:8080/admin-console/]
+[2K/css                  (Status: 302) [Size: 0] [--> http://10.10.188.245:8080/css/]
+[2K/favicon.ico          (Status: 200) [Size: 1406]
+[2K/images               (Status: 302) [Size: 0] [--> http://10.10.188.245:8080/images/]
+[2K/index.html           (Status: 200) [Size: 1554]
+[2K/jbossws              (Status: 302) [Size: 0] [--> http://10.10.188.245:8080/jbossws/]
+[2K/jmx-console          (Status: 302) [Size: 0] [--> http://10.10.188.245:8080/jmx-console/]
+[2K/manager              (Status: 302) [Size: 0] [--> http://10.10.188.245:8080/manager/]
+
+===============================================================
+Finished
+===============================================================

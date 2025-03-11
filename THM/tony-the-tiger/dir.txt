@@ -1,0 +1,32 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.188.245/
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /home/tomba/wordlists/seclists/web-content/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+[2K/.hta                 (Status: 403) [Size: 284]
+[2K/.htaccess            (Status: 403) [Size: 289]
+[2K/.htpasswd            (Status: 403) [Size: 289]
+[2K/categories           (Status: 301) [Size: 318] [--> http://10.10.188.245/categories/]
+[2K/css                  (Status: 301) [Size: 311] [--> http://10.10.188.245/css/]
+[2K/fonts                (Status: 301) [Size: 313] [--> http://10.10.188.245/fonts/]
+[2K/images               (Status: 301) [Size: 314] [--> http://10.10.188.245/images/]
+[2K/index.html           (Status: 200) [Size: 16608]
+[2K/js                   (Status: 301) [Size: 310] [--> http://10.10.188.245/js/]
+[2K/page                 (Status: 301) [Size: 312] [--> http://10.10.188.245/page/]
+[2K/posts                (Status: 301) [Size: 313] [--> http://10.10.188.245/posts/]
+[2K/server-status        (Status: 403) [Size: 293]
+[2K/sitemap.xml          (Status: 200) [Size: 661]
+[2K/tags                 (Status: 301) [Size: 312] [--> http://10.10.188.245/tags/]
+
+===============================================================
+Finished
+===============================================================
