@@ -1,0 +1,2 @@
+1. scanning port -> sudo nmap -sV ip
+2. langsung dikasih github nya bjir di hint nya -> decrypt aja md5 nya langsung tuh user seina
