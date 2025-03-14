@@ -1,0 +1,20 @@
+# Nmap 7.95 scan initiated Fri Mar 14 06:55:09 2025 as: /usr/lib/nmap/nmap -sCV -vv -p- -oN scan.nmap --min-rate 1000 10.10.82.121
+Increasing send delay for 10.10.82.121 from 5 to 10 due to 160 out of 531 dropped probes since last increase.
+Increasing send delay for 10.10.82.121 from 40 to 80 due to 444 out of 1478 dropped probes since last increase.
+Increasing send delay for 10.10.82.121 from 160 to 320 due to 529 out of 1762 dropped probes since last increase.
+Increasing send delay for 10.10.82.121 from 320 to 640 due to 306 out of 1018 dropped probes since last increase.
+Increasing send delay for 10.10.82.121 from 640 to 1000 due to 133 out of 441 dropped probes since last increase.
+Warning: 10.10.82.121 giving up on port because retransmission cap hit (10).
+Nmap scan report for 10.10.82.121
+Host is up, received reset ttl 60 (0.23s latency).
+Scanned at 2025-03-14 06:55:09 WIB for 130s
+Not shown: 65534 closed tcp ports (reset)
+PORT     STATE SERVICE REASON         VERSION
+8080/tcp open  http    syn-ack ttl 60 Node.js Express framework
+|_http-title: VulnNet &ndash; Your reliable news source &ndash; Try Now!
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Mar 14 06:57:19 2025 -- 1 IP address (1 host up) scanned in 130.66 seconds
