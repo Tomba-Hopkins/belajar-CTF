@@ -1,0 +1,3 @@
+1. baca wu orang -> ' OR ''=''-- bakal ke banned
+2. brute uname nemu martin 
+3. martin' AND ''=''-- -
