@@ -1,0 +1,10 @@
+# Nmap 7.95 scan initiated Sun Mar 16 08:04:56 2025 as: /usr/lib/nmap/nmap --privileged -vv -oN scan.nmap 10.10.179.188
+Nmap scan report for 10.10.179.188
+Host is up, received reset ttl 60 (0.29s latency).
+Scanned at 2025-03-16 08:04:57 WIB for 8s
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE REASON
+80/tcp open  http    syn-ack ttl 60
+
+Read data files from: /usr/share/nmap
+# Nmap done at Sun Mar 16 08:05:06 2025 -- 1 IP address (1 host up) scanned in 9.08 seconds
