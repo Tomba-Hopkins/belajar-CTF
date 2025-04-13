@@ -1,0 +1,14 @@
+1. scan nmap -> pakai yang -p- sama yang biasa aja soalnya biasa ada 4
+2. exploit vsftpd backdoor juga gada
+3. cek versi samba nya -> cari aja Samba smbd 3.0.20-Debian exploit di google
+4. di msf ada ternyata pakai aja -> o iya cve catet aja di exploit db buat jawaban
+5. dah run aja yang module msf itu -> exploit dapet root
+6. klaim user
+
+PE :
+1. klaim root langsung 
+
+
+
+bonus :
+- di guide mode -> baca wu aja -> firewall -> 6200 -> itulah pokoknya

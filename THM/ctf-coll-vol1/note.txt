@@ -1,0 +1,64 @@
+1. base said
+- decode aja base64
+
+2. meta meta
+- download foto save image as -> exiftool in aja
+
+3. mon, are w goin to be ok 
+- download foto save image -> steghide extract -sf namafoto.jpg -> passphrase kosongin -> di sana ada .txt
+
+4. Erm......Magick
+- sorot aja itu yang bg nya putih -> buatnya tinggal bg putih aja sih
+
+5. QRrrrr
+- download fotonya aja save image -> terus ke google scan qr online by upload file 
+
+6. Reverse it or read it?
+- strings aja file nya -> nanti ketemu flag disitu
+
+7. Another decoding stuff
+- hash analyze dulu aja -> decode kek biasanya
+
+8. Left or right
+- rot13 + amount 7
+
+9. Make a comment
+- inspect ke description soal nanti ada flag di comment html
+
+10. Can you fix it? 
+- file namafile.png -> isinya data bukan png padahal ekstensi nya png
+- hexeditor namafile.png -> samain signature awal png ke dia soalnya ada yang ga bener signature nya
+- file namafile.png -> dah jadi png
+
+11. Read it
+- cari reddit tryhackme r/tryhackme gitu terus ada search bar cari aja nama room nya
+- nanti kek ada post spoiler new room ada flag nya
+
+12. Spin my head
+- cari aja brainfck decoder online -> dah decode aja
+
+13. An exclusive!
+- ke cyberchef -> from hex + XOR -> taruh key yangg 1010101 -> taruh s1 ke inputnya
+
+14. Binary walk
+- download jpg nya dulu save image -> binwalk -e namafile.jpg -> nanti ada foldernya -> kalau error binwalk uninstall aja module terus pip i lagi
+
+15. Darkness
+- aperisolve.com ato stegsolve -> upload image nya kesitu hasilnya ada di view di blue
+
+16. A sounding QR
+- scan qr -> ada audio dengerin aja -> dia mengeja di flag is S ou n d ai n ji qiu ar gitu
+
+17. Dig up the past
+- copy url -> ke wayback machine -> cari yang 2 jan 2020 -> ctrl + f aja THM{ nanti nemu
+
+18.  Uncrackable
+- vigenere -> ke cyberchef -> key nya dicoba 1 1 -> ternyata key nya thm -> dah decode aja
+
+19. Small base
+- cari dulu decimal to hex  rapid table aja -> next hex to str atau ascii -> dah decode aja
+
+20. Read the packet
+- download aja file pcap nya -> buka aja wireshark namafile.pcap
+- search aja di bar nya gini -> http.request -> biasanya flag2 gitu disana sih
+- tuh ada yang method get http stream aja kesitu  
