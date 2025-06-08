@@ -1,3 +1,13 @@
 1. bin file -> gada ghidra -> bisa gdb sih tapi ga ah
 2. file namafile -> ldd namafile -> strings namafile -> objdump -d namafile -> atau -t aja -> readelf -h namafile
-3. 
+
+
+- ulang
+- hasil baca wu
+1. bin architecture: file namafile -> gada x86 ternyata x64 jir 
+2. flag: baca writeup orang ada yg bikin script, copas
+
+- ini binary exploitation: buffer overflow
+- semua ini hasil wu orang aku ga paham sama sekali
+
+

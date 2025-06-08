@@ -1,4 +1,61 @@
 1. jawabnnya ada di path export filename -> kan ada path /home/user -> nah usernya itu
 2. cari aja uname tadi di google -> ada github pgp -> wget aja filenya -> gpg namafile -> muncul isinya email
 3. kalau nama asli sih dia di twit username filename tadi ada -> cek aja post2 kebawahnya
-4.   
+
+
+- unveil :
+1. what cryptocurr does attacker own cryptocurr wallet for: 
+> eth
+> soalnya repo nya abis pgp, jadi org lain mungkin yg buat
+
+2. attacker cryptocurr wallet addr :
+> cek di commit repo nya itu 
+
+3. what mining pool did the attacker receive payments from on jan 23, 2021 :
+> cek di blockchain.com paste id wallet attacker nya
+> cari dah itu yang tanggal segitu from apa from apa
+
+4. what other cryptocurr did the attacker exchange with using their cryptocurr wallet :
+> cek profil nya di blockchain
+> cek di wallet nanti ada tether usdt
+
+
+- taunt :
+
+1. what is the attacker curr twitter handle :
+> cari aja di google aikoabe nanti ada beberapa twitter dia
+> cek yang 2021 ini: https://x.com/sakuraloveraiko
+> disitu ada post2 nya tentang wifi 
+
+2. what is BSSID for attacker home wifi :
+> ke deepweblinks.net -> pake tor + vpn aja biar aman
+> nyalain vpn -> buka tor torbrowser-launcher
+> gatau dah gatau dah kgk bisa tetep -> https://raw.githubusercontent.com/OsintDojo/public/main/deeppaste.png
+> home wifi name: DK1F-G
+> dah dah baca wu aja ->  84:af:ec:34:fc:f8
+
+- homebound :
+
+1. cek airport terdekat :
+> cek foto postingannya di twit
+> pake reverse image aja
+> cek di bagian kayak ada monumen gitu 
+> cari monumen di g maps 
+> cek airport sekitar situ
+> cari nama code airport itu di google
+
+2. di bandara mana persinggahan terakhir attacker :
+> cek twit nya ada foto bandara terakhir
+> ambil foto nya ke google image search
+> terus about this image, ada di haneda cari aja code airport nya
+
+3. danau apa yg di post attacker di flight terakhirnya :
+> download aja itu foto map nya 
+> ke google image search nanti cek related search ada nama nya
+
+4. kota apa yg kira2 jadi rumahnya :
+> cek di bssid kata wu ada
+> copas aja terus klik filter
+> kalau udah coba search di map wigle net nya lake ina apa gitu namanya
+> nanti ada ungu2 itu letak bssid nya
+> jawab aja 

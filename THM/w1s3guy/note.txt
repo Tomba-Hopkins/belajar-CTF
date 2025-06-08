@@ -1,0 +1,19 @@
+1. cek source code nya dulu -> dia butuh nc ke port sama localhost itu 
+2. terus di function start print key dulu biar nanti tau key nya apa 
+3. run python server flag sama nc nya -> cek nanti print key nya ada
+
+
+
+- local flag ( dari source ) :
+1. run python server flag -> nc in localhost sama port -> 0.0.0.0 1337 -> cek print key di app source flag
+2. paste di nc tadi -> dapet hash
+3. run key2.py -> paste hash nya -> dapet encrypt key nya 
+4. run key1.py -> paste hash sama encrypt key barusan
+5. klaim flag 
+
+
+- global flag (dari ip) :
+1. nc ip 1337 
+2. ada hash -> run key2.py dapet key -> paste key nya -> dapet flag
+
+- semua ini hasil wu 
