@@ -1,0 +1,52 @@
+# Nmap 7.95 scan initiated Sun Jun 15 06:16:45 2025 as: /usr/lib/nmap/nmap --privileged -sCV -vv -oN scan.nmap --min-rate 1000 -Pn 10.10.2.89
+Nmap scan report for 10.10.2.89
+Host is up, received user-set (0.34s latency).
+Scanned at 2025-06-15 06:16:45 WIB for 112s
+Not shown: 998 filtered tcp ports (no-response)
+PORT     STATE SERVICE       REASON          VERSION
+80/tcp   open  http          syn-ack ttl 124 Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+3389/tcp open  ms-wbt-server syn-ack ttl 124 Microsoft Terminal Services
+| ssl-cert: Subject: commonName=WIN-LU09299160F
+| Issuer: commonName=WIN-LU09299160F
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2025-06-13T23:15:51
+| Not valid after:  2025-12-13T23:15:51
+| MD5:   5d53:29be:969e:e9af:8ea0:be3b:6175:99e7
+| SHA-1: 6225:acac:568a:f469:b19b:2134:14bf:7eef:8da5:fd71
+| -----BEGIN CERTIFICATE-----
+| MIIC4jCCAcqgAwIBAgIQNgxHMgms65VG7a6/ZRiSvjANBgkqhkiG9w0BAQsFADAa
+| MRgwFgYDVQQDEw9XSU4tTFUwOTI5OTE2MEYwHhcNMjUwNjEzMjMxNTUxWhcNMjUx
+| MjEzMjMxNTUxWjAaMRgwFgYDVQQDEw9XSU4tTFUwOTI5OTE2MEYwggEiMA0GCSqG
+| SIb3DQEBAQUAA4IBDwAwggEKAoIBAQC+DyPrB9bTfeCIJi9bt4hk2Se0ebfB92YY
+| QjP4/CbaVOhVmxGwRJ9NjOQIOUQKxKZx+wga8ZpM/LYQngqWgLVe1Ccrs046xV30
+| n3ooI59QG/N4yC5cVJJxnFFbcM3WqgeG9rLRThiX4l9rKIxbT5osrSkPaXG0d3Xq
+| m3FeUIix/LRojTuFNxvB+9gffYtnOXjHrTAbtzAN9ZOqjmbwQ8HjrJl1btKZc9r4
+| hygMu+4CmKny8Zb4Li98XED987Uw/9TkfRd/swZvCw8n9GCCiY2WGWQUOAtzgv8g
+| cZRoJsGe//q7casxrMfqSJbGTggiY9JYVCNIh/OuDeNPaCYhsBfdAgMBAAGjJDAi
+| MBMGA1UdJQQMMAoGCCsGAQUFBwMBMAsGA1UdDwQEAwIEMDANBgkqhkiG9w0BAQsF
+| AAOCAQEAOEuPWiuUN+lp3cOkGo+vI7wxXB1+ABJ+RHz3cyOG66gGr70ewZZ0i1Xw
+| 1UpC6ZBsNoCxi/qwQgDYFBsLvfGprXVi4EAno7KJb3Ga42uAX9bDuX7oX79VENtK
+| HiwC5Ger2ckmL7hWc7r+JYlZRWNrNHlviLJoETIQx0tBWnPe2QCxsgSFeNvGKM9V
+| bhGujDx0CrbFQY3gwbl4AHY4FVel1WZmMriULz1f9K/prS8LULnHtE5BjVnPW9l1
+| MHbE8bSmsAIg3kk2+kga7y4yuZJ8GeJbmBeggcN+WV09cckA2IPW0br04/80LnlT
+| TgCG6/xovdU03eRKK5wjsXk8IZG2YA==
+|_-----END CERTIFICATE-----
+| rdp-ntlm-info: 
+|   Target_Name: WIN-LU09299160F
+|   NetBIOS_Domain_Name: WIN-LU09299160F
+|   NetBIOS_Computer_Name: WIN-LU09299160F
+|   DNS_Domain_Name: WIN-LU09299160F
+|   DNS_Computer_Name: WIN-LU09299160F
+|   Product_Version: 10.0.17763
+|_  System_Time: 2025-06-14T23:17:10+00:00
+|_ssl-date: 2025-06-14T23:18:31+00:00; +2s from scanner time.
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 1s, deviation: 0s, median: 1s
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jun 15 06:18:37 2025 -- 1 IP address (1 host up) scanned in 112.03 seconds

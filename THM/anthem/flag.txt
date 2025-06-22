@@ -1,0 +1,4 @@
+1. THM{G!T_G00D} -> ada di source code http main page
+2. THM{L0L_WH0_D15} -> dapet di endpoint /authors
+3. THM{L0L_WH0_US3S_M3T4}" -> dapet di /archive yang we are hiring, cek meta
+4.   

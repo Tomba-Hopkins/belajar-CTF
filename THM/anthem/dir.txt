@@ -1,0 +1,35 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.138.109/
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /home/tomba/wordlists/seclists/web-content/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+[2K/Archive              (Status: 301) [Size: 118] [--> /]
+[2K/Blog                 (Status: 200) [Size: 5399]
+[2K/RSS                  (Status: 200) [Size: 1877]
+[2K/Search               (Status: 200) [Size: 3472]
+[2K/SiteMap              (Status: 200) [Size: 1047]
+[2K/archive              (Status: 301) [Size: 123] [--> /blog/]
+[2K/authors              (Status: 200) [Size: 4120]
+[2K/blog                 (Status: 200) [Size: 5399]
+[2K/categories           (Status: 200) [Size: 3546]
+[2K/install              (Status: 302) [Size: 126] [--> /umbraco/]
+[2K/render/https://www.google.com (Status: 400) [Size: 3420]
+[2K/robots.txt           (Status: 200) [Size: 192]
+[2K/rss                  (Status: 200) [Size: 1877]
+[2K/search               (Status: 200) [Size: 3472]
+[2K/sitemap              (Status: 200) [Size: 1047]
+[2K/tags                 (Status: 200) [Size: 3599]
+[2K/umbraco              (Status: 200) [Size: 4078]
+
+===============================================================
+Finished
+===============================================================
