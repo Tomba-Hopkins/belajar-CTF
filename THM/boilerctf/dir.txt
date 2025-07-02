@@ -1,0 +1,26 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.91.234/
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /home/tomba/wordlists/seclists/web-content/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+[2K/.hta                 (Status: 403) [Size: 291]
+[2K/.htaccess            (Status: 403) [Size: 296]
+[2K/.htpasswd            (Status: 403) [Size: 296]
+[2K/index.html           (Status: 200) [Size: 11321]
+[2K/joomla               (Status: 301) [Size: 313] [--> http://10.10.91.234/joomla/]
+[2K/manual               (Status: 301) [Size: 313] [--> http://10.10.91.234/manual/]
+[2K/robots.txt           (Status: 200) [Size: 257]
+[2K/server-status        (Status: 403) [Size: 300]
+
+===============================================================
+Finished
+===============================================================

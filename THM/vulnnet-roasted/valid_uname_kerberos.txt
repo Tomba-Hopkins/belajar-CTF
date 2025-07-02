@@ -1,0 +1,17 @@
+
+    __             __               __     
+   / /_____  _____/ /_  _______  __/ /____ 
+  / //_/ _ \/ ___/ __ \/ ___/ / / / __/ _ \
+ / ,< /  __/ /  / /_/ / /  / /_/ / /_/  __/
+/_/|_|\___/_/  /_.___/_/   \__,_/\__/\___/                                        
+
+Version: dev (n/a) - 06/30/25 - Ronnie Flathers @ropnop
+
+2025/06/30 22:55:57 >  Using KDC(s):[0m
+2025/06/30 22:55:57 >  	10.10.82.121:88
+[0m
+[32m2025/06/30 22:56:03 >  [+] VALID USERNAME:	 A-Whitehat@vulnnet-rst.local[0m
+[32m2025/06/30 22:56:03 >  [+] VALID USERNAME:	 J-Goldenhand@vulnnet-rst.local[0m
+[32m2025/06/30 22:56:04 >  [+] VALID USERNAME:	 J-Leet@vulnnet-rst.local[0m
+[32m2025/06/30 22:56:09 >  [+] VALID USERNAME:	 T-Skid@vulnnet-rst.local[0m
+2025/06/30 22:56:09 >  Done! Tested 36 usernames (4 valid) in 12.055 seconds[0m

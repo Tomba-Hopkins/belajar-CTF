@@ -21,4 +21,20 @@
 - Can we find find the email address of the administrator? :
 > nama author puisi itu disingkat aja kayak john doe jadi jd@anthem.com
 
-2.    
+2. initial access 
+
+- Let's figure out the username and password to log in to the box.(The box is not on a domain)
+> tanpa anthem.com, xfreerdp /u:username /p passwd /v ip
+> pake sg:passwdnya
+
+
+- Gain initial access to the machine, what is the contents of user.txt? 
+> THM{N00T_NO0T}, di desktop ada
+
+- Can we spot the admin password? 
+> ChangeMeBaby1MoreTime, ada di C:\, nah dia hidden files, ke view di bar, nyalain hidden files
+> nanti access denied juga, ke properties -> security -> edit -> nah add, pake users add nya -> add in si sg
+> buka file nya
+
+- Escalate your privileges to root, what is the contents of root.txt?
+> THM{Y0U_4R3_1337}, ke administrator/desktop         

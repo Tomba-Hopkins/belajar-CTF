@@ -1,0 +1,6 @@
+- user.txt :
+> scanning, fuzz, kayak biasanya cek aja dulu, port banyak yg kebuka
+> semua port susah, kecuali http sama ssmb di 445 cek aja di smbclient
+> smbclient -L //ip -> next yg gada $ dulu -> smbclient //ip/dir -> get passwd disitu ada passwd
+> next coba2 login ke sharename lain yg pake $ -> smbclient //ip/$dir -U Username
+> coba cek2 aja  

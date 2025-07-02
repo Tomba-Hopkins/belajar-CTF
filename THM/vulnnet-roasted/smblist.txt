@@ -1,0 +1,13 @@
+Password for [WORKGROUP\tomba]:
+
+	Sharename       Type      Comment
+	---------       ----      -------
+	ADMIN$          Disk      Remote Admin
+	C$              Disk      Default share
+	IPC$            IPC       Remote IPC
+	NETLOGON        Disk      Logon server share 
+	SYSVOL          Disk      Logon server share 
+	VulnNet-Business-Anonymous Disk      VulnNet Business Sharing
+	VulnNet-Enterprise-Anonymous Disk      VulnNet Enterprise Sharing
+Reconnecting with SMB1 for workgroup listing.
+Unable to connect with SMB1 -- no workgroup available

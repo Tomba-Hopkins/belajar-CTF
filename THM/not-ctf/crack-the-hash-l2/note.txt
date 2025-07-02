@@ -1,0 +1,11 @@
+1. Hash identification :
+> pake hash-identifier aja bawaan -> app [hashnya]
+> ga dah gausah pake haiti aja, kali linux udah ada ruby juga, tinggal gem in aja , sudo in aja kali aja dia butuh akses ke dir root root
+> haiti namahashnya
+> dapet tuh 2 2 nya
+> code keccak nya juga tuh kasih
+> code nya kasih yg jtr buat john the ripper, hc buat hashcat
+
+2. Wordlists :
+> pake install2 segala jir wordlistctl, pake py ada repo.json , chmod +x jadi gausah ada .py nya 
+>   

