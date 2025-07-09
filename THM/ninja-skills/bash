@@ -1,0 +1,1 @@
+sh -i id_rsa username@ip - -p
