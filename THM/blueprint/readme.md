@@ -1,0 +1,17 @@
+# 1. get flag
+- scanning nmap -> gas fuzz gada
+- buka port 8080 http, ato https aja ke ip ada
+- dia ngebuka kayak dirlist, ada osmerce, cari exploit nya yg di seachsploit, yg 2 aja yg baru
+- ada tuh exploit aja suurhnya gimana coba cek test dulu
+- ada masuk shell dir aja, gabisa cd kemana mana dir ke C:\Users
+- usut dir dir in isi users ampe admin ampe desktop ada flag
+- type aja ampe ke flag
+
+
+# 2. get hash
+- di shell cmd gini -> reg save hklm\system system, sam sam, security security
+- wget ke semua nya ada di dirlist tadi ke /install/includes/ di yg catalog
+- ada tuh wget semua aja
+- samdump2 security sam atau sam security, cek nama2 nya decrypt aja 
+- di hash nya yg belakang, keknya itu uname:passwd
+- ke crackstation aja

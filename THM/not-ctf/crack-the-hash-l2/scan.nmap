@@ -1,0 +1,16 @@
+# Nmap 7.95 scan initiated Tue Jul  8 08:04:28 2025 as: /usr/lib/nmap/nmap -sCV -vv --min-rate 1000 -p- -oN scan.nmap 10.10.14.160
+Increasing send delay for 10.10.14.160 from 0 to 5 due to 11 out of 15 dropped probes since last increase.
+Increasing send delay for 10.10.14.160 from 5 to 10 due to 11 out of 11 dropped probes since last increase.
+Nmap scan report for 10.10.14.160
+Host is up, received reset ttl 255 (0.0050s latency).
+Scanned at 2025-07-08 08:04:29 WIB for 158s
+Not shown: 65534 filtered tcp ports (no-response)
+PORT   STATE SERVICE REASON         VERSION
+53/tcp open  domain  syn-ack ttl 64 ISC BIND 9.11.4-P2 (RedHat Enterprise Linux 7)
+| dns-nsid: 
+|_  bind.version: 9.11.4-P2-RedHat-9.11.4-26.P2.el7_9.13
+Service Info: OS: Linux; CPE: cpe:/o:redhat:enterprise_linux:7
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Jul  8 08:07:07 2025 -- 1 IP address (1 host up) scanned in 158.69 seconds

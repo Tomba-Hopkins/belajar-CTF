@@ -1,0 +1,5 @@
+- Web browser : tinggal inspect aja -> terus baca source code js nya -> berapa kali question itu jawab
+- Ping : yauda jawab 
+- Traceroute : Yaudaaa JAWAB
+- telnet : yaudaa telnet in
+- netcat : kudu nyalain machine nya ada sendiri jir, bukan yang soal ke 3

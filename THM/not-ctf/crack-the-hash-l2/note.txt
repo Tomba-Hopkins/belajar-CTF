@@ -8,4 +8,37 @@
 
 2. Wordlists :
 > pake install2 segala jir wordlistctl, pake py ada repo.json , chmod +x jadi gausah ada .py nya 
->   
+> dahlah ikut aja ikut aja 
+> wordlistctl list -g namanya_usernames_apakek
+
+3. Cracking tools, modes & rules :
+> pertama bikin mutasi baru, entah itu di /usr/share/john ato /etc/john, intinya john.conf
+> bikin aja [List.Rules:THM01] sama $[0-9]$[0-9] 
+> nextt tinggal cari wordlist nya di seclist 10 most common passwd keknya
+> dah run run aja hash nya crack aja
+> john hash3.txt --format=raw-sha1 --wordlist=~/wordlists/seclists/password/10k-most-common.txt --rules=THM01
+
+4. Custom wordlist generation :
+> sudo wordlistctl fetch -l dogs -d /usr/share/wordlists/misc/dogs.txt
+> download mentalist aja, pake yg source aja enak sudo python3 setup.py install  
+> run aja mentalist nya, baseword ke misc dogs tadi
+> case toggel 2nd, subs nya replace all s jadi $, at on time
+> dah save aja format john/hc rules, next dapet tuh output paling bawah
+> vim aja ke john.conf lagi, add rules kek tadi:dogs
+> haiti ke hashnya, md5 aja tuh
+> ohn hash4.txt --format=raw-md5 --wordlist=/usr/share/wordlists/misc/dogs.txt --rules=dogs
+> suruh cewl: cewl -d 2 -w $(pwd)/example.txt https://example.org
+> ttpassgen --rule '[?d]{4:4:*}' pin.txt -> ttpassgen --rule '[?l]{1:3:*}' abc.txt
+> ttpassgen --dictlist 'pin.txt,abc.txt' --rule '$0[-]{1}$1' combination.txt 
+> sizenya gede katanya males dah cek google aja hashnya gausah crack
+
+
+5.  It's time to crack hashes :
+- rssource: https://tech.kusuwada.com/entry/2022/02/08/151953
+- Advice n°1 
+> sudo wordlistctl fetch -l top_1000_usa_malenames_english -d  /usr/share/wordlists/misc/top_1000_usa_malenames_english.txt
+>  john n1.txt --wordlist=/usr/share/wordlists/misc/top_1000_usa_malenames_english.txt --rules=CTH01 --format=raw-md5
+- Advice n°2
+> sudo wordlistctl fetch -l top_1000_usa_femalenames_english -d  /usr/share/wordlists/misc/top_1000_usa_femalenames_english.txt
+> john n1.txt --wordlist=/usr/share/wordlists/misc/top_1000_usa_femalenames_english.txt --rules=CTH01 --format=raw-md5
+- 

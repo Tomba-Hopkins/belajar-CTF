@@ -1,0 +1,93 @@
+# Nmap 7.95 scan initiated Mon Jul  7 18:50:55 2025 as: /usr/lib/nmap/nmap -sCV -vv --min-rate 1000 -p- -oN scan.nmap 10.10.5.252
+adjust_timeouts2: packet supposedly had rtt of 9402725 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of 9402725 microseconds.  Ignoring time.
+Nmap scan report for 10.10.5.252
+Host is up, received echo-reply ttl 124 (0.37s latency).
+Scanned at 2025-07-07 18:50:56 WIB for 307s
+Not shown: 65527 filtered tcp ports (no-response)
+PORT      STATE SERVICE       REASON          VERSION
+80/tcp    open  http          syn-ack ttl 124 Microsoft IIS httpd 10.0
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: IIS Windows Server
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+135/tcp   open  msrpc         syn-ack ttl 124 Microsoft Windows RPC
+139/tcp   open  netbios-ssn   syn-ack ttl 124 Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds  syn-ack ttl 124 Windows Server 2016 Standard Evaluation 14393 microsoft-ds (workgroup: WORKGROUP)
+3389/tcp  open  ms-wbt-server syn-ack ttl 124 Microsoft Terminal Services
+| ssl-cert: Subject: commonName=Relevant
+| Issuer: commonName=Relevant
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2025-07-06T11:46:15
+| Not valid after:  2026-01-05T11:46:15
+| MD5:   1dfb:37f8:e4cf:19c7:6f6d:2761:d59f:7b7d
+| SHA-1: 5202:7f06:8ed5:f3c9:1934:48b1:302b:39c6:5299:ffd6
+| -----BEGIN CERTIFICATE-----
+| MIIC1DCCAbygAwIBAgIQYKkiF8Bq7LxLMEgz4QWSfjANBgkqhkiG9w0BAQsFADAT
+| MREwDwYDVQQDEwhSZWxldmFudDAeFw0yNTA3MDYxMTQ2MTVaFw0yNjAxMDUxMTQ2
+| MTVaMBMxETAPBgNVBAMTCFJlbGV2YW50MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8A
+| MIIBCgKCAQEAjGKCohYzspoESjOUev4P+1FbfyUEVdP8TpI/9AwAVfiVy6uw3tbs
+| I+z9y3K+q83/xlWCy+PGE+0CvRpZDj3hfmbtNkE1Ut5JYLLG5vPiDqb1AF/vgkeA
+| +ZnKithHPperWxiIhS88URiKjQptmNqER+aD5ZAMkm9KR40jmCXsGL6l/KK0iaAd
+| 44IDNVsl8juf8ZbyQZ+B5PG5hgcEdDDBZ7HCDTYLddQQAvb6eIv10y+6NZwya9Mk
+| 5shbqg/ckXfeKcOw5LA68qY/9X9974Bi2ALl82Zg4yHijvB2xmXDk/Ti7KdZpLr9
+| sv4tWLrZrqLx8YbJV5rEZr3C+BYRLERDOwIDAQABoyQwIjATBgNVHSUEDDAKBggr
+| BgEFBQcDATALBgNVHQ8EBAMCBDAwDQYJKoZIhvcNAQELBQADggEBABwsSMIr0mDF
+| HH/UUEK3AXfSdlDTwWf5oHTXr9wxDlVeL55cLHpAIR2MLK48RT+crR9kQh4P75tK
+| RDNEubMl43VpPSmtHz7/40wNfszhgGTZIm1685AZPb4QyjGyjjicGyY43d2JCzn8
+| gG7VdJCAXxQhRca0F8Mn+fPd6zahBMZHXEmgyorNj6/+Y3c14TfGqwYkNi1MPmFS
+| KaU/f8pYUwdsLNWqHkroVtLiS8nbc29ZZHH1ynhLPDAikhIBqkXX+Pyxxn8QXi/9
+| VmuEkmHdCb2VyZxs8hh+N8RfVZrjMsdWuEHm89vCYUbh78abExf+GC5eW2mXnECd
+| re66lR22e40=
+|_-----END CERTIFICATE-----
+|_ssl-date: 2025-07-07T11:56:02+00:00; +1s from scanner time.
+| rdp-ntlm-info: 
+|   Target_Name: RELEVANT
+|   NetBIOS_Domain_Name: RELEVANT
+|   NetBIOS_Computer_Name: RELEVANT
+|   DNS_Domain_Name: Relevant
+|   DNS_Computer_Name: Relevant
+|   Product_Version: 10.0.14393
+|_  System_Time: 2025-07-07T11:55:22+00:00
+49663/tcp open  http          syn-ack ttl 124 Microsoft IIS httpd 10.0
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+|_http-title: IIS Windows Server
+49666/tcp open  msrpc         syn-ack ttl 124 Microsoft Windows RPC
+49667/tcp open  msrpc         syn-ack ttl 124 Microsoft Windows RPC
+Service Info: Host: RELEVANT; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 53357/tcp): CLEAN (Timeout)
+|   Check 2 (port 33034/tcp): CLEAN (Timeout)
+|   Check 3 (port 57898/udp): CLEAN (Timeout)
+|   Check 4 (port 33090/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+|_clock-skew: mean: 1h24m02s, deviation: 3h07m52s, median: 1s
+| smb2-time: 
+|   date: 2025-07-07T11:55:25
+|_  start_date: 2025-07-07T11:46:16
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+| smb-os-discovery: 
+|   OS: Windows Server 2016 Standard Evaluation 14393 (Windows Server 2016 Standard Evaluation 6.3)
+|   Computer name: Relevant
+|   NetBIOS computer name: RELEVANT\x00
+|   Workgroup: WORKGROUP\x00
+|_  System time: 2025-07-07T04:55:27-07:00
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Jul  7 18:56:03 2025 -- 1 IP address (1 host up) scanned in 307.45 seconds

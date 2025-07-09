@@ -2,14 +2,43 @@
 Gobuster v3.6
 by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
 ===============================================================
-[+] Url:                     https://10.10.91.234:10000/
+[+] Url:                     http://10.10.46.229/joomla/
 [+] Method:                  GET
 [+] Threads:                 10
 [+] Wordlist:                /home/tomba/wordlists/seclists/web-content/common.txt
 [+] Negative Status codes:   404
-[+] Exclude Length:          4628
 [+] User Agent:              gobuster/3.6
 [+] Timeout:                 10s
 ===============================================================
 Starting gobuster in directory enumeration mode
+===============================================================
+[2K/.hta                 (Status: 403) [Size: 298]
+[2K/.htaccess            (Status: 403) [Size: 303]
+[2K/.htpasswd            (Status: 403) [Size: 303]
+[2K/_archive             (Status: 301) [Size: 322] [--> http://10.10.46.229/joomla/_archive/]
+[2K/_database            (Status: 301) [Size: 323] [--> http://10.10.46.229/joomla/_database/]
+[2K/_files               (Status: 301) [Size: 320] [--> http://10.10.46.229/joomla/_files/]
+[2K/_test                (Status: 301) [Size: 319] [--> http://10.10.46.229/joomla/_test/]
+[2K/administrator        (Status: 301) [Size: 327] [--> http://10.10.46.229/joomla/administrator/]
+[2K/bin                  (Status: 301) [Size: 317] [--> http://10.10.46.229/joomla/bin/]
+[2K/build                (Status: 301) [Size: 319] [--> http://10.10.46.229/joomla/build/]
+[2K/cache                (Status: 301) [Size: 319] [--> http://10.10.46.229/joomla/cache/]
+[2K/components           (Status: 301) [Size: 324] [--> http://10.10.46.229/joomla/components/]
+[2K/images               (Status: 301) [Size: 320] [--> http://10.10.46.229/joomla/images/]
+[2K/includes             (Status: 301) [Size: 322] [--> http://10.10.46.229/joomla/includes/]
+[2K/index.php            (Status: 200) [Size: 12478]
+[2K/installation         (Status: 301) [Size: 326] [--> http://10.10.46.229/joomla/installation/]
+[2K/language             (Status: 301) [Size: 322] [--> http://10.10.46.229/joomla/language/]
+[2K/layouts              (Status: 301) [Size: 321] [--> http://10.10.46.229/joomla/layouts/]
+[2K/libraries            (Status: 301) [Size: 323] [--> http://10.10.46.229/joomla/libraries/]
+[2K/media                (Status: 301) [Size: 319] [--> http://10.10.46.229/joomla/media/]
+[2K/modules              (Status: 301) [Size: 321] [--> http://10.10.46.229/joomla/modules/]
+[2K/plugins              (Status: 301) [Size: 321] [--> http://10.10.46.229/joomla/plugins/]
+[2K/templates            (Status: 301) [Size: 323] [--> http://10.10.46.229/joomla/templates/]
+[2K/tests                (Status: 301) [Size: 319] [--> http://10.10.46.229/joomla/tests/]
+[2K/tmp                  (Status: 301) [Size: 317] [--> http://10.10.46.229/joomla/tmp/]
+[2K/~www                 (Status: 301) [Size: 318] [--> http://10.10.46.229/joomla/~www/]
+
+===============================================================
+Finished
 ===============================================================
