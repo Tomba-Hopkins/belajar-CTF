@@ -40,5 +40,40 @@
 >  john n1.txt --wordlist=/usr/share/wordlists/misc/top_1000_usa_malenames_english.txt --rules=CTH01 --format=raw-md5
 - Advice n°2
 > sudo wordlistctl fetch -l top_1000_usa_femalenames_english -d  /usr/share/wordlists/misc/top_1000_usa_femalenames_english.txt
-> john n1.txt --wordlist=/usr/share/wordlists/misc/top_1000_usa_femalenames_english.txt --rules=CTH01 --format=raw-md5
-- 
+> john n2.txt --wordlist=/usr/share/wordlists/misc/top_1000_usa_femalenames_english.txt --rules=CTH01 --format=raw-md5
+- Advice n3
+> john n3.txt --wordlist=~/wordlists/seclists/etc/cities.txt --format=raw-md5 --rules=l33t
+- Advice n4
+> sudo wordlistctl fetch -l facebook-names-unique -d  /usr/share/wordlists/misc/facebook-names-unique
+> haiti hash
+> john n4.txt --wordlist=/misc/ya_itu --format=raw-sha1 --rules=ReplaceLettersCaps
+- Advice n5
+> git clone https://github.com/initstring/lyricpass.git
+> sudo python3 lyricpass.py -a "Adele"
+> haiti [hash] -> hc 0 aja
+> hashcat -m 0 n5.txt raw-lyrics-blablabla -r "r" -> ato echo r > rev.rule  aja nanti -r nya rev.rule
+- Advice n6
+> sint marteen no nya -> +1721, bisa buat clue
+> ada pokoknya di web nya cek aja di machine nya n6
+> git clone https://github.com/toxydose/pnwgen -> vim prefix.txt nya jadi +1721
+> next run python3 namaappnya.py -> enter aja
+> next run haiti -> haiti hash -> md5 aja jadi hc 0
+> hashcat -m 0 n6.txt pnwgen/wordlist.txt -> hashcat -m 0 n6.txt pnwgen/wordlist.txt --show
+- Advice n7
+> clue: Rockyou, SHA3-512, No mutation
+> haiti [hashnya] -> ambil sesuai clue
+> hashcat -m 17600 n7.txt /usr/share/wordlists/rockyou.txt -> hashcat -m 17600 n7.txt /usr/share/wordlists/rockyou.txt --show
+- Advice n8
+> clue: Web scrapping, blake2, Repetition, CeWL
+> di web nya ada ngarah kesini link gitu, http://ip/rtfm.re/en/sponsors/index.html 
+> cewl [link tadi] > wordlist8.txt
+> ke john.conf, buat aja rules: d -> dd -> ddd -> dddd -> ddddd
+> haiti [hash] -> blake2 tuh tadi clue nya
+> john n8.txt --format=blake2 tadi --wordlist=wordlist tadi --rules=namarules double tadi
+> john n8.txt --wordlist=wordlist8.txt --format=raw-blake2 --rules=Double
+- Advice n9
+> clue: Rockyou, SHA512-crypt, No mutation
+> haiti [hash] -> gabisa jir kudu gini -> haiti '[hash]'
+> nah udah bisa tuh ez
+> john n9.txt --wordlist=/usr/share/wordlists/rockyou.txt --format=sha512crypt
+     
