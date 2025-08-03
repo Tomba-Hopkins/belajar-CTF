@@ -1,0 +1,4 @@
+http://10.1.2.168:3000/_next/static/chunks/main.js
+http://10.1.2.168:3000/_next/static/chunks/pages/index.js
+http://10.1.2.168:3000/_next/static/chunks/pages/_app.js
+http://10.1.2.168:3000/_next/static/chunks/pages/_error.js

@@ -1,0 +1,79 @@
+1. Hash identification :
+> pake hash-identifier aja bawaan -> app [hashnya]
+> ga dah gausah pake haiti aja, kali linux udah ada ruby juga, tinggal gem in aja , sudo in aja kali aja dia butuh akses ke dir root root
+> haiti namahashnya
+> dapet tuh 2 2 nya
+> code keccak nya juga tuh kasih
+> code nya kasih yg jtr buat john the ripper, hc buat hashcat
+
+2. Wordlists :
+> pake install2 segala jir wordlistctl, pake py ada repo.json , chmod +x jadi gausah ada .py nya 
+> dahlah ikut aja ikut aja 
+> wordlistctl list -g namanya_usernames_apakek
+
+3. Cracking tools, modes & rules :
+> pertama bikin mutasi baru, entah itu di /usr/share/john ato /etc/john, intinya john.conf
+> bikin aja [List.Rules:THM01] sama $[0-9]$[0-9] 
+> nextt tinggal cari wordlist nya di seclist 10 most common passwd keknya
+> dah run run aja hash nya crack aja
+> john hash3.txt --format=raw-sha1 --wordlist=~/wordlists/seclists/password/10k-most-common.txt --rules=THM01
+
+4. Custom wordlist generation :
+> sudo wordlistctl fetch -l dogs -d /usr/share/wordlists/misc/dogs.txt
+> download mentalist aja, pake yg source aja enak sudo python3 setup.py install  
+> run aja mentalist nya, baseword ke misc dogs tadi
+> case toggel 2nd, subs nya replace all s jadi $, at on time
+> dah save aja format john/hc rules, next dapet tuh output paling bawah
+> vim aja ke john.conf lagi, add rules kek tadi:dogs
+> haiti ke hashnya, md5 aja tuh
+> ohn hash4.txt --format=raw-md5 --wordlist=/usr/share/wordlists/misc/dogs.txt --rules=dogs
+> suruh cewl: cewl -d 2 -w $(pwd)/example.txt https://example.org
+> ttpassgen --rule '[?d]{4:4:*}' pin.txt -> ttpassgen --rule '[?l]{1:3:*}' abc.txt
+> ttpassgen --dictlist 'pin.txt,abc.txt' --rule '$0[-]{1}$1' combination.txt 
+> sizenya gede katanya males dah cek google aja hashnya gausah crack
+
+
+5.  It's time to crack hashes :
+- rssource: https://tech.kusuwada.com/entry/2022/02/08/151953
+- Advice n°1 
+> sudo wordlistctl fetch -l top_1000_usa_malenames_english -d  /usr/share/wordlists/misc/top_1000_usa_malenames_english.txt
+>  john n1.txt --wordlist=/usr/share/wordlists/misc/top_1000_usa_malenames_english.txt --rules=CTH01 --format=raw-md5
+- Advice n°2
+> sudo wordlistctl fetch -l top_1000_usa_femalenames_english -d  /usr/share/wordlists/misc/top_1000_usa_femalenames_english.txt
+> john n2.txt --wordlist=/usr/share/wordlists/misc/top_1000_usa_femalenames_english.txt --rules=CTH01 --format=raw-md5
+- Advice n3
+> john n3.txt --wordlist=~/wordlists/seclists/etc/cities.txt --format=raw-md5 --rules=l33t
+- Advice n4
+> sudo wordlistctl fetch -l facebook-names-unique -d  /usr/share/wordlists/misc/facebook-names-unique
+> haiti hash
+> john n4.txt --wordlist=/misc/ya_itu --format=raw-sha1 --rules=ReplaceLettersCaps
+- Advice n5
+> git clone https://github.com/initstring/lyricpass.git
+> sudo python3 lyricpass.py -a "Adele"
+> haiti [hash] -> hc 0 aja
+> hashcat -m 0 n5.txt raw-lyrics-blablabla -r "r" -> ato echo r > rev.rule  aja nanti -r nya rev.rule
+- Advice n6
+> sint marteen no nya -> +1721, bisa buat clue
+> ada pokoknya di web nya cek aja di machine nya n6
+> git clone https://github.com/toxydose/pnwgen -> vim prefix.txt nya jadi +1721
+> next run python3 namaappnya.py -> enter aja
+> next run haiti -> haiti hash -> md5 aja jadi hc 0
+> hashcat -m 0 n6.txt pnwgen/wordlist.txt -> hashcat -m 0 n6.txt pnwgen/wordlist.txt --show
+- Advice n7
+> clue: Rockyou, SHA3-512, No mutation
+> haiti [hashnya] -> ambil sesuai clue
+> hashcat -m 17600 n7.txt /usr/share/wordlists/rockyou.txt -> hashcat -m 17600 n7.txt /usr/share/wordlists/rockyou.txt --show
+- Advice n8
+> clue: Web scrapping, blake2, Repetition, CeWL
+> di web nya ada ngarah kesini link gitu, http://ip/rtfm.re/en/sponsors/index.html 
+> cewl [link tadi] > wordlist8.txt
+> ke john.conf, buat aja rules: d -> dd -> ddd -> dddd -> ddddd
+> haiti [hash] -> blake2 tuh tadi clue nya
+> john n8.txt --format=blake2 tadi --wordlist=wordlist tadi --rules=namarules double tadi
+> john n8.txt --wordlist=wordlist8.txt --format=raw-blake2 --rules=Double
+- Advice n9
+> clue: Rockyou, SHA512-crypt, No mutation
+> haiti [hash] -> gabisa jir kudu gini -> haiti '[hash]'
+> nah udah bisa tuh ez
+> john n9.txt --wordlist=/usr/share/wordlists/rockyou.txt --format=sha512crypt
+     
