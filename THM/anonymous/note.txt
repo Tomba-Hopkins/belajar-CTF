@@ -1,0 +1,21 @@
+- Enumerate the machine.  How many ports are open?
+> nmap aja kek biasanya cek portnya
+
+- What service is running on port 21?
+> cek aja service apa di port itu
+
+- What service is running on ports 139 and 445? 
+> tau lah pasti kalo gatau cek google dah
+
+- There's a share on the user's computer.  What's it called?
+> smbclient -L //ip -> nanti ada yg gada $ tuh
+
+- user.txt :
+> ls -la di ftp nya, nanti dia rwx bisa exec lah y
+> edit aja itu file sh nya -> rewrite jadi revshell, nanti put aja ke ftp
+> klaim flag
+
+- root.txt :
+> pake linpeas aja
+> ada tuh env
+> klaim root   
