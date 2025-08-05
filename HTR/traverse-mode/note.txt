@@ -1,0 +1,27 @@
+- user.txt :
+> fuzz fuzz aja dir nya gatau kadang bisa kadang ga, nemu /console 
+> brute aja username login nyai cirt_default_usernames.txt, expected nya jangan username does not exist, pake yg wrong password, di hydra tuh
+> hydra -L cirt_default_usernames.txt -p pepek 10.1.2.142 http-post-form "/login:username=^USER^&password=^PASS^:Username does not exist\!" -s 5000
+> hydra -l [uname] -P /seclist/common-passwords-win.txt 10.1.2.142 http-post-form "/login:username=^USER^&password=^PASS^:Wrong password\!" -s 5000
+> dah bisa tuh login aja yg sysadmin tuh, cek cek aja
+> nah di /images udah bisa di buka kalau dah login sesuai, cek source code, ada tuh ngarah ke file
+> coba dulu aja ?img=., ada tuh error, cek2 dulu baca bagian: elif re.search(r'%2e%2e%2f?', filename):
+> nah bisa tuh kalau gitu nanti dia beda responsenya, bypas pake ini . ama / kali 2, jadi .. * 2 = ...., / * 2 = //
+> ....//....//, terus ampe dapet etc passwd, nah ada tuh exploit pin, butuh data2 dulu
+> gabisa bisa tuh ngecrack exploit pinnya
+> cek2 error msg kan path nya disini: /var/www/TraverseMode/website/get_images.py
+> cek aja coba: 
+> http://10.1.2.142:5000/get-images?img=....//....//....//....//....//var/www/TraverseMode/website/app.py 
+> anjir ternyata pinnya disitu kocak gausa exploit2 segala, bingung dah udah ambil machine id ama coba mac address nya
+> revshell aja udah, btw susah juga revshell disitu, import('os').popen gitu gabisa
+> pake gini: __import__('os').popen('ls -la').read()
+> pake revshell yg mkfifo soalnya dia ngeload
+> udah login disana find / -name user.txt 2>/dev/null
+> klaim flag
+
+
+- root.txt :
+> pake linpeas wget aja bisa kok ini, nah ada oren di path, tapi di crontab gada file yg automate di run root
+> ada juga sudo nya oren, cuma gatau creds nya user
+> find juga oren, cek aja gtfo, ambil yg suid karna gabisa sudo gatau creds
+> dah klaim flag    

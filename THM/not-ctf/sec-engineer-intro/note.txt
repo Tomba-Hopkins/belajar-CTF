@@ -22,4 +22,21 @@
 - What is a theoretical exercise carried out to gauge the operational readiness of an organization from a security point of view?
 > baca di bab tabletop exercises, itu kek simulasi latihan biar secure gitu loh rutin 
 - What is the priority of the management in case of a disaster or crisis?
-> baca di bab Disaster Recovery and Crisis Management, Business Continuity             
+> baca di bab Disaster Recovery and Crisis Management, Business Continuity
+
+5. Walking in Their Shoes
+- External Audit non-compliance report1
+> dia udah update semua os, tapi ada mesin2 lama yg ga update apa gimana gitu
+> yauda restrict aja kalo gitu
+- External Audit non-compliance report2
+> disini dia ga install siem gegara apa gitu
+> yauda install di single server aja
+- Vuln1 
+> dia ada sql vuln apa gitu
+> gatau dah restrict aja ke vpn net 
+- Vuln2 
+> ada vuln command injection gitu
+> yauda sama restrict ke vpn aja kek sebelumnya
+- Vuln3 
+> ada error di lua apa gimana lupa
+> patch vuln   

